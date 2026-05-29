@@ -1,0 +1,497 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import statesData from '../../data/states.json';
+
+export function getStaticPaths() {
+  return Object.entries(statesData).map(([abbr, data]) => ({
+    params: { state: data.slug },
+    props: { abbr, stateData: data },
+  }));
+}
+
+const { abbr, stateData } = Astro.props;
+const { name, dental, vision, hearingAids, nursingHome, cms_data } = stateData;
+
+const enroll   = cms_data?.enrollment_2024 ?? {};
+const plans    = cms_data?.plan_landscape_2025 ?? {};
+const ship     = cms_data?.ship_contact ?? {};
+const util2021 = cms_data?.utilization_2021 ?? {};
+
+function fmt(n: number) {
+  return n ? n.toLocaleString('en-US') : 'N/A';
+}
+
+const topics = [
+  {
+    id: 'dental',
+    label: 'Dental',
+    icon: '🦷',
+    color: '#0f7490',
+    bg: '#ecfeff',
+    border: '#a5f3fc',
+    data: dental,
+  },
+  {
+    id: 'vision',
+    label: 'Vision',
+    icon: '👁️',
+    color: '#7c3aed',
+    bg: '#f5f3ff',
+    border: '#ddd6fe',
+    data: vision,
+  },
+  {
+    id: 'hearing-aids',
+    label: 'Hearing Aids',
+    icon: '👂',
+    color: '#b45309',
+    bg: '#fffbeb',
+    border: '#fde68a',
+    data: hearingAids,
+  },
+  {
+    id: 'nursing-home',
+    label: 'Nursing Home',
+    icon: '🏥',
+    color: '#166534',
+    bg: '#f0fdf4',
+    border: '#bbf7d0',
+    data: nursingHome,
+  },
+];
+
+const coverageBadge = (level: string) => {
+  if (level === 'Comprehensive') return { text: 'Comprehensive', cls: 'badge-green' };
+  if (level === 'Moderate') return { text: 'Moderate', cls: 'badge-blue' };
+  if (level === 'Limited') return { text: 'Limited', cls: 'badge-yellow' };
+  return { text: 'Not Covered', cls: 'badge-red' };
+};
+---
+
+<BaseLayout
+  title={`${name} Medicare Coverage — Dental, Vision, Hearing, Nursing Home`}
+  description={`Medicare dental, vision, hearing aids, and nursing home coverage information for ${name}. Find programs, costs, and tips.`}
+>
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <a href="/">Home</a>
+      <span class="sep">›</span>
+      <a href="/">All States</a>
+      <span class="sep">›</span>
+      <span>{name}</span>
+    </div>
+  </div>
+
+  <!-- State Hero -->
+  <div class="state-hero">
+    <div class="container">
+      <div class="state-hero-inner">
+        <div class="state-badge">{abbr}</div>
+        <div>
+          <h1>{name} Medicare Coverage Guide</h1>
+          <p>Find dental, vision, hearing aid, and nursing home Medicare benefits available to {name} residents.</p>
+        </div>
+      </div>
+      <!-- Quick nav -->
+      <div class="quick-nav">
+        {topics.map(t => (
+          <a href={`#${t.id}`} class="quick-nav-item">
+            <span>{t.icon}</span> {t.label}
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="container">
+
+      <AdSlot slot="5555555555" format="horizontal" />
+
+      <!-- Topic sections -->
+      {topics.map((topic, i) => {
+        const badge = coverageBadge(topic.data.coverage);
+        return (
+          <section
+            id={topic.id}
+            class="topic-section"
+            style={`--topic-color:${topic.color}; --topic-bg:${topic.bg}; --topic-border:${topic.border};`}
+          >
+            <div class="topic-header">
+              <div class="topic-title-row">
+                <span class="topic-emoji">{topic.icon}</span>
+                <h2>{name} {topic.label} Coverage</h2>
+              </div>
+              <span class={`badge ${badge.cls}`}>{badge.text}</span>
+            </div>
+
+            <p class="topic-desc">{topic.data.description}</p>
+
+            <div class="topic-grid">
+              <!-- Programs -->
+              <div class="info-card">
+                <h3>Available Programs</h3>
+                <ul class="check-list">
+                  {topic.data.programs.map((p: string) => <li>{p}</li>)}
+                </ul>
+              </div>
+
+              <!-- Cost & Tips -->
+              <div>
+                <div class="info-card cost-card">
+                  <h3>Typical Out-of-Pocket Cost</h3>
+                  <p class="cost-value">{topic.data.avgCost}</p>
+                  <p class="cost-note">Costs vary by plan, provider, and income. Dual-eligible (Medicare + Medicaid) beneficiaries often pay much less.</p>
+                </div>
+                <div class="info-card tips-card">
+                  <h3>Tips for {name} Residents</h3>
+                  <ol class="tips-list">
+                    {topic.data.tips.map((tip: string) => <li>{tip}</li>)}
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+            {i === 1 && (
+              <AdSlot slot="6666666666" format="rectangle" />
+            )}
+          </section>
+        );
+      })}
+
+      <AdSlot slot="7777777777" format="horizontal" />
+
+      <!-- CMS Data Section -->
+      <section class="cms-section">
+        <h2>
+          <span class="cms-badge">📊 Live CMS Data</span>
+          {name} Medicare Snapshot
+        </h2>
+        <p class="cms-source">
+          Source: <strong>CMS Medicare Monthly Enrollment 2024</strong> &amp; <strong>CMS MA Landscape 2025</strong>
+          — public data from <a href="https://data.cms.gov" target="_blank" rel="noopener">data.cms.gov</a>
+        </p>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-value">{fmt(enroll.total_beneficiaries)}</div>
+            <div class="stat-label">Total Medicare Beneficiaries (2024)</div>
+          </div>
+          <div class="stat-card highlight">
+            <div class="stat-icon">🏥</div>
+            <div class="stat-value">{fmt(enroll.ma_enrollment)}</div>
+            <div class="stat-label">
+              Enrolled in Medicare Advantage (2024)
+              {enroll.ma_penetration_pct > 0 && (
+                <span class="pct-badge">{enroll.ma_penetration_pct}% of total</span>
+              )}
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">📋</div>
+            <div class="stat-value">{fmt(enroll.original_medicare)}</div>
+            <div class="stat-label">Original Medicare (Parts A &amp; B) Only</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🤝</div>
+            <div class="stat-value">{fmt(enroll.dual_eligible)}</div>
+            <div class="stat-label">Dual Eligible (Medicare + Medicaid)</div>
+          </div>
+        </div>
+
+        <div class="plans-row">
+          <div class="plan-box">
+            <div class="plan-box-title">2025 Medicare Advantage Plans</div>
+            <div class="plan-count">{plans.total_plan_count ?? 'N/A'}</div>
+            <div class="plan-desc">Plans available in {name}</div>
+          </div>
+          <div class="plan-box">
+            <div class="plan-box-title">Average Monthly Premium (2025)</div>
+            <div class="plan-count">
+              {plans.avg_monthly_premium_usd != null
+                ? (plans.avg_monthly_premium_usd === 0 ? '$0' : `$${plans.avg_monthly_premium_usd}`)
+                : 'N/A'}
+            </div>
+            <div class="plan-desc">Weighted avg across all MA plans</div>
+          </div>
+          <div class="plan-box insurers">
+            <div class="plan-box-title">Top Medicare Advantage Insurers</div>
+            <ol class="insurer-list">
+              {(plans.top_insurers ?? []).map((ins: string) => <li>{ins}</li>)}
+            </ol>
+          </div>
+          {ship.phone && (
+            <div class="plan-box ship-box">
+              <div class="plan-box-title">Free SHIP Counseling</div>
+              <div class="ship-name">{ship.name}</div>
+              <a href={`tel:${ship.phone?.replace(/-/g,'')}`} class="ship-phone">{ship.phone}</a>
+              <div class="plan-desc">Free, unbiased Medicare help</div>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <!-- State resources footer -->
+      <section class="resources-section">
+        <h2>Get Free Help in {name}</h2>
+        <div class="resources-grid">
+          <div class="resource-card">
+            <h3>SHIP Counseling</h3>
+            <p>Your state's <strong>State Health Insurance Assistance Program (SHIP)</strong> offers free, unbiased Medicare counseling from trained volunteers. They can help you compare plans and enroll.</p>
+            <a href="https://www.shiphelp.org" target="_blank" rel="noopener" class="btn">Find {name} SHIP →</a>
+          </div>
+          <div class="resource-card">
+            <h3>1-800-MEDICARE</h3>
+            <p>Call <strong>1-800-633-4227</strong> (TTY: 1-877-486-2048) 24/7 for Medicare questions, plan comparisons, and enrollment help. Free and official.</p>
+            <a href="https://www.medicare.gov" target="_blank" rel="noopener" class="btn">Medicare.gov →</a>
+          </div>
+          <div class="resource-card">
+            <h3>Medicare Plan Finder</h3>
+            <p>Use the official Medicare Plan Finder tool at Medicare.gov to compare all Medicare Advantage, Part D, and Medigap plans available in {name} by ZIP code.</p>
+            <a href="https://www.medicare.gov/plan-compare" target="_blank" rel="noopener" class="btn">Compare Plans →</a>
+          </div>
+          <div class="resource-card">
+            <h3>Nursing Home Compare</h3>
+            <p>Research and compare nursing home quality ratings, staffing levels, health inspection results, and more for facilities across {name}.</p>
+            <a href="https://www.medicare.gov/care-compare" target="_blank" rel="noopener" class="btn">Care Compare →</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Back nav -->
+      <div class="back-nav">
+        <a href="/" class="back-btn">← Back to All States Map</a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .breadcrumb-bar {
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0.5rem 1rem;
+    font-size: 0.82rem;
+    color: #64748b;
+  }
+  .breadcrumb-bar .container { display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; }
+  .breadcrumb-bar a { color: #2563eb; }
+  .sep { color: #94a3b8; }
+
+  .state-hero {
+    background: linear-gradient(135deg, #0f3578 0%, #1a4fa0 100%);
+    color: white;
+    padding: 2rem 1rem;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+  .state-hero-inner { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .state-badge {
+    width: 80px; height: 80px;
+    background: rgba(255,255,255,0.15);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 16px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.8rem; font-weight: 800;
+    flex-shrink: 0;
+  }
+  .state-hero h1 { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; margin-bottom: 0.4rem; }
+  .state-hero p { opacity: 0.88; font-size: 0.95rem; max-width: 600px; }
+
+  .quick-nav { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .quick-nav-item {
+    display: flex; align-items: center; gap: 0.35rem;
+    padding: 0.4rem 0.9rem;
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 20px;
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .quick-nav-item:hover { background: rgba(255,255,255,0.22); text-decoration: none; }
+
+  .page-body { padding: 2rem 0; }
+
+  .topic-section {
+    background: var(--topic-bg);
+    border: 1.5px solid var(--topic-border);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  .topic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+  }
+  .topic-title-row { display: flex; align-items: center; gap: 0.75rem; }
+  .topic-emoji { font-size: 1.8rem; }
+  .topic-section h2 { font-size: 1.35rem; font-weight: 700; color: var(--topic-color); }
+
+  .badge { padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.78rem; font-weight: 700; white-space: nowrap; }
+  .badge-green { background: #dcfce7; color: #166534; }
+  .badge-blue { background: #dbeafe; color: #1e40af; }
+  .badge-yellow { background: #fef9c3; color: #854d0e; }
+  .badge-red { background: #fee2e2; color: #991b1b; }
+
+  .topic-desc { color: #334155; font-size: 0.93rem; line-height: 1.7; margin-bottom: 1.5rem; }
+
+  .topic-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+
+  .info-card {
+    background: white;
+    border-radius: 10px;
+    padding: 1.25rem;
+    border: 1px solid var(--topic-border);
+  }
+  .info-card h3 { font-size: 0.92rem; font-weight: 700; color: var(--topic-color); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.03em; }
+
+  .check-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.45rem; }
+  .check-list li { font-size: 0.88rem; color: #334155; padding-left: 1.3rem; position: relative; line-height: 1.5; }
+  .check-list li::before { content: "✓"; position: absolute; left: 0; color: var(--topic-color); font-weight: 700; }
+
+  .cost-card { margin-bottom: 1rem; }
+  .cost-value { font-size: 1.1rem; font-weight: 700; color: #1e293b; margin-bottom: 0.4rem; }
+  .cost-note { font-size: 0.8rem; color: #64748b; line-height: 1.5; }
+
+  .tips-list { padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.45rem; }
+  .tips-list li { font-size: 0.87rem; color: #334155; line-height: 1.5; }
+
+  /* CMS Data Section */
+  .cms-section {
+    background: #f0f7ff;
+    border: 1.5px solid #bfdbfe;
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+  .cms-section h2 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1e293b;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.4rem;
+  }
+  .cms-badge {
+    background: #2563eb;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    letter-spacing: 0.03em;
+  }
+  .cms-source {
+    font-size: 0.78rem;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+  }
+  .cms-source a { color: #2563eb; }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0.9rem;
+    margin-bottom: 1.25rem;
+  }
+  .stat-card {
+    background: white;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .stat-card.highlight { border-color: #2563eb; background: #eff6ff; }
+  .stat-icon { font-size: 1.3rem; }
+  .stat-value { font-size: 1.4rem; font-weight: 800; color: #1e293b; line-height: 1; }
+  .stat-label { font-size: 0.78rem; color: #475569; line-height: 1.4; }
+  .pct-badge {
+    display: inline-block;
+    margin-top: 0.3rem;
+    background: #2563eb;
+    color: white;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.1rem 0.5rem;
+    border-radius: 10px;
+  }
+
+  .plans-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 0.9rem;
+  }
+  .plan-box {
+    background: white;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1rem;
+  }
+  .plan-box-title { font-size: 0.72rem; font-weight: 700; color: #64748b; text-transform: uppercase; letter-spacing: 0.04em; margin-bottom: 0.4rem; }
+  .plan-count { font-size: 1.6rem; font-weight: 800; color: #1a4fa0; line-height: 1; }
+  .plan-desc { font-size: 0.77rem; color: #64748b; margin-top: 0.3rem; }
+  .insurer-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.3rem; }
+  .insurer-list li { font-size: 0.83rem; color: #1e293b; padding-left: 0.9rem; position: relative; }
+  .insurer-list li::before { content: ''; position: absolute; left: 0; top: 50%; width: 5px; height: 5px; border-radius: 50%; background: #2563eb; transform: translateY(-50%); }
+  .ship-box { background: #f0fdf4; border-color: #bbf7d0; }
+  .ship-name { font-size: 0.88rem; font-weight: 700; color: #166534; margin-bottom: 0.25rem; }
+  .ship-phone { display: inline-block; font-size: 1rem; font-weight: 800; color: #15803d; text-decoration: none; }
+  .ship-phone:hover { text-decoration: underline; }
+
+  .resources-section { padding: 2rem 0; }
+  .resources-section h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1.25rem; }
+  .resources-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+  .resource-card {
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .resource-card h3 { font-size: 0.95rem; font-weight: 700; color: #1a4fa0; }
+  .resource-card p { font-size: 0.85rem; color: #475569; line-height: 1.55; flex: 1; }
+  .btn {
+    display: inline-block;
+    padding: 0.45rem 0.9rem;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s;
+    width: fit-content;
+  }
+  .btn:hover { background: #1a4fa0; text-decoration: none; }
+
+  .back-nav { padding: 1.5rem 0 1rem; }
+  .back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1.2rem;
+    border: 1.5px solid #2563eb;
+    color: #2563eb;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .back-btn:hover { background: #eff6ff; text-decoration: none; }
+</style>

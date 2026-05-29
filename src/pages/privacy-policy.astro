@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const updated = 'May 30, 2026';
+---
+<BaseLayout title="Privacy Policy — US Medicare Guide" description="Privacy policy for US Medicare Guide — how we collect, use, and protect your information.">
+  <div class="page-hero">
+    <div class="container"><h1>Privacy Policy</h1><p>Last updated: {updated}</p></div>
+  </div>
+  <div class="page-body">
+    <div class="container prose">
+      <h2>1. Information We Collect</h2>
+      <p>US Medicare Guide collects minimal information. When you visit our site, we may collect standard server log data such as your IP address, browser type, and pages visited. If you contact us via our contact form, we collect your name, email address, and the contents of your message.</p>
+      <p>We do not collect sensitive personal information such as Social Security numbers, financial account details, or Medicare ID numbers.</p>
+
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to operate and improve this website, respond to your inquiries, and understand how visitors use our site. We do not sell, rent, or share your personal information with third parties for marketing purposes.</p>
+
+      <h2>3. Cookies and Analytics</h2>
+      <p>We may use cookies and third-party analytics services (such as Google Analytics) to understand site traffic and usage patterns. These services may collect information about your visits to this and other websites. You can opt out of Google Analytics by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">Google Analytics Opt-out Browser Add-on</a>.</p>
+      <p>We use Google AdSense to display advertisements. Google and its partners may use cookies to serve ads based on your prior visits to this site or other sites. You can opt out at <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>.</p>
+
+      <h2>4. Third-Party Links</h2>
+      <p>Our site contains links to external websites such as Medicare.gov and shiphelp.org. We are not responsible for the privacy practices or content of those sites.</p>
+
+      <h2>5. Data Security</h2>
+      <p>We take reasonable measures to protect information submitted to us. However, no internet transmission is completely secure, and we cannot guarantee the security of information transmitted to our site.</p>
+
+      <h2>6. Children's Privacy</h2>
+      <p>This site is not directed to children under the age of 13. We do not knowingly collect personal information from children.</p>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. The updated date at the top of this page reflects the most recent revision.</p>
+
+      <h2>8. Contact</h2>
+      <p>If you have questions about this Privacy Policy, please <a href="/contact">contact us</a>.</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero { background: linear-gradient(135deg, #0f3578 0%, #2563eb 100%); color: white; padding: 2.5rem 1rem; }
+  .page-hero h1 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 0.3rem; }
+  .page-hero p { opacity: 0.8; font-size: 0.9rem; }
+  .container { max-width: 800px; margin: 0 auto; padding: 0 1rem; }
+  .page-body { padding: 2.5rem 1rem; }
+  .prose h2 { font-size: 1.1rem; font-weight: 700; color: #1a4fa0; margin: 1.75rem 0 0.5rem; }
+  .prose p { font-size: 0.9rem; color: #334155; line-height: 1.75; margin-bottom: 0.75rem; }
+  .prose a { color: #2563eb; }
+</style>

@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const updated = 'May 30, 2026';
+---
+<BaseLayout title="Terms of Service — US Medicare Guide" description="Terms of service for using the US Medicare Guide website.">
+  <div class="page-hero">
+    <div class="container"><h1>Terms of Service</h1><p>Last updated: {updated}</p></div>
+  </div>
+  <div class="page-body">
+    <div class="container prose">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using US Medicare Guide ("the Site"), you agree to be bound by these Terms of Service. If you do not agree with any part of these terms, please do not use this Site.</p>
+
+      <h2>2. Informational Purpose Only</h2>
+      <p>The content on this Site is provided for general informational and educational purposes only. It does not constitute legal, financial, medical, or insurance advice. You should not rely on this information as a substitute for professional advice from a licensed healthcare provider, insurance counselor, or attorney.</p>
+      <p>Always verify coverage details with <a href="https://www.medicare.gov" target="_blank" rel="noopener">Medicare.gov</a> or a licensed SHIP (State Health Insurance Assistance Program) counselor before making enrollment decisions.</p>
+
+      <h2>3. No Affiliation with Government</h2>
+      <p>US Medicare Guide is an independent website and is not affiliated with the US government, the Centers for Medicare &amp; Medicaid Services (CMS), or any state Medicaid agency. Use of official government program names is for descriptive purposes only.</p>
+
+      <h2>4. Accuracy of Information</h2>
+      <p>We make reasonable efforts to ensure the accuracy of the information on this Site. However, Medicare rules, Medicaid benefits, plan details, and costs change frequently. We make no warranties, express or implied, about the completeness, accuracy, reliability, or suitability of the information provided.</p>
+
+      <h2>5. Third-Party Links</h2>
+      <p>This Site contains links to third-party websites. These links are provided for convenience only. We have no control over the content of those sites and accept no responsibility for them or for any loss or damage that may arise from your use of them.</p>
+
+      <h2>6. Advertising</h2>
+      <p>This Site displays third-party advertisements through Google AdSense and may earn revenue from clicks or impressions. Advertised products and services are independent of our editorial content.</p>
+
+      <h2>7. Intellectual Property</h2>
+      <p>All content on this Site, including text, graphics, and layout, is the property of US Medicare Guide unless otherwise noted. You may not reproduce, distribute, or create derivative works without prior written permission.</p>
+
+      <h2>8. Limitation of Liability</h2>
+      <p>To the fullest extent permitted by law, US Medicare Guide shall not be liable for any indirect, incidental, special, or consequential damages arising from your use of, or inability to use, this Site or its content.</p>
+
+      <h2>9. Changes to Terms</h2>
+      <p>We reserve the right to modify these Terms at any time. Continued use of the Site after changes constitutes acceptance of the revised Terms.</p>
+
+      <h2>10. Contact</h2>
+      <p>Questions about these Terms? Please <a href="/contact">contact us</a>.</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero { background: linear-gradient(135deg, #0f3578 0%, #2563eb 100%); color: white; padding: 2.5rem 1rem; }
+  .page-hero h1 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 0.3rem; }
+  .page-hero p { opacity: 0.8; font-size: 0.9rem; }
+  .container { max-width: 800px; margin: 0 auto; padding: 0 1rem; }
+  .page-body { padding: 2.5rem 1rem; }
+  .prose h2 { font-size: 1.1rem; font-weight: 700; color: #1a4fa0; margin: 1.75rem 0 0.5rem; }
+  .prose p { font-size: 0.9rem; color: #334155; line-height: 1.75; margin-bottom: 0.75rem; }
+  .prose a { color: #2563eb; }
+</style>

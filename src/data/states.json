@@ -1,0 +1,4906 @@
+{
+  "AL": {
+    "name": "Alabama",
+    "slug": "alabama",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Alabama Medicaid provides limited emergency dental services for Medicare-Medicaid dual enrollees. Most Medicare Advantage plans in Alabama offer some dental benefits.",
+      "programs": [
+        "Alabama Medicaid Dental (dual eligible)",
+        "Medicare Advantage dental riders",
+        "Alabama Dental Association referral network"
+      ],
+      "avgCost": "$800–$2,500/year out-of-pocket without supplemental coverage",
+      "tips": [
+        "Compare Medicare Advantage plans during Open Enrollment (Oct 15–Dec 7)",
+        "Look for plans with $0 preventive dental",
+        "Use dental schools in Birmingham for reduced-cost care"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Original Medicare does not cover routine eye exams or glasses. Alabama Medicare Advantage plans often include vision benefits.",
+      "programs": [
+        "Medicare Advantage vision benefits",
+        "Alabama Eye Bank low-vision services",
+        "VSP and EyeMed network plans"
+      ],
+      "avgCost": "$150–$400/year for glasses and exam",
+      "tips": [
+        "Enroll in a Medicare Advantage plan with vision",
+        "Use in-network providers to reduce costs",
+        "Annual eye exam may be covered if diabetic"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Original Medicare does not cover hearing aids. Some Medicare Advantage plans in Alabama include hearing aid allowances.",
+      "programs": [
+        "Medicare Advantage hearing benefits",
+        "Alabama Department of Rehabilitation Services",
+        "Hearing Loss Association – Alabama Chapter"
+      ],
+      "avgCost": "$1,000–$7,000 per pair out-of-pocket",
+      "tips": [
+        "Check Medicare Advantage plans offering $500–$2,500 hearing aid allowance",
+        "Contact ADRS for vocational assistance",
+        "Consider OTC hearing aids (FDA-approved since 2022)"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers up to 100 days in a skilled nursing facility (SNF) per benefit period. After day 20, a daily coinsurance applies. Alabama Medicaid covers long-term custodial care for those who qualify.",
+      "programs": [
+        "Medicare Part A SNF benefit",
+        "Alabama Medicaid Long-Term Care",
+        "Alabama State Health Insurance Assistance Program (SHIP)"
+      ],
+      "avgCost": "$250–$320/day for semi-private room; Medicare covers days 1–20 fully",
+      "tips": [
+        "Qualify for SNF: 3-day inpatient hospital stay required",
+        "Apply for Alabama Medicaid if assets are limited",
+        "Contact SHIP at 1-800-243-5463 for free counseling"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1118502,
+        "ma_enrollment": 664514,
+        "ma_penetration_pct": 59.4,
+        "original_medicare": 453988,
+        "dual_eligible": 225819,
+        "mapd_enrollment": 634287
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 25.9,
+        "snf_utilization_pct": 3.03
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 103,
+        "avg_monthly_premium_usd": 8.9,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "BCBS Alabama"
+        ]
+      },
+      "ship_contact": {
+        "name": "Alabama SHIP",
+        "phone": "1-800-243-5463",
+        "website": "www.alabamaageline.gov"
+      }
+    }
+  },
+  "AK": {
+    "name": "Alaska",
+    "slug": "alaska",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Alaska Medicaid covers limited dental for dual-eligible beneficiaries. Dental care is expensive in Alaska due to provider shortages.",
+      "programs": [
+        "Alaska Medicaid Adult Dental",
+        "Medicare Advantage dental plans",
+        "Alaska Native Tribal Health Consortium dental"
+      ],
+      "avgCost": "$1,000–$3,500/year out-of-pocket",
+      "tips": [
+        "Alaska Native beneficiaries may access free dental through tribal health",
+        "Anchorage has the most Medicare Advantage plan options",
+        "Telehealth dental screenings available in rural areas"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Original Medicare excludes routine vision. Alaska Medicare Advantage plans offer vision, though fewer plan options exist compared to lower-48 states.",
+      "programs": [
+        "Medicare Advantage vision riders",
+        "Alaska Native Tribal Health Consortium eye care",
+        "University of Alaska Anchorage optometry"
+      ],
+      "avgCost": "$200–$500/year",
+      "tips": [
+        "Alaska Native beneficiaries may access free eye care through tribal health",
+        "Glaucoma screening covered by Medicare Part B for high-risk individuals",
+        "Order glasses online to reduce costs"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Alaska faces provider shortages, making costs higher than national average.",
+      "programs": [
+        "Medicare Advantage hearing allowance plans",
+        "Alaska Division of Vocational Rehabilitation",
+        "Alaska SHIP counseling"
+      ],
+      "avgCost": "$1,500–$8,000 per pair",
+      "tips": [
+        "Alaska Native beneficiaries may qualify for tribal hearing programs",
+        "OTC hearing aids available at retailers since 2022",
+        "Contact AK SHIP at 1-800-478-6065"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Alaska has the highest nursing home costs in the US. Medicare Part A SNF coverage applies, and Alaska Medicaid covers long-term care for eligible residents.",
+      "programs": [
+        "Medicare Part A SNF benefit",
+        "Alaska Medicaid Long-Term Care",
+        "Alaska Senior and Disabilities Services"
+      ],
+      "avgCost": "$600–$800/day (highest in the nation)",
+      "tips": [
+        "Plan well in advance given extreme costs",
+        "Alaska SHIP: 1-800-478-6065",
+        "Home and community-based Medicaid waivers available as alternatives"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 118142,
+        "ma_enrollment": 3105,
+        "ma_penetration_pct": 2.6,
+        "original_medicare": 115036,
+        "dual_eligible": 20583,
+        "mapd_enrollment": 1961
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 9.4,
+        "snf_utilization_pct": 2.02
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 8,
+        "avg_monthly_premium_usd": 0.0,
+        "top_insurers": [
+          "Premera BCBS",
+          "Aetna",
+          "UnitedHealth"
+        ]
+      },
+      "ship_contact": {
+        "name": "Alaska SHIP",
+        "phone": "1-800-478-6065",
+        "website": "www.akdhss.gov/aging"
+      }
+    }
+  },
+  "AZ": {
+    "name": "Arizona",
+    "slug": "arizona",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Arizona has a robust Medicare Advantage market with many plans offering dental. AHCCCS (Arizona Medicaid) covers dental for dual-eligible beneficiaries.",
+      "programs": [
+        "AHCCCS Dental coverage",
+        "Medicare Advantage dental plans",
+        "Arizona Dental Association member clinics"
+      ],
+      "avgCost": "$500–$2,000/year",
+      "tips": [
+        "Phoenix and Tucson have many competing Medicare Advantage plans",
+        "Compare plans at Medicare.gov Plan Finder",
+        "Dental schools at University of Arizona offer low-cost care"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Arizona Medicare Advantage plans frequently include vision. AHCCCS covers vision for dual-eligible members.",
+      "programs": [
+        "AHCCCS vision benefits",
+        "Medicare Advantage vision",
+        "Arizona Commission for the Blind"
+      ],
+      "avgCost": "$100–$300/year with supplemental plan",
+      "tips": [
+        "Arizona has many competing MA plans — shop annually",
+        "Diabetic eye exams covered by Part B",
+        "Use in-network optical chains for best pricing"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Some Arizona Medicare Advantage plans offer hearing aid benefits. AHCCCS may cover hearing aids for dual-eligible members.",
+      "programs": [
+        "Medicare Advantage hearing benefit plans",
+        "Arizona Commission for the Deaf and Hard of Hearing",
+        "AHCCCS hearing coverage"
+      ],
+      "avgCost": "$1,000–$6,000 per pair",
+      "tips": [
+        "Arizona ACDHH provides resources and referrals",
+        "OTC hearing aids starting around $200 available statewide",
+        "Check if your MA plan includes TruHearing or HearUSA network"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A SNF coverage applies. Arizona Medicaid (AHCCCS) covers long-term care. Arizona has a strong assisted living and memory care market.",
+      "programs": [
+        "Medicare Part A SNF benefit",
+        "AHCCCS Long-Term Care",
+        "Arizona SHIP (1-800-432-4040)"
+      ],
+      "avgCost": "$200–$280/day semi-private",
+      "tips": [
+        "ALTCS (Arizona Long-Term Care System) is Arizona's Medicaid LTC program",
+        "Apply early — ALTCS waitlists can be long",
+        "SHIP counseling free at 1-800-432-4040"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1500194,
+        "ma_enrollment": 754878,
+        "ma_penetration_pct": 50.3,
+        "original_medicare": 745316,
+        "dual_eligible": 251423,
+        "mapd_enrollment": 719930
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 27.5,
+        "snf_utilization_pct": 3.72
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 121,
+        "avg_monthly_premium_usd": 9.2,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Centene/WellCare"
+        ]
+      },
+      "ship_contact": {
+        "name": "Arizona SHIP",
+        "phone": "1-800-432-4040",
+        "website": "www.azdes.gov/ship"
+      }
+    }
+  },
+  "AR": {
+    "name": "Arkansas",
+    "slug": "arkansas",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Arkansas Medicaid provides limited dental for dual enrollees. Many rural areas face dental provider shortages.",
+      "programs": [
+        "Arkansas Medicaid Dental",
+        "Medicare Advantage dental",
+        "UAMS College of Dentistry"
+      ],
+      "avgCost": "$800–$2,500/year",
+      "tips": [
+        "UAMS dental school in Little Rock offers reduced rates",
+        "Compare Medicare Advantage plans in your county",
+        "Mobile dental units serve rural communities"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Original Medicare excludes routine vision. Arkansas Medicare Advantage plans include vision benefits at varying levels.",
+      "programs": [
+        "Medicare Advantage vision",
+        "Arkansas Division of Services for the Blind",
+        "Lions Clubs vision assistance"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "Glaucoma screening covered by Medicare for high-risk individuals",
+        "Division of Services for the Blind: 501-682-5463",
+        "Annual diabetic eye exam may be covered by Part B"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Arkansas has limited specialized hearing centers, particularly in rural areas.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Arkansas Rehabilitation Services",
+        "Hearing Loss Association of America – AR"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "OTC hearing aids now available without a prescription",
+        "Arkansas Rehabilitation Services may assist working-age adults",
+        "Contact AR SHIP at 1-800-224-6330"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF care. Arkansas Medicaid covers custodial long-term care for eligible residents.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Arkansas Medicaid LTC",
+        "AR SHIP (1-800-224-6330)"
+      ],
+      "avgCost": "$180–$240/day semi-private",
+      "tips": [
+        "Arkansas has relatively affordable nursing home costs",
+        "Medicaid eligibility: $2,000 asset limit for individuals",
+        "SHIP counseling: 1-800-224-6330"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 679039,
+        "ma_enrollment": 305830,
+        "ma_penetration_pct": 45.0,
+        "original_medicare": 373209,
+        "dual_eligible": 128937,
+        "mapd_enrollment": 290006
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 33.0,
+        "snf_utilization_pct": 2.81
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 78,
+        "avg_monthly_premium_usd": 10.5,
+        "top_insurers": [
+          "Humana",
+          "UnitedHealth",
+          "Arkansas BCBS"
+        ]
+      },
+      "ship_contact": {
+        "name": "Arkansas SHIP",
+        "phone": "1-800-224-6330",
+        "website": "www.insurance.arkansas.gov"
+      }
+    }
+  },
+  "CA": {
+    "name": "California",
+    "slug": "california",
+    "dental": {
+      "coverage": "Comprehensive",
+      "description": "California (Medi-Cal) offers one of the most comprehensive dental programs for dual-eligible Medicare-Medicaid beneficiaries in the nation. Covered services include preventive, restorative, and some prosthodontic care.",
+      "programs": [
+        "Medi-Cal Dental (Denti-Cal)",
+        "Medicare Advantage dental plans",
+        "California Dental Association Foundation",
+        "PACE programs"
+      ],
+      "avgCost": "$0–$500/year for Medi-Cal eligible; $500–$2,000 for others",
+      "tips": [
+        "Denti-Cal covers cleanings, fillings, extractions and more for dual-eligibles",
+        "UCLA and UCSF dental schools offer quality low-cost care",
+        "PACE programs in metro areas offer integrated dental care"
+      ]
+    },
+    "vision": {
+      "coverage": "Comprehensive",
+      "description": "Medi-Cal covers vision care including eye exams and glasses for dual-eligible beneficiaries. California Medicare Advantage plans also offer competitive vision benefits.",
+      "programs": [
+        "Medi-Cal vision benefits",
+        "Medicare Advantage vision",
+        "California Department of Rehabilitation"
+      ],
+      "avgCost": "$0 for Medi-Cal eligible; $100–$300 for others",
+      "tips": [
+        "Medi-Cal vision: one exam and one pair of glasses per year",
+        "Glaucoma and diabetic retinopathy screenings covered by Part B",
+        "Department of Rehabilitation: vision assistance for working-age adults"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Medi-Cal covers hearing aids for dual-eligible beneficiaries. California Medicare Advantage plans often include hearing benefits.",
+      "programs": [
+        "Medi-Cal hearing aid coverage",
+        "Medicare Advantage hearing plans",
+        "California Hearing Aid Dispensers Bureau",
+        "CHAP program"
+      ],
+      "avgCost": "$0 for Medi-Cal eligible; $1,000–$7,000 for others",
+      "tips": [
+        "Medi-Cal: covers one hearing aid per ear every 3–5 years for eligible members",
+        "California has strict hearing aid consumer protections",
+        "OTC hearing aids a cost-effective option since 2022"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Comprehensive",
+      "description": "Medi-Cal pays for nursing home care for eligible low-income seniors. California has strict nursing home quality regulations and a robust LTSS system.",
+      "programs": [
+        "Medicare Part A SNF benefit",
+        "Medi-Cal LTC (MSSP waiver)",
+        "California Department of Public Health nursing home oversight",
+        "PACE programs"
+      ],
+      "avgCost": "$300–$400/day; Medi-Cal covers most costs for eligible",
+      "tips": [
+        "MSSP (Multipurpose Senior Services Program) supports home-based alternatives",
+        "Check facility ratings at Medicare's Care Compare",
+        "CA SHIP (HICAP): 1-800-434-0222"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 6938292,
+        "ma_enrollment": 3518505,
+        "ma_penetration_pct": 50.7,
+        "original_medicare": 3419787,
+        "dual_eligible": 1744964,
+        "mapd_enrollment": 3409613
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 20.3,
+        "snf_utilization_pct": 1.98
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 245,
+        "avg_monthly_premium_usd": 11.8,
+        "top_insurers": [
+          "Kaiser Permanente",
+          "UnitedHealth",
+          "Molina Healthcare"
+        ]
+      },
+      "ship_contact": {
+        "name": "California HICAP",
+        "phone": "1-800-434-0222",
+        "website": "www.aging.ca.gov/hicap"
+      }
+    }
+  },
+  "CO": {
+    "name": "Colorado",
+    "slug": "colorado",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Colorado Medicaid (Health First Colorado) covers dental for dual-eligible beneficiaries. Colorado has a growing Medicare Advantage market with competitive dental offerings.",
+      "programs": [
+        "Health First Colorado Dental",
+        "Medicare Advantage dental plans",
+        "Colorado Dental Association"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "University of Colorado School of Dental Medicine offers low-cost care",
+        "Compare MA plans at Medicare.gov",
+        "Federally Qualified Health Centers provide sliding-scale dental"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Health First Colorado covers vision for dual-eligible members. Colorado Medicare Advantage plans offer vision benefits.",
+      "programs": [
+        "Health First Colorado vision",
+        "Medicare Advantage vision plans",
+        "Colorado Division of Vocational Rehabilitation"
+      ],
+      "avgCost": "$150–$350/year",
+      "tips": [
+        "Annual diabetic eye exam covered by Part B",
+        "High altitude increases UV risk — factor in UV-protective lenses",
+        "DVR assists with vision rehabilitation"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Medicare Advantage plans in Colorado offer varying hearing aid benefits. Colorado has urban audiology centers but rural access can be limited.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Colorado Commission for the Deaf, Hard of Hearing and DeafBlind",
+        "Colorado Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "CDHHDB provides resources and peer support",
+        "Telehealth audiology expanding in Colorado",
+        "OTC hearing aids available at major retailers"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A applies. Colorado Medicaid covers long-term care. Colorado emphasizes home and community-based services as alternatives to nursing facilities.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Colorado Medicaid LTC",
+        "PACE Colorado",
+        "CO SHIP (1-888-696-7213)"
+      ],
+      "avgCost": "$250–$320/day",
+      "tips": [
+        "PACE programs available in Denver and Colorado Springs",
+        "HCBS waiver programs support aging in place",
+        "CO SHIP: 1-888-696-7213"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1037114,
+        "ma_enrollment": 540532,
+        "ma_penetration_pct": 52.1,
+        "original_medicare": 496581,
+        "dual_eligible": 128718,
+        "mapd_enrollment": 513085
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 14.9,
+        "snf_utilization_pct": 2.84
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 98,
+        "avg_monthly_premium_usd": 7.4,
+        "top_insurers": [
+          "UnitedHealth",
+          "Kaiser Permanente",
+          "Humana"
+        ]
+      },
+      "ship_contact": {
+        "name": "Colorado SHIP",
+        "phone": "1-888-696-7213",
+        "website": "www.colorado.gov/ship"
+      }
+    }
+  },
+  "CT": {
+    "name": "Connecticut",
+    "slug": "connecticut",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Connecticut Medicaid covers dental for dual-eligible beneficiaries. Connecticut has one of the higher Medicare Advantage penetration rates in New England.",
+      "programs": [
+        "CT Medicaid Dental",
+        "Medicare Advantage dental",
+        "UConn School of Dental Medicine"
+      ],
+      "avgCost": "$500–$2,000/year",
+      "tips": [
+        "UConn dental school offers quality care at reduced rates",
+        "CT has many competing MA plans in Hartford and New Haven areas",
+        "SNAP and Low Income Subsidy (LIS/Extra Help) may reduce drug costs"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "CT Medicaid covers vision for dual-eligible members. Medicare Advantage plans in CT offer competitive vision benefits.",
+      "programs": [
+        "CT Medicaid vision",
+        "Medicare Advantage vision",
+        "Board of Education and Services for the Blind"
+      ],
+      "avgCost": "$150–$350/year",
+      "tips": [
+        "BESB provides vision rehabilitation for eligible residents",
+        "Compare MA vision plans at CT CHOICES (1-800-994-9422)",
+        "Glaucoma screenings: covered by Part B for high-risk individuals"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "CT Medicare Advantage plans often include hearing benefits. The state has good access to audiology services in urban areas.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "CT CHOICES counseling",
+        "CT Department of Aging and Disability Services"
+      ],
+      "avgCost": "$1,000–$7,000 per pair",
+      "tips": [
+        "CT CHOICES counselors can help compare plans with hearing benefits",
+        "OTC hearing aids a lower-cost option for mild-to-moderate hearing loss",
+        "Contact ADS at 1-800-994-9422"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. CT Medicaid pays for long-term care. CT has some of the highest nursing home quality ratings in the Northeast.",
+      "programs": [
+        "Medicare Part A SNF",
+        "CT Medicaid LTC",
+        "CT CHOICES SHIP (1-800-994-9422)"
+      ],
+      "avgCost": "$350–$450/day (among the highest in the US)",
+      "tips": [
+        "CT has high nursing home costs — plan ahead",
+        "Home care and assisted living may be more affordable alternatives",
+        "CT CHOICES: 1-800-994-9422"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 743293,
+        "ma_enrollment": 417999,
+        "ma_penetration_pct": 56.2,
+        "original_medicare": 325294,
+        "dual_eligible": 201150,
+        "mapd_enrollment": 402685
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 31.7,
+        "snf_utilization_pct": 4.55
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 62,
+        "avg_monthly_premium_usd": 13.5,
+        "top_insurers": [
+          "UnitedHealth",
+          "Anthem BCBS",
+          "Aetna"
+        ]
+      },
+      "ship_contact": {
+        "name": "Connecticut CHOICES",
+        "phone": "1-800-994-9422",
+        "website": "www.ct.gov/choices"
+      }
+    }
+  },
+  "DE": {
+    "name": "Delaware",
+    "slug": "delaware",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Delaware Medicaid provides limited dental for dual-eligible beneficiaries. Delaware has a small but competitive Medicare Advantage market.",
+      "programs": [
+        "Delaware Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "Delaware Dental Association"
+      ],
+      "avgCost": "$600–$2,200/year",
+      "tips": [
+        "Wilmington area has most MA plan options",
+        "FQHC clinics provide sliding-scale dental",
+        "Delaware SHIP: 1-800-336-9500"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Delaware Medicaid covers vision for dual-eligible members. MA plans offer vision benefits.",
+      "programs": [
+        "Delaware Medicaid vision",
+        "Medicare Advantage vision",
+        "Delaware Division of Vocational Rehabilitation"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "Annual diabetic eye exam covered by Part B",
+        "Division of Vocational Rehabilitation assists with vision needs",
+        "Shop MA plans during Open Enrollment"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Original Medicare does not cover hearing aids. Delaware Medicare Advantage plans offer varying hearing benefits.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Delaware Commission for the Deaf and Hard of Hearing",
+        "DCDHHH resources"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "DCDHHH provides resources at 302-366-7000",
+        "OTC hearing aids available since 2022",
+        "Compare MA hearing benefits at Delaware SHIP"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A SNF coverage applies. Delaware Medicaid covers long-term nursing home care for eligible residents.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Delaware Medicaid LTC",
+        "Delaware SHIP (1-800-336-9500)"
+      ],
+      "avgCost": "$280–$380/day",
+      "tips": [
+        "3-day hospital stay required for Medicare SNF coverage",
+        "Medicaid spend-down rules apply",
+        "SHIP counseling: 1-800-336-9500"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 245324,
+        "ma_enrollment": 78252,
+        "ma_penetration_pct": 31.9,
+        "original_medicare": 167073,
+        "dual_eligible": 32934,
+        "mapd_enrollment": 68643
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 22.7,
+        "snf_utilization_pct": 3.02
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 34,
+        "avg_monthly_premium_usd": 18.2,
+        "top_insurers": [
+          "Highmark BCBS",
+          "UnitedHealth",
+          "Aetna"
+        ]
+      },
+      "ship_contact": {
+        "name": "Delaware SHIP",
+        "phone": "1-800-336-9500",
+        "website": "www.delawarehelps.com"
+      }
+    }
+  },
+  "FL": {
+    "name": "Florida",
+    "slug": "florida",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Florida has the largest Medicare population in the US and a very competitive Medicare Advantage market. Many MA plans offer robust dental benefits. Florida Medicaid covers limited dental for dual-eligibles.",
+      "programs": [
+        "Florida Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "Florida Dental Association",
+        "Nova Southeastern University dental school"
+      ],
+      "avgCost": "$300–$1,500/year with MA plan",
+      "tips": [
+        "Florida has among the most MA plan choices nationwide — compare carefully",
+        "Dental schools in Miami, Tampa, and Fort Lauderdale offer quality low-cost care",
+        "SHINE counselors (1-800-963-5337) can help compare plans"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Florida Medicaid covers vision for dual-eligible beneficiaries. MA plans in Florida offer competitive vision benefits given market competition.",
+      "programs": [
+        "Florida Medicaid vision",
+        "Medicare Advantage vision",
+        "Florida Division of Blind Services"
+      ],
+      "avgCost": "$100–$300/year with MA plan",
+      "tips": [
+        "Division of Blind Services: 1-800-342-3556",
+        "Diabetic eye exam covered by Medicare Part B",
+        "Many Florida MA plans include annual eye exams and eyewear allowances"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Florida Medicare Advantage plans often offer hearing aid benefits given market competition. Florida has numerous audiology providers.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Florida Coordinating Council for the Deaf and Hard of Hearing",
+        "Division of Vocational Rehabilitation"
+      ],
+      "avgCost": "$800–$6,000 per pair with MA benefit",
+      "tips": [
+        "Many FL MA plans include $500–$2,500 hearing aid allowance per year",
+        "OTC hearing aids available statewide",
+        "SHINE: 1-800-963-5337 for plan comparison"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Florida has one of the most nursing homes per capita. Medicare Part A covers SNF care. Florida Medicaid covers long-term care. Florida also has robust PACE and assisted living options.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Florida Medicaid LTC",
+        "PACE Florida programs",
+        "Florida SHINE (1-800-963-5337)"
+      ],
+      "avgCost": "$250–$320/day semi-private",
+      "tips": [
+        "Check nursing home ratings at Medicare.gov Care Compare",
+        "PACE programs in Miami, Tampa, Orlando, Jacksonville",
+        "SHINE: 1-800-963-5337 for free Medicare counseling"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 5136024,
+        "ma_enrollment": 2883497,
+        "ma_penetration_pct": 56.1,
+        "original_medicare": 2252528,
+        "dual_eligible": 937511,
+        "mapd_enrollment": 2764220
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 26.8,
+        "snf_utilization_pct": 2.81
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 264,
+        "avg_monthly_premium_usd": 10.3,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Centene/WellCare"
+        ]
+      },
+      "ship_contact": {
+        "name": "Florida SHINE",
+        "phone": "1-800-963-5337",
+        "website": "www.floridashine.org"
+      }
+    }
+  },
+  "GA": {
+    "name": "Georgia",
+    "slug": "georgia",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Georgia Medicaid covers limited dental for dual-eligible beneficiaries. Metro Atlanta has many MA plan options with dental benefits.",
+      "programs": [
+        "Georgia Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "Dental College of Georgia (Augusta)"
+      ],
+      "avgCost": "$700–$2,500/year",
+      "tips": [
+        "Dental College of Georgia offers low-cost care in Augusta",
+        "Morehouse School of Medicine partners on community dental care",
+        "GA SHIP (1-866-552-4464) for plan counseling"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Georgia Medicaid covers vision for dual-eligible members. MA plans in GA offer vision benefits.",
+      "programs": [
+        "Georgia Medicaid vision",
+        "Medicare Advantage vision",
+        "Georgia Vocational Rehabilitation Agency"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "GVRA assists with vision rehabilitation",
+        "Diabetic eye exam covered by Part B",
+        "Compare MA vision plans: GA SHIP 1-866-552-4464"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Georgia Medicare Advantage plans offer varying hearing benefits.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Georgia Council for the Hearing Impaired",
+        "GA Vocational Rehabilitation Agency"
+      ],
+      "avgCost": "$1,000–$7,000 per pair",
+      "tips": [
+        "GA SHIP helps compare MA hearing benefits",
+        "OTC hearing aids available at major Georgia retailers",
+        "Hearing Loop installations at major venues in Atlanta"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A SNF coverage. Georgia Medicaid pays for custodial long-term care. Georgia has ongoing nursing home quality improvement initiatives.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Georgia Medicaid LTC",
+        "SOURCE waiver program",
+        "GA SHIP (1-866-552-4464)"
+      ],
+      "avgCost": "$200–$270/day semi-private",
+      "tips": [
+        "SOURCE waiver supports community-based alternatives to nursing homes",
+        "Check GA nursing home ratings at Medicare Care Compare",
+        "SHIP: 1-866-552-4464"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1945979,
+        "ma_enrollment": 1067313,
+        "ma_penetration_pct": 54.8,
+        "original_medicare": 878666,
+        "dual_eligible": 373062,
+        "mapd_enrollment": 1021289
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 27.9,
+        "snf_utilization_pct": 2.46
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 146,
+        "avg_monthly_premium_usd": 9.1,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Centene/WellCare"
+        ]
+      },
+      "ship_contact": {
+        "name": "Georgia SHIP",
+        "phone": "1-866-552-4464",
+        "website": "www.georgiaship.org"
+      }
+    }
+  },
+  "HI": {
+    "name": "Hawaii",
+    "slug": "hawaii",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Hawaii Medicaid (Med-QUEST) covers dental for dual-eligible beneficiaries. Hawaii has a unique employer-mandate health system and limited MA plan competition.",
+      "programs": [
+        "Hawaii Med-QUEST Dental",
+        "Medicare Advantage dental plans",
+        "University of Hawaii dental school"
+      ],
+      "avgCost": "$500–$2,000/year",
+      "tips": [
+        "UH dental school in Honolulu offers reduced-cost care",
+        "Rural islands have limited dental access — plan ahead",
+        "Hawaii SHIP (SAGE PLUS): 808-586-0100"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Med-QUEST covers vision for dual-eligible members. Hawaii MA plans offer vision benefits.",
+      "programs": [
+        "Hawaii Med-QUEST vision",
+        "Medicare Advantage vision",
+        "Hawaii State Library talking book program"
+      ],
+      "avgCost": "$150–$350/year",
+      "tips": [
+        "High UV exposure in Hawaii makes UV-protective lenses important",
+        "Glaucoma risk screening covered by Part B",
+        "SAGE PLUS SHIP: 808-586-0100"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Hawaii Medicare Advantage plans offer hearing benefits. Hearing care access on neighbor islands can be limited.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Hawaii State Deaf and Hard of Hearing Center",
+        "Hawaii Vocational Rehabilitation"
+      ],
+      "avgCost": "$1,200–$7,000 per pair",
+      "tips": [
+        "Telehealth audiology expanding to neighbor islands",
+        "OTC hearing aids available in Honolulu and major towns",
+        "Contact DHHHC: 808-586-8131"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A applies. Hawaii Medicaid covers long-term care. Hawaii has the highest life expectancy in the US and growing nursing home demand.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Hawaii Medicaid LTC",
+        "Aging and Disability Resource Center Hawaii",
+        "SHIP SAGE PLUS"
+      ],
+      "avgCost": "$350–$450/day (among highest in US)",
+      "tips": [
+        "Hawaii nursing home costs are very high — plan early",
+        "ADRC Hawaii: 808-586-0100",
+        "Home-based HCBS waivers may be more affordable"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 306503,
+        "ma_enrollment": 163990,
+        "ma_penetration_pct": 53.5,
+        "original_medicare": 142512,
+        "dual_eligible": 51841,
+        "mapd_enrollment": 158019
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 24.4,
+        "snf_utilization_pct": 2.49
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 29,
+        "avg_monthly_premium_usd": 15.2,
+        "top_insurers": [
+          "Kaiser Permanente",
+          "UnitedHealth",
+          "AlohaCare"
+        ]
+      },
+      "ship_contact": {
+        "name": "Hawaii SAGE PLUS",
+        "phone": "808-586-0100",
+        "website": "www.aging.hawaii.gov"
+      }
+    }
+  },
+  "ID": {
+    "name": "Idaho",
+    "slug": "idaho",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Idaho Medicaid covers limited dental for dual-eligible beneficiaries. Rural areas face significant dental provider shortages.",
+      "programs": [
+        "Idaho Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "Idaho State University dental hygiene clinic"
+      ],
+      "avgCost": "$800–$2,500/year",
+      "tips": [
+        "ISU dental clinic in Pocatello offers low-cost care",
+        "Mobile dental units serve rural areas",
+        "Idaho SHIBA (1-800-247-4422) for plan counseling"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Idaho Medicaid covers vision for dual-eligible members. Limited MA plan competition in many counties.",
+      "programs": [
+        "Idaho Medicaid vision",
+        "Medicare Advantage vision",
+        "Idaho Commission for the Blind and Visually Impaired"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "ICBVI: 208-334-3220",
+        "Annual diabetic eye exam covered by Part B",
+        "SHIBA: 1-800-247-4422 for counseling"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Original Medicare does not cover hearing aids. Idaho has limited audiology centers outside Boise.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Idaho Council for the Deaf and Hard of Hearing",
+        "Idaho Assistive Technology Project"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "Idaho ATP: 1-800-432-8324 for assistive technology",
+        "OTC hearing aids a cost-effective option",
+        "Telehealth audiology expanding in rural Idaho"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A SNF coverage. Idaho Medicaid pays for long-term nursing home care. Idaho emphasizes home and community-based care.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Idaho Medicaid LTC",
+        "Idaho SHIBA (1-800-247-4422)"
+      ],
+      "avgCost": "$200–$260/day semi-private",
+      "tips": [
+        "Idaho has relatively affordable nursing home costs",
+        "HCBS waiver programs support aging in place",
+        "SHIBA: 1-800-247-4422"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 394620,
+        "ma_enrollment": 191874,
+        "ma_penetration_pct": 48.6,
+        "original_medicare": 202746,
+        "dual_eligible": 51484,
+        "mapd_enrollment": 177107
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 16.5,
+        "snf_utilization_pct": 2.27
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 44,
+        "avg_monthly_premium_usd": 12.4,
+        "top_insurers": [
+          "Regence BCBS",
+          "UnitedHealth",
+          "Humana"
+        ]
+      },
+      "ship_contact": {
+        "name": "Idaho SHIBA",
+        "phone": "1-800-247-4422",
+        "website": "www.doi.idaho.gov/shiba"
+      }
+    }
+  },
+  "IL": {
+    "name": "Illinois",
+    "slug": "illinois",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Illinois Medicaid covers dental for dual-eligible beneficiaries. Chicago has a very competitive MA market with strong dental benefits. University of Illinois College of Dentistry provides excellent low-cost care.",
+      "programs": [
+        "Illinois Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "University of Illinois College of Dentistry",
+        "Midwestern University dental school"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "UI dental school in Chicago offers high-quality low-cost care",
+        "Illinois SHIP (1-800-548-9034) for MA plan comparison",
+        "Rush and Northwestern dental clinics serve seniors"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Illinois Medicaid covers vision for dual-eligible members. Competitive MA market in Chicago metro offers robust vision benefits.",
+      "programs": [
+        "Illinois Medicaid vision",
+        "Medicare Advantage vision",
+        "Illinois Department of Human Services Division of Rehabilitation"
+      ],
+      "avgCost": "$100–$300/year",
+      "tips": [
+        "DRS provides vision rehabilitation services",
+        "Illinois SHIP: 1-800-548-9034",
+        "Glaucoma and macular degeneration screenings available"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Illinois MA plans frequently offer hearing aid benefits. The state has excellent audiology centers in Chicago and surrounding metro areas.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Illinois Assistive Technology Program",
+        "Center for Hearing and Speech"
+      ],
+      "avgCost": "$800–$6,500 per pair",
+      "tips": [
+        "IATP: 1-800-852-5110 for assistive technology resources",
+        "OTC hearing aids widely available in IL",
+        "Illinois SHIP: 1-800-548-9034"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Illinois Medicaid covers long-term care. Illinois has a large network of nursing facilities with varying quality.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Illinois Medicaid LTC",
+        "PACE Illinois",
+        "Illinois SHIP (1-800-548-9034)"
+      ],
+      "avgCost": "$200–$280/day semi-private",
+      "tips": [
+        "PACE programs in Chicago and surrounding areas",
+        "Use Medicare Care Compare to review IL facility ratings",
+        "SHIP: 1-800-548-9034"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 2407750,
+        "ma_enrollment": 1030719,
+        "ma_penetration_pct": 42.8,
+        "original_medicare": 1377032,
+        "dual_eligible": 421952,
+        "mapd_enrollment": 973812
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 21.5,
+        "snf_utilization_pct": 3.37
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 147,
+        "avg_monthly_premium_usd": 10.6,
+        "top_insurers": [
+          "Humana",
+          "UnitedHealth",
+          "BCBS Illinois"
+        ]
+      },
+      "ship_contact": {
+        "name": "Illinois SHIP",
+        "phone": "1-800-548-9034",
+        "website": "www.illinoisship.com"
+      }
+    }
+  },
+  "IN": {
+    "name": "Indiana",
+    "slug": "indiana",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Indiana Medicaid provides limited dental for dual-eligible beneficiaries. Indiana University School of Dentistry in Indianapolis is a major resource.",
+      "programs": [
+        "Indiana Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "IU School of Dentistry"
+      ],
+      "avgCost": "$700–$2,500/year",
+      "tips": [
+        "IU dental school offers quality low-cost care",
+        "Indiana SHIP (1-800-452-4800) for plan guidance",
+        "FQHCs provide sliding-scale dental statewide"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Indiana Medicaid covers vision for dual-eligible members. MA plans in IN offer vision benefits.",
+      "programs": [
+        "Indiana Medicaid vision",
+        "Medicare Advantage vision",
+        "Indiana School for the Blind"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "ISB: 317-253-1481 for vision rehabilitation",
+        "Annual diabetic eye exam covered by Part B",
+        "Indiana SHIP: 1-800-452-4800"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Indiana Medicare Advantage plans offer hearing benefits.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Indiana School for the Deaf",
+        "Indiana Assistive Technology Act program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "ISD: 317-550-4800 for resources and referrals",
+        "OTC hearing aids available at major Indiana retailers",
+        "Indiana INDATA: 1-800-528-8246 for assistive technology"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A SNF coverage. Indiana Medicaid pays for long-term care. Indiana has an active HCBS waiver program.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Indiana Medicaid LTC",
+        "CHOICE waiver program",
+        "Indiana SHIP (1-800-452-4800)"
+      ],
+      "avgCost": "$190–$260/day semi-private",
+      "tips": [
+        "CHOICE waiver supports home-based alternatives",
+        "Check nursing home ratings at Medicare Care Compare",
+        "SHIP: 1-800-452-4800"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1377619,
+        "ma_enrollment": 678624,
+        "ma_penetration_pct": 49.3,
+        "original_medicare": 698995,
+        "dual_eligible": 238601,
+        "mapd_enrollment": 636530
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 21.0,
+        "snf_utilization_pct": 4.06
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 108,
+        "avg_monthly_premium_usd": 7.8,
+        "top_insurers": [
+          "UnitedHealth",
+          "Anthem BCBS",
+          "Humana"
+        ]
+      },
+      "ship_contact": {
+        "name": "Indiana SHIP",
+        "phone": "1-800-452-4800",
+        "website": "www.in.gov/ship"
+      }
+    }
+  },
+  "IA": {
+    "name": "Iowa",
+    "slug": "iowa",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Iowa Medicaid covers limited dental for dual-eligible beneficiaries. University of Iowa College of Dentistry is a major statewide resource.",
+      "programs": [
+        "Iowa Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "University of Iowa College of Dentistry"
+      ],
+      "avgCost": "$700–$2,200/year",
+      "tips": [
+        "U of Iowa dental school in Iowa City offers excellent low-cost care",
+        "Iowa SHIP (1-800-351-4664) for plan help",
+        "Telehealth dental expanding in rural Iowa"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Iowa Medicaid covers vision for dual-eligible members. MA plan options limited in many rural counties.",
+      "programs": [
+        "Iowa Medicaid vision",
+        "Medicare Advantage vision",
+        "Iowa Department for the Blind"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "Iowa Dept for the Blind: 515-281-1333",
+        "Annual diabetic eye exam covered by Part B",
+        "SHIP: 1-800-351-4664"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Iowa has limited hearing care centers outside of major cities.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Iowa School for the Deaf",
+        "Iowa Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,000 per pair",
+      "tips": [
+        "Iowa ATP: 1-800-779-2001 for assistive technology",
+        "OTC hearing aids available in Des Moines and larger cities",
+        "Iowa SHIP: 1-800-351-4664"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A SNF coverage. Iowa Medicaid covers long-term care. Iowa nursing homes are generally affordable compared to coastal states.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Iowa Medicaid LTC",
+        "Iowa SHIP (1-800-351-4664)"
+      ],
+      "avgCost": "$180–$240/day semi-private",
+      "tips": [
+        "Iowa has affordable nursing home costs",
+        "Medicaid eligibility: asset limit $2,000 for individuals",
+        "SHIP: 1-800-351-4664"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 686102,
+        "ma_enrollment": 254648,
+        "ma_penetration_pct": 37.1,
+        "original_medicare": 431454,
+        "dual_eligible": 86410,
+        "mapd_enrollment": 230760
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 20.6,
+        "snf_utilization_pct": 3.44
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 56,
+        "avg_monthly_premium_usd": 14.2,
+        "top_insurers": [
+          "UnitedHealth",
+          "Wellmark BCBS",
+          "Medica"
+        ]
+      },
+      "ship_contact": {
+        "name": "Iowa SHIP",
+        "phone": "1-800-351-4664",
+        "website": "www.iowaaging.gov/ship"
+      }
+    }
+  },
+  "KS": {
+    "name": "Kansas",
+    "slug": "kansas",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Kansas Medicaid covers limited dental for dual-eligible beneficiaries. University of Missouri-Kansas City dental school serves the KC metro area.",
+      "programs": [
+        "KanCare Dental",
+        "Medicare Advantage dental plans",
+        "UMKC School of Dentistry (KC area)"
+      ],
+      "avgCost": "$800–$2,500/year",
+      "tips": [
+        "UMKC dental school offers quality low-cost care in Kansas City",
+        "Kansas SHICK (1-800-860-5260) for plan counseling",
+        "FQHCs offer sliding-scale dental in rural areas"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "KanCare covers vision for dual-eligible members. Limited MA plan options outside metro areas.",
+      "programs": [
+        "KanCare vision benefits",
+        "Medicare Advantage vision",
+        "Kansas Rehabilitation Services"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "Kansas RS: 785-296-5341 for vocational rehabilitation",
+        "Diabetic eye exam covered by Part B",
+        "SHICK: 1-800-860-5260"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Limited audiology services outside Wichita and Kansas City.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Kansas Commission for the Deaf and Hard of Hearing",
+        "Kansas Assistive Technology Cooperative"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "KCDHH: 785-296-5044 for resources",
+        "OTC hearing aids available at major retailers",
+        "Kansas SHICK: 1-800-860-5260"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. KanCare Medicaid covers long-term nursing home care for eligible Kansans.",
+      "programs": [
+        "Medicare Part A SNF",
+        "KanCare LTC",
+        "Kansas SHICK (1-800-860-5260)"
+      ],
+      "avgCost": "$180–$240/day semi-private",
+      "tips": [
+        "Kansas has affordable nursing home rates",
+        "Medicaid HCBS waivers support home-based care",
+        "SHICK: 1-800-860-5260"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 589955,
+        "ma_enrollment": 196047,
+        "ma_penetration_pct": 33.2,
+        "original_medicare": 393908,
+        "dual_eligible": 69574,
+        "mapd_enrollment": 182362
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 19.7,
+        "snf_utilization_pct": 3.93
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 60,
+        "avg_monthly_premium_usd": 13.1,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "BCBS Kansas"
+        ]
+      },
+      "ship_contact": {
+        "name": "Kansas SHICK",
+        "phone": "1-800-860-5260",
+        "website": "www.kansasship.com"
+      }
+    }
+  },
+  "KY": {
+    "name": "Kentucky",
+    "slug": "kentucky",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Kentucky Medicaid covers limited dental for dual-eligible beneficiaries. Kentucky faces dental access challenges, especially in rural Appalachian areas.",
+      "programs": [
+        "Kentucky Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "University of Kentucky College of Dentistry",
+        "Remote Area Medical (RAM) clinics"
+      ],
+      "avgCost": "$800–$2,800/year",
+      "tips": [
+        "UK dental school in Lexington offers reduced-cost care",
+        "RAM mobile clinics offer free dental events in rural KY",
+        "Kentucky SHIP (1-877-293-7447) for plan guidance"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Kentucky Medicaid covers vision for dual-eligible members. Vision care access is limited in rural eastern Kentucky.",
+      "programs": [
+        "Kentucky Medicaid vision",
+        "Medicare Advantage vision",
+        "Kentucky Office for the Blind"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "Office for the Blind: 502-564-4754",
+        "Diabetic eye exam covered by Part B",
+        "Kentucky SHIP: 1-877-293-7447"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Kentucky has limited hearing care centers in rural areas.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Kentucky Commission on the Deaf and Hard of Hearing",
+        "Kentucky Assistive Technology Service"
+      ],
+      "avgCost": "$1,000–$7,000 per pair",
+      "tips": [
+        "KCDHH: 502-573-2604 for resources and referrals",
+        "OTC hearing aids available in Louisville, Lexington, and online",
+        "Kentucky SHIP: 1-877-293-7447"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Kentucky Medicaid covers long-term care. Kentucky has a high nursing home utilization rate.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Kentucky Medicaid LTC",
+        "Kentucky SHIP (1-877-293-7447)"
+      ],
+      "avgCost": "$180–$250/day semi-private",
+      "tips": [
+        "Kentucky has relatively affordable nursing home costs",
+        "HCBS waiver programs available for home-based care",
+        "SHIP: 1-877-293-7447"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 988868,
+        "ma_enrollment": 529446,
+        "ma_penetration_pct": 53.5,
+        "original_medicare": 459422,
+        "dual_eligible": 180100,
+        "mapd_enrollment": 461423
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 22.5,
+        "snf_utilization_pct": 3.42
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 99,
+        "avg_monthly_premium_usd": 6.9,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Anthem BCBS"
+        ]
+      },
+      "ship_contact": {
+        "name": "Kentucky SHIP",
+        "phone": "1-877-293-7447",
+        "website": "www.kyship.ky.gov"
+      }
+    }
+  },
+  "LA": {
+    "name": "Louisiana",
+    "slug": "louisiana",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Louisiana Medicaid covers limited dental for dual-eligible beneficiaries. LSU Health Sciences Center dental school in New Orleans provides low-cost care.",
+      "programs": [
+        "Louisiana Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "LSU School of Dentistry (New Orleans)"
+      ],
+      "avgCost": "$700–$2,500/year",
+      "tips": [
+        "LSU dental school offers comprehensive low-cost dental care",
+        "Louisiana SHIP (1-800-259-5301) for plan counseling",
+        "FQHCs in New Orleans and Baton Rouge offer sliding-scale dental"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Louisiana Medicaid covers vision for dual-eligible members. MA plan options available primarily in metro areas.",
+      "programs": [
+        "Louisiana Medicaid vision",
+        "Medicare Advantage vision",
+        "Louisiana Division of Welfare Services"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "Diabetic eye exam covered by Part B",
+        "Compare MA plans: Louisiana SHIP 1-800-259-5301",
+        "LSU Eye Center offers specialized low-cost care"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Louisiana has limited audiology resources in rural parishes.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Louisiana Commission for the Deaf",
+        "Louisiana Assistive Technology Access Network"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "LCD: 225-219-4518 for resources",
+        "LATAN: 225-925-9500 for assistive technology",
+        "OTC hearing aids available in major Louisiana cities"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A SNF coverage. Louisiana Medicaid covers long-term care. Louisiana has active nursing home oversight through LDHH.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Louisiana Medicaid LTC",
+        "Louisiana SHIP (1-800-259-5301)"
+      ],
+      "avgCost": "$180–$250/day semi-private",
+      "tips": [
+        "Louisiana has affordable nursing home costs",
+        "HCBS Elderly waiver supports home-based care",
+        "SHIP: 1-800-259-5301"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 939490,
+        "ma_enrollment": 524236,
+        "ma_penetration_pct": 55.8,
+        "original_medicare": 415254,
+        "dual_eligible": 237617,
+        "mapd_enrollment": 504549
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 32.5,
+        "snf_utilization_pct": 2.31
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 107,
+        "avg_monthly_premium_usd": 8.5,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Centene/WellCare"
+        ]
+      },
+      "ship_contact": {
+        "name": "Louisiana SHIP",
+        "phone": "1-800-259-5301",
+        "website": "www.laship.org"
+      }
+    }
+  },
+  "ME": {
+    "name": "Maine",
+    "slug": "maine",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Maine Medicaid (MaineCare) covers dental for dual-eligible beneficiaries. University of New England dental school in Portland is a major resource.",
+      "programs": [
+        "MaineCare Dental",
+        "Medicare Advantage dental plans",
+        "University of New England dental school"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "UNE dental school in Portland offers quality low-cost care",
+        "Maine SHIP (1-800-262-2232) for plan guidance",
+        "Access to dental care limited in northern Maine — plan ahead"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "MaineCare covers vision for dual-eligible members. Limited MA plan competition in rural Maine.",
+      "programs": [
+        "MaineCare vision benefits",
+        "Medicare Advantage vision",
+        "Maine Division for the Blind and Visually Impaired"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "DBVI: 207-624-5150 for vision rehabilitation",
+        "Glaucoma screening covered by Part B for high-risk individuals",
+        "Maine SHIP: 1-800-262-2232"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Maine Medicare Advantage plans offer hearing benefits. Hearing care access limited outside Portland and Bangor.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Maine Educational Center for the Deaf and Hard of Hearing",
+        "Maine Assistive Technology Reuse Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "MECDHH: 207-781-6180 for resources",
+        "Telehealth audiology expanding in rural Maine",
+        "Maine SHIP: 1-800-262-2232"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. MaineCare covers long-term care. Maine has a strong preference for home and community-based care.",
+      "programs": [
+        "Medicare Part A SNF",
+        "MaineCare LTC",
+        "PACE Maine",
+        "Maine SHIP (1-800-262-2232)"
+      ],
+      "avgCost": "$280–$380/day",
+      "tips": [
+        "Maine PACE programs in Portland and Bangor areas",
+        "MaineCare waiver supports home-based alternatives",
+        "SHIP: 1-800-262-2232"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 378727,
+        "ma_enrollment": 217115,
+        "ma_penetration_pct": 57.3,
+        "original_medicare": 161612,
+        "dual_eligible": 95976,
+        "mapd_enrollment": 204585
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 24.3,
+        "snf_utilization_pct": 2.01
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 42,
+        "avg_monthly_premium_usd": 16.8,
+        "top_insurers": [
+          "Anthem BCBS",
+          "UnitedHealth",
+          "Martins Point"
+        ]
+      },
+      "ship_contact": {
+        "name": "Maine SHIP",
+        "phone": "1-800-262-2232",
+        "website": "www.maineship.net"
+      }
+    }
+  },
+  "MD": {
+    "name": "Maryland",
+    "slug": "maryland",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Maryland Medicaid covers dental for dual-eligible beneficiaries. University of Maryland School of Dentistry in Baltimore is world-class and serves low-income patients.",
+      "programs": [
+        "Maryland Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "University of Maryland Dental School"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "UMD dental school offers top-quality low-cost care in Baltimore",
+        "Maryland SHIP (1-800-243-3425) for plan comparison",
+        "Competitive MA market in Baltimore and DC suburbs"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Maryland Medicaid covers vision for dual-eligible members. Strong MA market in Baltimore/DC corridor.",
+      "programs": [
+        "Maryland Medicaid vision",
+        "Medicare Advantage vision",
+        "Maryland Division of Rehabilitation Services"
+      ],
+      "avgCost": "$100–$300/year",
+      "tips": [
+        "DRS: 410-554-9400 for vision rehabilitation",
+        "Johns Hopkins Wilmer Eye Institute offers specialized eye care",
+        "Maryland SHIP: 1-800-243-3425"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Maryland Medicare Advantage plans frequently include hearing benefits given the competitive market.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Maryland Commission on Civil Rights",
+        "Deaf Community Center Maryland"
+      ],
+      "avgCost": "$800–$6,000 per pair",
+      "tips": [
+        "Johns Hopkins cochlear implant program is nationally recognized",
+        "OTC hearing aids widely available in MD",
+        "Maryland SHIP: 1-800-243-3425"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Maryland Medicaid covers long-term care. Maryland regulates nursing homes strictly through OHCQ.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Maryland Medicaid LTC",
+        "PACE Maryland",
+        "Maryland SHIP (1-800-243-3425)"
+      ],
+      "avgCost": "$280–$380/day",
+      "tips": [
+        "PACE programs in Baltimore and Prince George's County",
+        "OHCQ complaints: 1-877-402-8218",
+        "Maryland SHIP: 1-800-243-3425"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1149602,
+        "ma_enrollment": 275643,
+        "ma_penetration_pct": 24.0,
+        "original_medicare": 873959,
+        "dual_eligible": 162531,
+        "mapd_enrollment": 250482
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 17.1,
+        "snf_utilization_pct": 3.96
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 67,
+        "avg_monthly_premium_usd": 14.6,
+        "top_insurers": [
+          "UnitedHealth",
+          "Aetna",
+          "CareFirst BCBS"
+        ]
+      },
+      "ship_contact": {
+        "name": "Maryland SHIP",
+        "phone": "1-800-243-3425",
+        "website": "www.marylandship.org"
+      }
+    }
+  },
+  "MA": {
+    "name": "Massachusetts",
+    "slug": "massachusetts",
+    "dental": {
+      "coverage": "Comprehensive",
+      "description": "Massachusetts has one of the most comprehensive Medicaid dental programs in the nation. MassHealth covers extensive dental services for dual-eligible beneficiaries. Boston has world-class dental schools.",
+      "programs": [
+        "MassHealth Dental",
+        "Medicare Advantage dental plans",
+        "Harvard School of Dental Medicine",
+        "Tufts School of Dental Medicine",
+        "Boston University dental school"
+      ],
+      "avgCost": "$0–$300/year for MassHealth eligible; $400–$1,500 for others",
+      "tips": [
+        "Three dental schools in Boston offer excellent low-cost care",
+        "MassHealth covers cleanings, fillings, root canals, crowns and more",
+        "Massachusetts SHINE (1-800-243-4636) for plan counseling"
+      ]
+    },
+    "vision": {
+      "coverage": "Comprehensive",
+      "description": "MassHealth covers vision including exams and glasses for dual-eligible members. Massachusetts MA plans offer strong vision benefits.",
+      "programs": [
+        "MassHealth vision benefits",
+        "Medicare Advantage vision",
+        "Massachusetts Eye and Ear Infirmary",
+        "Mass Commission for the Blind"
+      ],
+      "avgCost": "$0 for MassHealth eligible; $100–$300 for others",
+      "tips": [
+        "Mass Eye and Ear: 617-523-7900 for specialized eye care",
+        "MCB: 1-800-392-6450 for vision rehabilitation",
+        "SHINE: 1-800-243-4636"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Moderate",
+      "description": "MassHealth covers hearing aids for dual-eligible beneficiaries. Massachusetts has excellent audiology and hearing centers.",
+      "programs": [
+        "MassHealth hearing aid coverage",
+        "Medicare Advantage hearing plans",
+        "Mass Eye and Ear Hearing Center",
+        "Mass Rehabilitation Commission"
+      ],
+      "avgCost": "$0 for MassHealth eligible; $800–$6,000 for others",
+      "tips": [
+        "MassHealth covers one hearing aid per ear with prior authorization",
+        "Mass Eye and Ear is a national leader in hearing care",
+        "MRC: 617-204-3600 for hearing rehabilitation"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Comprehensive",
+      "description": "MassHealth covers nursing home care for eligible seniors. Massachusetts has high nursing home quality standards and strong PACE programs.",
+      "programs": [
+        "Medicare Part A SNF",
+        "MassHealth LTC",
+        "PACE Massachusetts (many locations)",
+        "Massachusetts SHINE (1-800-243-4636)"
+      ],
+      "avgCost": "$350–$450/day (among highest in US)",
+      "tips": [
+        "PACE programs throughout Massachusetts — a strong alternative to nursing homes",
+        "MassHealth covers nursing home costs for income-eligible individuals",
+        "SHINE: 1-800-243-4636"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1457575,
+        "ma_enrollment": 516598,
+        "ma_penetration_pct": 35.4,
+        "original_medicare": 940977,
+        "dual_eligible": 353261,
+        "mapd_enrollment": 487424
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 31.0,
+        "snf_utilization_pct": 5.19
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 72,
+        "avg_monthly_premium_usd": 20.1,
+        "top_insurers": [
+          "Tufts Health Plan",
+          "BCBS Massachusetts",
+          "UnitedHealth"
+        ]
+      },
+      "ship_contact": {
+        "name": "Massachusetts SHINE",
+        "phone": "1-800-243-4636",
+        "website": "www.mass.gov/shine"
+      }
+    }
+  },
+  "MI": {
+    "name": "Michigan",
+    "slug": "michigan",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Michigan Medicaid covers dental for dual-eligible beneficiaries. University of Michigan School of Dentistry in Ann Arbor is nationally ranked.",
+      "programs": [
+        "Michigan Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "University of Michigan Dental School",
+        "Delta Dental of Michigan"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "U of M dental school offers top-quality low-cost care in Ann Arbor",
+        "Michigan MMAP (1-800-803-7174) for plan counseling",
+        "Competitive MA market in Detroit, Grand Rapids, and Lansing areas"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Michigan Medicaid covers vision for dual-eligible members. Michigan College of Optometry provides low-cost eye care.",
+      "programs": [
+        "Michigan Medicaid vision",
+        "Medicare Advantage vision",
+        "Michigan Commission for the Blind"
+      ],
+      "avgCost": "$150–$350/year",
+      "tips": [
+        "MCB: 1-800-292-4200 for vision rehabilitation",
+        "Diabetic eye exam covered by Part B",
+        "Michigan MMAP: 1-800-803-7174"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Michigan Medicare Advantage plans offer hearing benefits. Michigan has good audiology resources in urban areas.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Michigan Association of the Deaf",
+        "Michigan Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "Michigan ATP: 1-800-274-7426 for assistive technology",
+        "OTC hearing aids available statewide",
+        "Michigan MMAP: 1-800-803-7174"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Michigan Medicaid covers long-term care. Michigan has active nursing home quality oversight.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Michigan Medicaid LTC",
+        "PACE Michigan",
+        "Michigan MMAP (1-800-803-7174)"
+      ],
+      "avgCost": "$220–$300/day semi-private",
+      "tips": [
+        "PACE programs in Detroit, Kalamazoo, and Lansing areas",
+        "Check nursing home ratings at Michigan.gov/lara",
+        "Michigan MMAP: 1-800-803-7174"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 2251633,
+        "ma_enrollment": 1385622,
+        "ma_penetration_pct": 61.5,
+        "original_medicare": 866011,
+        "dual_eligible": 349364,
+        "mapd_enrollment": 1089199
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 13.9,
+        "snf_utilization_pct": 3.31
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 146,
+        "avg_monthly_premium_usd": 8.3,
+        "top_insurers": [
+          "Priority Health",
+          "BCBS Michigan",
+          "UnitedHealth"
+        ]
+      },
+      "ship_contact": {
+        "name": "Michigan MMAP",
+        "phone": "1-800-803-7174",
+        "website": "www.mmapinc.org"
+      }
+    }
+  },
+  "MN": {
+    "name": "Minnesota",
+    "slug": "minnesota",
+    "dental": {
+      "coverage": "Comprehensive",
+      "description": "Minnesota Medicaid (MA) provides comprehensive dental coverage for dual-eligible beneficiaries. University of Minnesota School of Dentistry is a top-10 dental school.",
+      "programs": [
+        "Minnesota MA Dental",
+        "Medicare Advantage dental plans",
+        "University of Minnesota School of Dentistry"
+      ],
+      "avgCost": "$0–$400/year for MA eligible",
+      "tips": [
+        "U of MN dental school offers excellent low-cost care in Minneapolis",
+        "Minnesota SHIP (1-800-333-2433) for plan guidance",
+        "HealthPartners and UCare offer competitive MA dental plans in MN"
+      ]
+    },
+    "vision": {
+      "coverage": "Comprehensive",
+      "description": "Minnesota MA covers vision for dual-eligible members. Competitive MA market in Twin Cities metro.",
+      "programs": [
+        "Minnesota MA vision",
+        "Medicare Advantage vision",
+        "Minnesota State Services for the Blind"
+      ],
+      "avgCost": "$0 for MA eligible; $100–$300 for others",
+      "tips": [
+        "SSB: 651-539-2300 for vision rehabilitation",
+        "Mayo Clinic in Rochester offers world-class eye care",
+        "Minnesota SHIP: 1-800-333-2433"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Moderate",
+      "description": "Minnesota MA covers hearing aids for dual-eligible beneficiaries. University of Minnesota has a nationally recognized audiology program.",
+      "programs": [
+        "Minnesota MA hearing aid coverage",
+        "Medicare Advantage hearing plans",
+        "Communication Access Center",
+        "U of MN Audiology Clinic"
+      ],
+      "avgCost": "$0 for MA eligible; $1,000–$6,000 for others",
+      "tips": [
+        "MN MA covers hearing aids for eligible low-income seniors",
+        "U of MN audiology clinic offers comprehensive hearing care",
+        "Minnesota SHIP: 1-800-333-2433"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Comprehensive",
+      "description": "Minnesota MA covers nursing home care. Minnesota has some of the highest nursing home quality ratings in the US and strong LTSS programs.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Minnesota MA LTC",
+        "PACE Minnesota",
+        "Minnesota SHIP (1-800-333-2433)"
+      ],
+      "avgCost": "$250–$340/day",
+      "tips": [
+        "Minnesota has excellent nursing home quality overall",
+        "EW (Elderly Waiver) supports home and community-based care",
+        "SHIP: 1-800-333-2433"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1151530,
+        "ma_enrollment": 683796,
+        "ma_penetration_pct": 59.4,
+        "original_medicare": 467734,
+        "dual_eligible": 147753,
+        "mapd_enrollment": 606816
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 11.9,
+        "snf_utilization_pct": 3.0
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 68,
+        "avg_monthly_premium_usd": 22.5,
+        "top_insurers": [
+          "UCare",
+          "HealthPartners",
+          "Medica"
+        ]
+      },
+      "ship_contact": {
+        "name": "Minnesota SHIP",
+        "phone": "1-800-333-2433",
+        "website": "www.mnship.org"
+      }
+    }
+  },
+  "MS": {
+    "name": "Mississippi",
+    "slug": "mississippi",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Mississippi Medicaid covers limited dental for dual-eligible beneficiaries. Mississippi faces significant dental access challenges and provider shortages.",
+      "programs": [
+        "Mississippi Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "University of Mississippi Medical Center dental program"
+      ],
+      "avgCost": "$800–$3,000/year",
+      "tips": [
+        "UMMC in Jackson offers dental care at reduced rates",
+        "Mississippi SHIP (1-800-948-3090) for plan guidance",
+        "Remote Area Medical clinics periodically offer free dental in MS"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Mississippi Medicaid covers vision for dual-eligible members. Vision care access is limited outside Jackson.",
+      "programs": [
+        "Mississippi Medicaid vision",
+        "Medicare Advantage vision",
+        "Mississippi Department of Rehabilitation Services"
+      ],
+      "avgCost": "$200–$500/year",
+      "tips": [
+        "MDRS: 601-853-5100 for vision rehabilitation",
+        "Diabetic eye exam covered by Part B — important given high MS diabetes rates",
+        "Mississippi SHIP: 1-800-948-3090"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Mississippi has very limited audiology resources outside Jackson.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Mississippi Board for Persons Who Are Deaf and Hard of Hearing",
+        "MS Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$7,000 per pair",
+      "tips": [
+        "MS Board for Deaf/HH: 601-576-7801 for resources",
+        "OTC hearing aids most accessible option in rural MS",
+        "SHIP: 1-800-948-3090"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Mississippi Medicaid covers long-term nursing home care. Mississippi has some of the most affordable nursing home costs in the US.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Mississippi Medicaid LTC",
+        "Mississippi SHIP (1-800-948-3090)"
+      ],
+      "avgCost": "$160–$220/day semi-private (among lowest in US)",
+      "tips": [
+        "Mississippi has very affordable nursing home costs",
+        "HCBS waiver supports home-based care alternatives",
+        "SHIP: 1-800-948-3090"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 641820,
+        "ma_enrollment": 274544,
+        "ma_penetration_pct": 42.8,
+        "original_medicare": 367275,
+        "dual_eligible": 162945,
+        "mapd_enrollment": 259475
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 38.9,
+        "snf_utilization_pct": 2.54
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 82,
+        "avg_monthly_premium_usd": 8.2,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Centene/WellCare"
+        ]
+      },
+      "ship_contact": {
+        "name": "Mississippi SHIP",
+        "phone": "1-800-948-3090",
+        "website": "www.msship.ms.gov"
+      }
+    }
+  },
+  "MO": {
+    "name": "Missouri",
+    "slug": "missouri",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Missouri Medicaid covers limited dental for dual-eligible beneficiaries. UMKC School of Dentistry and Missouri School of Dentistry and Oral Health serve the population.",
+      "programs": [
+        "Missouri Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "UMKC School of Dentistry",
+        "Missouri School of Dentistry (A.T. Still)"
+      ],
+      "avgCost": "$700–$2,500/year",
+      "tips": [
+        "UMKC and A.T. Still dental schools offer excellent low-cost care",
+        "Missouri CLAIM (1-800-390-3330) for plan counseling",
+        "St. Louis and Kansas City have competitive MA markets"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Missouri Medicaid covers vision for dual-eligible members. Limited MA plan options in rural Missouri.",
+      "programs": [
+        "Missouri Medicaid vision",
+        "Medicare Advantage vision",
+        "Missouri Department of Elementary and Secondary Education — Vision Services"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "Diabetic eye exam covered by Part B",
+        "Washington University Eye Center in St. Louis offers specialized care",
+        "Missouri CLAIM: 1-800-390-3330"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Missouri has hearing care resources in St. Louis and Kansas City.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Missouri Commission for the Deaf and Hard of Hearing",
+        "Mo Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "MCDHH: 573-526-5205 for resources",
+        "OTC hearing aids available at major Missouri retailers",
+        "Missouri CLAIM: 1-800-390-3330"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Missouri Medicaid covers long-term care. Missouri has many nursing facilities across the state.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Missouri Medicaid LTC",
+        "Missouri CLAIM (1-800-390-3330)"
+      ],
+      "avgCost": "$180–$250/day semi-private",
+      "tips": [
+        "Missouri has affordable nursing home costs",
+        "HCBS waiver supports home-based alternatives",
+        "CLAIM: 1-800-390-3330"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1331904,
+        "ma_enrollment": 706183,
+        "ma_penetration_pct": 53.0,
+        "original_medicare": 625720,
+        "dual_eligible": 194974,
+        "mapd_enrollment": 660469
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 17.5,
+        "snf_utilization_pct": 3.41
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 116,
+        "avg_monthly_premium_usd": 9.7,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Centene/WellCare"
+        ]
+      },
+      "ship_contact": {
+        "name": "Missouri CLAIM",
+        "phone": "1-800-390-3330",
+        "website": "www.missouriclaim.org"
+      }
+    }
+  },
+  "MT": {
+    "name": "Montana",
+    "slug": "montana",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Montana Medicaid covers limited dental for dual-eligible beneficiaries. Rural access is a major challenge across the vast state.",
+      "programs": [
+        "Montana Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "Montana State University dental hygiene program"
+      ],
+      "avgCost": "$800–$2,800/year",
+      "tips": [
+        "Mobile dental units serve rural Montana communities",
+        "Montana SHIP (1-800-332-2272) for plan guidance",
+        "Only a few MA plans available — compare carefully"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Montana Medicaid covers vision for dual-eligible members. Vision care is very limited outside Billings, Great Falls, and Missoula.",
+      "programs": [
+        "Montana Medicaid vision",
+        "Medicare Advantage vision",
+        "Montana Department of Public Health — Blind and Low Vision Services"
+      ],
+      "avgCost": "$200–$500/year",
+      "tips": [
+        "BLV: 406-444-2590 for vision rehabilitation",
+        "Telehealth expanding for vision screenings",
+        "Montana SHIP: 1-800-332-2272"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Montana has very limited audiology services outside major cities.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Montana Independent Living Program",
+        "Montana Assistive Technology Program"
+      ],
+      "avgCost": "$1,200–$7,000 per pair",
+      "tips": [
+        "Montana ATP: 406-243-5676 for assistive technology",
+        "OTC hearing aids best option for rural Montana residents",
+        "Montana SHIP: 1-800-332-2272"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Montana Medicaid covers long-term care. Montana has limited nursing home facilities due to rural geography.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Montana Medicaid LTC",
+        "Montana SHIP (1-800-332-2272)"
+      ],
+      "avgCost": "$240–$320/day",
+      "tips": [
+        "Home-based care important in rural areas with few nursing homes",
+        "HCBS waiver programs available",
+        "SHIP: 1-800-332-2272"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 262042,
+        "ma_enrollment": 77275,
+        "ma_penetration_pct": 29.5,
+        "original_medicare": 184767,
+        "dual_eligible": 26371,
+        "mapd_enrollment": 71159
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 12.5,
+        "snf_utilization_pct": 2.3
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 26,
+        "avg_monthly_premium_usd": 22.3,
+        "top_insurers": [
+          "Montana Health CO-OP",
+          "UnitedHealth",
+          "Aetna"
+        ]
+      },
+      "ship_contact": {
+        "name": "Montana SHIP",
+        "phone": "1-800-332-2272",
+        "website": "www.dphhs.mt.gov/ship"
+      }
+    }
+  },
+  "NE": {
+    "name": "Nebraska",
+    "slug": "nebraska",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Nebraska Medicaid covers limited dental for dual-eligible beneficiaries. University of Nebraska Medical Center dental school in Lincoln is a major resource.",
+      "programs": [
+        "Nebraska Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "UNMC College of Dentistry"
+      ],
+      "avgCost": "$700–$2,500/year",
+      "tips": [
+        "UNMC dental school in Lincoln offers quality low-cost care",
+        "Nebraska SHIP (1-800-234-7119) for plan counseling",
+        "Omaha has more competitive MA market than rural areas"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Nebraska Medicaid covers vision for dual-eligible members. MA plan options limited outside Omaha and Lincoln.",
+      "programs": [
+        "Nebraska Medicaid vision",
+        "Medicare Advantage vision",
+        "Nebraska Commission for the Blind and Visually Impaired"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "NCBVI: 402-471-2891 for vision rehabilitation",
+        "Annual diabetic eye exam covered by Part B",
+        "Nebraska SHIP: 1-800-234-7119"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Nebraska has audiology resources primarily in Omaha and Lincoln.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Nebraska Commission for the Deaf and Hard of Hearing",
+        "Nebraska Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "NCDHH: 402-471-3593 for resources",
+        "OTC hearing aids available at major Nebraska retailers",
+        "Nebraska SHIP: 1-800-234-7119"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Nebraska Medicaid covers long-term care. Nebraska has affordable nursing home costs.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Nebraska Medicaid LTC",
+        "Nebraska SHIP (1-800-234-7119)"
+      ],
+      "avgCost": "$190–$260/day semi-private",
+      "tips": [
+        "Nebraska has affordable nursing home costs compared to national average",
+        "HCBS waiver supports home-based alternatives",
+        "SHIP: 1-800-234-7119"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 383718,
+        "ma_enrollment": 129458,
+        "ma_penetration_pct": 33.7,
+        "original_medicare": 254260,
+        "dual_eligible": 44709,
+        "mapd_enrollment": 117148
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 18.9,
+        "snf_utilization_pct": 3.91
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 44,
+        "avg_monthly_premium_usd": 16.4,
+        "top_insurers": [
+          "UnitedHealth",
+          "Aetna",
+          "Medica"
+        ]
+      },
+      "ship_contact": {
+        "name": "Nebraska SHIP",
+        "phone": "1-800-234-7119",
+        "website": "www.doi.nebraska.gov/ship"
+      }
+    }
+  },
+  "NV": {
+    "name": "Nevada",
+    "slug": "nevada",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Nevada Medicaid covers limited dental for dual-eligible beneficiaries. Nevada faces dental provider shortages particularly in rural areas.",
+      "programs": [
+        "Nevada Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "UNLV School of Dental Medicine"
+      ],
+      "avgCost": "$600–$2,200/year",
+      "tips": [
+        "UNLV dental school in Las Vegas offers quality low-cost care",
+        "Nevada SHIP (1-800-307-4444) for plan guidance",
+        "Las Vegas has competitive MA market with strong dental options"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Nevada Medicaid covers vision for dual-eligible members. Limited vision care outside Las Vegas and Reno.",
+      "programs": [
+        "Nevada Medicaid vision",
+        "Medicare Advantage vision",
+        "Nevada Blind Children's Foundation"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "Diabetic eye exam covered by Part B",
+        "Compare MA plans in Las Vegas: Nevada SHIP 1-800-307-4444",
+        "Telehealth vision screenings expanding in rural Nevada"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Nevada has audiology resources concentrated in Las Vegas and Reno.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Nevada Governor's Committee on Employment of People with Disabilities",
+        "Nevada Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$7,000 per pair",
+      "tips": [
+        "NATP: 775-688-1233 for assistive technology resources",
+        "OTC hearing aids widely available in Las Vegas",
+        "Nevada SHIP: 1-800-307-4444"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Nevada Medicaid covers long-term care. Nevada has limited nursing home capacity relative to its growing senior population.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Nevada Medicaid LTC",
+        "Nevada SHIP (1-800-307-4444)"
+      ],
+      "avgCost": "$220–$310/day semi-private",
+      "tips": [
+        "Growing senior population is expanding nursing home capacity",
+        "HCBS waiver programs support home-based care",
+        "SHIP: 1-800-307-4444"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 603246,
+        "ma_enrollment": 306145,
+        "ma_penetration_pct": 50.7,
+        "original_medicare": 297101,
+        "dual_eligible": 88524,
+        "mapd_enrollment": 292561
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 14.7,
+        "snf_utilization_pct": 3.27
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 74,
+        "avg_monthly_premium_usd": 8.7,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Centene/WellCare"
+        ]
+      },
+      "ship_contact": {
+        "name": "Nevada SHIP",
+        "phone": "1-800-307-4444",
+        "website": "www.nvship.com"
+      }
+    }
+  },
+  "NH": {
+    "name": "New Hampshire",
+    "slug": "new-hampshire",
+    "dental": {
+      "coverage": "Limited",
+      "description": "New Hampshire Medicaid covers limited dental for dual-eligible beneficiaries. Dental provider shortages exist in northern and rural areas.",
+      "programs": [
+        "NH Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "University of New England dental access programs"
+      ],
+      "avgCost": "$700–$2,200/year",
+      "tips": [
+        "Community dental programs in Manchester and Concord",
+        "NH SHIP (1-800-852-3388) for plan guidance",
+        "Federally Qualified Health Centers offer sliding-scale dental"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "NH Medicaid covers vision for dual-eligible members. NH has a competitive MA market given its proximity to Boston.",
+      "programs": [
+        "NH Medicaid vision",
+        "Medicare Advantage vision",
+        "NH Division of Vocational Rehabilitation"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "DVR: 603-271-3471 for vision rehabilitation",
+        "Diabetic eye exam covered by Part B",
+        "NH SHIP: 1-800-852-3388"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. NH has limited audiology centers outside Manchester, Nashua, and Concord.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "NH Bureau of Vocational Rehabilitation",
+        "Northeast Deaf and Hard of Hearing Services"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "NEDHHS provides resources at 603-224-1850",
+        "OTC hearing aids available in southern NH cities",
+        "NH SHIP: 1-800-852-3388"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. NH Medicaid covers long-term care. NH has high-quality nursing homes but limited availability.",
+      "programs": [
+        "Medicare Part A SNF",
+        "NH Medicaid LTC",
+        "NH SHIP (1-800-852-3388)"
+      ],
+      "avgCost": "$320–$420/day (among highest in US)",
+      "tips": [
+        "NH nursing home costs are very high — plan ahead",
+        "Home-based HCBS waiver programs available",
+        "SHIP: 1-800-852-3388"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 344961,
+        "ma_enrollment": 119447,
+        "ma_penetration_pct": 34.6,
+        "original_medicare": 225514,
+        "dual_eligible": 32194,
+        "mapd_enrollment": 109156
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 11.6,
+        "snf_utilization_pct": 2.75
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 38,
+        "avg_monthly_premium_usd": 17.9,
+        "top_insurers": [
+          "Harvard Pilgrim",
+          "Anthem BCBS",
+          "UnitedHealth"
+        ]
+      },
+      "ship_contact": {
+        "name": "New Hampshire SHIP",
+        "phone": "1-800-852-3388",
+        "website": "www.nhship.org"
+      }
+    }
+  },
+  "NJ": {
+    "name": "New Jersey",
+    "slug": "new-jersey",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "New Jersey Medicaid covers dental for dual-eligible beneficiaries. Rutgers School of Dental Medicine in Newark provides low-cost care.",
+      "programs": [
+        "NJ Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "Rutgers School of Dental Medicine"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "Rutgers dental school in Newark offers quality low-cost care",
+        "NJ SHIP (1-800-792-8820) for plan counseling",
+        "Strong MA market in northern NJ near NYC metro"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "NJ Medicaid covers vision for dual-eligible members. Competitive MA market in NJ offers strong vision benefits.",
+      "programs": [
+        "NJ Medicaid vision",
+        "Medicare Advantage vision",
+        "NJ Commission for the Blind and Visually Impaired"
+      ],
+      "avgCost": "$100–$300/year",
+      "tips": [
+        "NJCBVI: 973-648-3333 for vision rehabilitation",
+        "Diabetic eye exam covered by Part B",
+        "NJ SHIP: 1-800-792-8820"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "NJ Medicare Advantage plans offer hearing benefits. NJ has good audiology resources in urban areas.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "NJ Division of the Deaf and Hard of Hearing",
+        "NJ Assistive Technology Advocacy Center"
+      ],
+      "avgCost": "$1,000–$7,000 per pair",
+      "tips": [
+        "NJDDHH: 1-800-792-8339 for resources",
+        "OTC hearing aids available statewide",
+        "NJ SHIP: 1-800-792-8820"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. NJ Medicaid covers long-term care. NJ has high nursing home quality ratings but also very high costs.",
+      "programs": [
+        "Medicare Part A SNF",
+        "NJ Medicaid LTC",
+        "PACE New Jersey",
+        "NJ SHIP (1-800-792-8820)"
+      ],
+      "avgCost": "$350–$450/day (among highest in US)",
+      "tips": [
+        "PACE programs in Newark and Trenton areas",
+        "NJ has high nursing home costs — plan ahead",
+        "SHIP: 1-800-792-8820"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1767493,
+        "ma_enrollment": 712274,
+        "ma_penetration_pct": 40.3,
+        "original_medicare": 1055219,
+        "dual_eligible": 243560,
+        "mapd_enrollment": 513701
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 16.9,
+        "snf_utilization_pct": 4.0
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 88,
+        "avg_monthly_premium_usd": 15.2,
+        "top_insurers": [
+          "UnitedHealth",
+          "Aetna",
+          "Horizon BCBS NJ"
+        ]
+      },
+      "ship_contact": {
+        "name": "New Jersey SHIP",
+        "phone": "1-800-792-8820",
+        "website": "www.nj.gov/ship"
+      }
+    }
+  },
+  "NM": {
+    "name": "New Mexico",
+    "slug": "new-mexico",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "New Mexico Medicaid (Centennial Care) covers dental for dual-eligible beneficiaries. University of New Mexico Health Sciences Center provides dental education and care.",
+      "programs": [
+        "Centennial Care Dental",
+        "Medicare Advantage dental plans",
+        "UNM Division of Dental Services"
+      ],
+      "avgCost": "$500–$2,000/year",
+      "tips": [
+        "UNM dental clinics offer low-cost care in Albuquerque",
+        "New Mexico SHIP (1-800-432-2080) for plan guidance",
+        "Tribal dental programs available for eligible Native American residents"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Centennial Care covers vision for dual-eligible members. Limited MA plan options outside Albuquerque.",
+      "programs": [
+        "Centennial Care vision",
+        "Medicare Advantage vision",
+        "NM Commission for the Blind"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "NMCB: 505-827-4479 for vision rehabilitation",
+        "Diabetic eye exam very important given high NM diabetes rates",
+        "New Mexico SHIP: 1-800-432-2080"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Medicare does not cover hearing aids. New Mexico has limited audiology resources outside Albuquerque and Santa Fe.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "New Mexico Commission for the Deaf and Hard of Hearing",
+        "New Mexico Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "NMCDHH: 505-827-7584 for resources",
+        "OTC hearing aids available in Albuquerque and online",
+        "New Mexico SHIP: 1-800-432-2080"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. New Mexico Medicaid covers long-term care. New Mexico has a strong emphasis on home and community-based services.",
+      "programs": [
+        "Medicare Part A SNF",
+        "NM Medicaid LTC",
+        "Mi Via HCBS waiver",
+        "New Mexico SHIP (1-800-432-2080)"
+      ],
+      "avgCost": "$200–$280/day semi-private",
+      "tips": [
+        "Mi Via waiver supports self-directed home-based care",
+        "Tribal options for Native American seniors",
+        "SHIP: 1-800-432-2080"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 462873,
+        "ma_enrollment": 230063,
+        "ma_penetration_pct": 49.7,
+        "original_medicare": 232810,
+        "dual_eligible": 106336,
+        "mapd_enrollment": 218496
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 28.8,
+        "snf_utilization_pct": 2.16
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 52,
+        "avg_monthly_premium_usd": 9.4,
+        "top_insurers": [
+          "UnitedHealth",
+          "Lovelace Health Plan",
+          "Molina Healthcare"
+        ]
+      },
+      "ship_contact": {
+        "name": "New Mexico SHIP",
+        "phone": "1-800-432-2080",
+        "website": "www.nmship.org"
+      }
+    }
+  },
+  "NY": {
+    "name": "New York",
+    "slug": "new-york",
+    "dental": {
+      "coverage": "Comprehensive",
+      "description": "New York Medicaid provides comprehensive dental coverage for dual-eligible beneficiaries. New York City has numerous world-class dental schools offering low-cost care.",
+      "programs": [
+        "NY Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "NYU College of Dentistry",
+        "Columbia University College of Dental Medicine",
+        "Touro College of Dental Medicine"
+      ],
+      "avgCost": "$0–$300/year for Medicaid eligible; $400–$1,500 for others",
+      "tips": [
+        "NYU, Columbia, and Touro dental schools offer excellent low-cost care in NYC",
+        "NY HIICAP (1-800-701-0501) for plan guidance",
+        "NY has one of the most competitive MA markets in the nation"
+      ]
+    },
+    "vision": {
+      "coverage": "Comprehensive",
+      "description": "NY Medicaid covers vision for dual-eligible members. Strong MA market in NYC metro and upstate cities offers robust vision benefits.",
+      "programs": [
+        "NY Medicaid vision",
+        "Medicare Advantage vision",
+        "NYS Commission for the Blind",
+        "Lighthouse Guild"
+      ],
+      "avgCost": "$0 for Medicaid eligible; $100–$300 for others",
+      "tips": [
+        "NYS Commission for the Blind: 1-866-871-3000",
+        "Lighthouse Guild: 1-800-284-4422 for vision rehabilitation",
+        "NY HIICAP: 1-800-701-0501"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Moderate",
+      "description": "NY Medicaid covers hearing aids for dual-eligible beneficiaries. New York has excellent audiology resources across the state.",
+      "programs": [
+        "NY Medicaid hearing aid coverage",
+        "Medicare Advantage hearing plans",
+        "Center for Hearing and Communication NYC",
+        "NY HIICAP"
+      ],
+      "avgCost": "$0 for Medicaid eligible; $1,000–$7,000 for others",
+      "tips": [
+        "NY Medicaid covers hearing aids with prior authorization for eligible enrollees",
+        "Center for Hearing and Communication in NYC is nationally recognized",
+        "NY HIICAP: 1-800-701-0501"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Comprehensive",
+      "description": "NY Medicaid (including MLTC plans) pays for nursing home care. NY has strong nursing home regulations and PACE programs. NY MLTC programs support community-based care.",
+      "programs": [
+        "Medicare Part A SNF",
+        "NY Medicaid MLTC",
+        "PACE New York (many locations)",
+        "NY HIICAP (1-800-701-0501)"
+      ],
+      "avgCost": "$350–$500/day (among highest in US)",
+      "tips": [
+        "MLTC (Managed Long-Term Care) supports nursing home alternatives",
+        "PACE programs throughout NYC, Long Island, and upstate areas",
+        "HIICAP: 1-800-701-0501"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 3914782,
+        "ma_enrollment": 2041281,
+        "ma_penetration_pct": 52.1,
+        "original_medicare": 1873501,
+        "dual_eligible": 1170948,
+        "mapd_enrollment": 1914847
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 34.1,
+        "snf_utilization_pct": 2.9
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 188,
+        "avg_monthly_premium_usd": 19.8,
+        "top_insurers": [
+          "UnitedHealth",
+          "CDPHP",
+          "Excellus BCBS"
+        ]
+      },
+      "ship_contact": {
+        "name": "New York HIICAP",
+        "phone": "1-800-701-0501",
+        "website": "www.aging.ny.gov/hiicap"
+      }
+    }
+  },
+  "NC": {
+    "name": "North Carolina",
+    "slug": "north-carolina",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "NC Medicaid covers dental for dual-eligible beneficiaries. UNC Adams School of Dentistry in Chapel Hill is one of the top dental schools in the nation.",
+      "programs": [
+        "NC Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "UNC Adams School of Dentistry"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "UNC dental school offers excellent low-cost care in Chapel Hill",
+        "NC SHIIP (1-855-408-1212) for plan guidance",
+        "Competitive MA markets in Charlotte, Raleigh, and Greensboro"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "NC Medicaid covers vision for dual-eligible members. Strong MA market in major metros.",
+      "programs": [
+        "NC Medicaid vision",
+        "Medicare Advantage vision",
+        "NC Division of Services for the Blind"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "DSB: 919-733-9700 for vision rehabilitation",
+        "Duke Eye Center and UNC Eye Clinic offer specialized care",
+        "NC SHIIP: 1-855-408-1212"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "NC Medicare Advantage plans offer hearing benefits. NC has good audiology resources in urban areas.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "NC Division of Services for the Deaf and Hard of Hearing",
+        "NC Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "DSDHH: 919-754-9333 for resources",
+        "OTC hearing aids widely available in NC",
+        "NC SHIIP: 1-855-408-1212"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. NC Medicaid covers long-term care. NC has an active Community Alternatives Program (CAP).",
+      "programs": [
+        "Medicare Part A SNF",
+        "NC Medicaid LTC",
+        "Community Alternatives Program (CAP)",
+        "NC SHIIP (1-855-408-1212)"
+      ],
+      "avgCost": "$220–$290/day semi-private",
+      "tips": [
+        "CAP/DA and CAP/C programs support home-based alternatives",
+        "Check NC nursing home ratings at Medicare Care Compare",
+        "SHIIP: 1-855-408-1212"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 2229392,
+        "ma_enrollment": 1233536,
+        "ma_penetration_pct": 55.3,
+        "original_medicare": 995856,
+        "dual_eligible": 356677,
+        "mapd_enrollment": 1155542
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 18.9,
+        "snf_utilization_pct": 3.19
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 149,
+        "avg_monthly_premium_usd": 9.6,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Blue Cross NC"
+        ]
+      },
+      "ship_contact": {
+        "name": "North Carolina SHIIP",
+        "phone": "1-855-408-1212",
+        "website": "www.ncdoi.com/shiip"
+      }
+    }
+  },
+  "ND": {
+    "name": "North Dakota",
+    "slug": "north-dakota",
+    "dental": {
+      "coverage": "Limited",
+      "description": "North Dakota Medicaid covers limited dental for dual-eligible beneficiaries. North Dakota faces dental provider shortages in rural areas.",
+      "programs": [
+        "ND Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "University of North Dakota dental hygiene program"
+      ],
+      "avgCost": "$800–$2,500/year",
+      "tips": [
+        "Community health centers provide low-cost dental in Fargo and Bismarck",
+        "ND SHIC (1-888-575-6611) for plan guidance",
+        "Mobile dental units serve rural ND"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "ND Medicaid covers vision for dual-eligible members. Limited MA plan options outside Fargo and Bismarck.",
+      "programs": [
+        "ND Medicaid vision",
+        "Medicare Advantage vision",
+        "ND Vocational Rehabilitation"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "ND VR: 701-328-8950 for vision rehabilitation",
+        "Diabetic eye exam covered by Part B",
+        "ND SHIC: 1-888-575-6611"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. ND has very limited audiology services outside major cities.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "ND School for the Deaf",
+        "ND Assistive Technology Program"
+      ],
+      "avgCost": "$1,200–$7,000 per pair",
+      "tips": [
+        "ND ATP: 701-328-8968 for assistive technology",
+        "OTC hearing aids best option in rural ND",
+        "ND SHIC: 1-888-575-6611"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. ND Medicaid covers long-term care. ND has affordable nursing home costs.",
+      "programs": [
+        "Medicare Part A SNF",
+        "ND Medicaid LTC",
+        "ND SHIC (1-888-575-6611)"
+      ],
+      "avgCost": "$200–$280/day semi-private",
+      "tips": [
+        "ND has affordable nursing home rates",
+        "Home-based HCBS waiver available",
+        "ND SHIC: 1-888-575-6611"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 147907,
+        "ma_enrollment": 50659,
+        "ma_penetration_pct": 34.3,
+        "original_medicare": 97248,
+        "dual_eligible": 15140,
+        "mapd_enrollment": 36295
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 8.4,
+        "snf_utilization_pct": 1.04
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 21,
+        "avg_monthly_premium_usd": 18.5,
+        "top_insurers": [
+          "Sanford Health",
+          "Medica",
+          "UnitedHealth"
+        ]
+      },
+      "ship_contact": {
+        "name": "North Dakota SHIC",
+        "phone": "1-888-575-6611",
+        "website": "www.nd.gov/ship"
+      }
+    }
+  },
+  "OH": {
+    "name": "Ohio",
+    "slug": "ohio",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Ohio Medicaid covers dental for dual-eligible beneficiaries. Ohio State University College of Dentistry and Case Western dental school serve the population.",
+      "programs": [
+        "Ohio Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "OSU College of Dentistry",
+        "Case Western Reserve School of Dental Medicine"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "OSU and Case Western dental schools offer quality low-cost care",
+        "Ohio OSHIIP (1-800-686-1578) for plan guidance",
+        "Competitive MA markets in Columbus, Cleveland, and Cincinnati"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Ohio Medicaid covers vision for dual-eligible members. Competitive MA market in Ohio's three major metros.",
+      "programs": [
+        "Ohio Medicaid vision",
+        "Medicare Advantage vision",
+        "Ohio Rehabilitation Services Commission"
+      ],
+      "avgCost": "$150–$350/year",
+      "tips": [
+        "RSC: 1-800-282-4536 for vision rehabilitation",
+        "Diabetic eye exam covered by Part B",
+        "Ohio OSHIIP: 1-800-686-1578"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Ohio MA plans offer hearing benefits. Ohio has good audiology resources in Columbus, Cleveland, and Cincinnati.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Ohio School for the Deaf",
+        "Ohio Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "OSD: 614-728-1481 for resources and referrals",
+        "OTC hearing aids widely available in Ohio",
+        "Ohio OSHIIP: 1-800-686-1578"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Ohio Medicaid covers long-term care. Ohio has many nursing facilities with varying quality.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Ohio Medicaid LTC",
+        "PASSPORT waiver program",
+        "Ohio OSHIIP (1-800-686-1578)"
+      ],
+      "avgCost": "$220–$290/day semi-private",
+      "tips": [
+        "PASSPORT waiver supports home-based care alternatives",
+        "Check OH nursing home ratings at Medicare Care Compare",
+        "OSHIIP: 1-800-686-1578"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 2536384,
+        "ma_enrollment": 1414094,
+        "ma_penetration_pct": 55.8,
+        "original_medicare": 1122290,
+        "dual_eligible": 411118,
+        "mapd_enrollment": 1227236
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 21.0,
+        "snf_utilization_pct": 4.94
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 162,
+        "avg_monthly_premium_usd": 8.4,
+        "top_insurers": [
+          "UnitedHealth",
+          "Medical Mutual",
+          "Humana"
+        ]
+      },
+      "ship_contact": {
+        "name": "Ohio OSHIIP",
+        "phone": "1-800-686-1578",
+        "website": "www.ohio.gov/oshiip"
+      }
+    }
+  },
+  "OK": {
+    "name": "Oklahoma",
+    "slug": "oklahoma",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Oklahoma Medicaid covers limited dental for dual-eligible beneficiaries. University of Oklahoma College of Dentistry in Oklahoma City serves the population.",
+      "programs": [
+        "Oklahoma Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "OU College of Dentistry"
+      ],
+      "avgCost": "$700–$2,500/year",
+      "tips": [
+        "OU dental school in OKC offers quality low-cost care",
+        "Oklahoma SHIP (1-800-763-2828) for plan guidance",
+        "Tribal dental programs available for eligible Native American members"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Oklahoma Medicaid covers vision for dual-eligible members. Limited MA plan options outside Oklahoma City and Tulsa.",
+      "programs": [
+        "Oklahoma Medicaid vision",
+        "Medicare Advantage vision",
+        "Oklahoma Department of Rehabilitation Services"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "DRS: 405-951-3400 for vision rehabilitation",
+        "Annual diabetic eye exam covered by Part B",
+        "Oklahoma SHIP: 1-800-763-2828"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Oklahoma has limited audiology resources outside OKC and Tulsa.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Oklahoma Department of Rehabilitation Services",
+        "Oklahoma Assistive Technology Center"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "DRS hearing programs: 405-951-3400",
+        "OATC: 405-271-3625 for assistive technology",
+        "Oklahoma SHIP: 1-800-763-2828"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Oklahoma Medicaid covers long-term care. Oklahoma has affordable nursing home costs.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Oklahoma Medicaid LTC",
+        "Oklahoma SHIP (1-800-763-2828)"
+      ],
+      "avgCost": "$180–$250/day semi-private",
+      "tips": [
+        "Oklahoma has affordable nursing home costs",
+        "HCBS waiver supports home-based alternatives",
+        "SHIP: 1-800-763-2828"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 806321,
+        "ma_enrollment": 325388,
+        "ma_penetration_pct": 40.4,
+        "original_medicare": 480933,
+        "dual_eligible": 123459,
+        "mapd_enrollment": 298809
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 20.5,
+        "snf_utilization_pct": 2.77
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 72,
+        "avg_monthly_premium_usd": 11.2,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "BCBS Oklahoma"
+        ]
+      },
+      "ship_contact": {
+        "name": "Oklahoma SHIP",
+        "phone": "1-800-763-2828",
+        "website": "www.okship.gov"
+      }
+    }
+  },
+  "OR": {
+    "name": "Oregon",
+    "slug": "oregon",
+    "dental": {
+      "coverage": "Comprehensive",
+      "description": "Oregon Health Plan (OHP) covers dental for dual-eligible beneficiaries. Oregon Health & Science University (OHSU) dental school in Portland provides excellent care.",
+      "programs": [
+        "Oregon Health Plan Dental",
+        "Medicare Advantage dental plans",
+        "OHSU School of Dentistry"
+      ],
+      "avgCost": "$200–$1,200/year",
+      "tips": [
+        "OHSU dental school in Portland offers quality low-cost care",
+        "Oregon SHIBA (1-800-722-4134) for plan guidance",
+        "Oregon has a strong commitment to oral health equity"
+      ]
+    },
+    "vision": {
+      "coverage": "Comprehensive",
+      "description": "OHP covers vision for dual-eligible members. Oregon MA plans offer competitive vision benefits.",
+      "programs": [
+        "OHP vision benefits",
+        "Medicare Advantage vision",
+        "Oregon Commission for the Blind"
+      ],
+      "avgCost": "$0 for OHP eligible; $100–$300 for others",
+      "tips": [
+        "OCB: 971-673-1588 for vision rehabilitation",
+        "OHSU Casey Eye Institute offers specialized care",
+        "Oregon SHIBA: 1-800-722-4134"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Moderate",
+      "description": "OHP covers hearing aids for dual-eligible beneficiaries. Oregon has good audiology resources in Portland and Eugene.",
+      "programs": [
+        "OHP hearing aid coverage",
+        "Medicare Advantage hearing plans",
+        "Oregon School for the Deaf",
+        "OHSU Hearing Center"
+      ],
+      "avgCost": "$0 for OHP eligible; $1,000–$6,000 for others",
+      "tips": [
+        "OHP covers hearing aids for eligible dual-eligible members",
+        "OHSU Hearing Center is a leading facility in the Pacific Northwest",
+        "Oregon SHIBA: 1-800-722-4134"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Oregon Medicaid covers long-term care. Oregon strongly emphasizes community-based alternatives to nursing homes.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Oregon Medicaid LTC",
+        "Oregon Project Independence",
+        "Oregon SHIBA (1-800-722-4134)"
+      ],
+      "avgCost": "$280–$360/day",
+      "tips": [
+        "Oregon Project Independence supports home-based care",
+        "Oregon has lower nursing home utilization due to strong HCBS programs",
+        "SHIBA: 1-800-722-4134"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 945907,
+        "ma_enrollment": 516885,
+        "ma_penetration_pct": 54.6,
+        "original_medicare": 429021,
+        "dual_eligible": 174302,
+        "mapd_enrollment": 493353
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 17.5,
+        "snf_utilization_pct": 2.05
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 74,
+        "avg_monthly_premium_usd": 8.9,
+        "top_insurers": [
+          "Kaiser Permanente",
+          "Moda Health",
+          "UnitedHealth"
+        ]
+      },
+      "ship_contact": {
+        "name": "Oregon SHIBA",
+        "phone": "1-800-722-4134",
+        "website": "www.oregonshiba.org"
+      }
+    }
+  },
+  "PA": {
+    "name": "Pennsylvania",
+    "slug": "pennsylvania",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Pennsylvania Medicaid covers dental for dual-eligible beneficiaries. Penn Dental Medicine in Philadelphia and Temple University Kornberg School of Dentistry are world-class resources.",
+      "programs": [
+        "PA Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "Penn Dental Medicine",
+        "Temple Kornberg School of Dentistry"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "Penn and Temple dental schools in Philadelphia offer excellent low-cost care",
+        "PA APPRISE (1-800-783-7067) for plan guidance",
+        "Competitive MA markets in Philadelphia and Pittsburgh"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "PA Medicaid covers vision for dual-eligible members. Competitive MA market in PA major metros.",
+      "programs": [
+        "PA Medicaid vision",
+        "Medicare Advantage vision",
+        "Pennsylvania Bureau of Blindness and Visual Services"
+      ],
+      "avgCost": "$150–$350/year",
+      "tips": [
+        "BBVS: 717-787-6176 for vision rehabilitation",
+        "Wills Eye Hospital in Philadelphia is nationally renowned",
+        "PA APPRISE: 1-800-783-7067"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "PA Medicare Advantage plans offer hearing benefits. PA has excellent audiology resources in Philadelphia and Pittsburgh.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Pennsylvania Office of Deaf and Hard of Hearing",
+        "Pennsylvania Assistive Technology Foundation"
+      ],
+      "avgCost": "$1,000–$7,000 per pair",
+      "tips": [
+        "ODHH: 717-783-4912 for resources and referrals",
+        "PATF: 1-888-744-1938 for low-interest loans for hearing aids",
+        "PA APPRISE: 1-800-783-7067"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. PA Medicaid covers long-term care. Pennsylvania has many nursing facilities and PACE programs.",
+      "programs": [
+        "Medicare Part A SNF",
+        "PA Medicaid LTC",
+        "PACE Pennsylvania (many locations)",
+        "PA APPRISE (1-800-783-7067)"
+      ],
+      "avgCost": "$290–$380/day",
+      "tips": [
+        "PACE programs in Philadelphia, Pittsburgh, and other PA cities",
+        "PA Community HealthChoices supports home-based alternatives",
+        "APPRISE: 1-800-783-7067"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 2951214,
+        "ma_enrollment": 1561375,
+        "ma_penetration_pct": 52.9,
+        "original_medicare": 1389839,
+        "dual_eligible": 479328,
+        "mapd_enrollment": 1395122
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 21.4,
+        "snf_utilization_pct": 4.44
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 176,
+        "avg_monthly_premium_usd": 10.7,
+        "top_insurers": [
+          "UPMC Health Plan",
+          "Independence Blue Cross",
+          "Highmark BCBS"
+        ]
+      },
+      "ship_contact": {
+        "name": "Pennsylvania APPRISE",
+        "phone": "1-800-783-7067",
+        "website": "www.apprisecounseling.org"
+      }
+    }
+  },
+  "RI": {
+    "name": "Rhode Island",
+    "slug": "rhode-island",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Rhode Island Medicaid covers dental for dual-eligible beneficiaries. University of Rhode Island and Brown University provide dental education and care resources.",
+      "programs": [
+        "RI Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "RI Dental Association resources"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "Community dental clinics in Providence offer low-cost care",
+        "RI SHIP (1-800-322-2880) for plan guidance",
+        "RI has small MA market — compare plans carefully"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "RI Medicaid covers vision for dual-eligible members. RI has a small but competitive MA market.",
+      "programs": [
+        "RI Medicaid vision",
+        "Medicare Advantage vision",
+        "RI Services for the Blind and Visually Impaired"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "SBVI: 401-421-7005 for vision rehabilitation",
+        "Diabetic eye exam covered by Part B",
+        "RI SHIP: 1-800-322-2880"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "RI Medicare Advantage plans offer hearing benefits. RI has limited audiology resources for such a small state.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "RI Commission on the Deaf and Hard of Hearing",
+        "RI Assistive Technology Access Partnership"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "RICDHHH: 401-222-1204 for resources",
+        "OTC hearing aids available in Providence area",
+        "RI SHIP: 1-800-322-2880"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. RI Medicaid covers long-term care. RI has high nursing home costs relative to the region.",
+      "programs": [
+        "Medicare Part A SNF",
+        "RI Medicaid LTC",
+        "PACE Rhode Island",
+        "RI SHIP (1-800-322-2880)"
+      ],
+      "avgCost": "$320–$420/day",
+      "tips": [
+        "PACE RI program available in Providence area",
+        "Home-based alternatives through HCBS waivers",
+        "RI SHIP: 1-800-322-2880"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 243313,
+        "ma_enrollment": 143776,
+        "ma_penetration_pct": 59.1,
+        "original_medicare": 99537,
+        "dual_eligible": 46687,
+        "mapd_enrollment": 139131
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 26.4,
+        "snf_utilization_pct": 4.98
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 38,
+        "avg_monthly_premium_usd": 14.3,
+        "top_insurers": [
+          "UnitedHealth",
+          "Tufts Health Plan",
+          "Anthem BCBS"
+        ]
+      },
+      "ship_contact": {
+        "name": "Rhode Island SHIP",
+        "phone": "1-800-322-2880",
+        "website": "www.riship.org"
+      }
+    }
+  },
+  "SC": {
+    "name": "South Carolina",
+    "slug": "south-carolina",
+    "dental": {
+      "coverage": "Limited",
+      "description": "South Carolina Medicaid covers limited dental for dual-eligible beneficiaries. Medical University of South Carolina (MUSC) dental program serves the population.",
+      "programs": [
+        "SC Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "MUSC James B. Edwards College of Dental Medicine"
+      ],
+      "avgCost": "$700–$2,500/year",
+      "tips": [
+        "MUSC dental school in Charleston offers quality low-cost care",
+        "SC SHIP (1-800-868-9095) for plan guidance",
+        "Competitive MA markets in Columbia and Charleston"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "SC Medicaid covers vision for dual-eligible members. MA plan options vary by county.",
+      "programs": [
+        "SC Medicaid vision",
+        "Medicare Advantage vision",
+        "SC Commission for the Blind"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "SCCB: 803-898-8731 for vision rehabilitation",
+        "Annual diabetic eye exam covered by Part B",
+        "SC SHIP: 1-800-868-9095"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. SC has limited audiology centers outside major cities.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "SC School for the Deaf and Blind",
+        "SC Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "SCSDB: 864-577-7521 for resources",
+        "SCATP: 1-800-915-4522 for assistive technology",
+        "SC SHIP: 1-800-868-9095"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. SC Medicaid covers long-term care. SC has an active HCBS waiver program.",
+      "programs": [
+        "Medicare Part A SNF",
+        "SC Medicaid LTC",
+        "Community Choices waiver",
+        "SC SHIP (1-800-868-9095)"
+      ],
+      "avgCost": "$200–$270/day semi-private",
+      "tips": [
+        "Community Choices waiver supports home-based alternatives",
+        "SC has affordable nursing home costs",
+        "SHIP: 1-800-868-9095"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1230967,
+        "ma_enrollment": 558256,
+        "ma_penetration_pct": 45.4,
+        "original_medicare": 672711,
+        "dual_eligible": 184475,
+        "mapd_enrollment": 517195
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 27.1,
+        "snf_utilization_pct": 3.21
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 103,
+        "avg_monthly_premium_usd": 9.5,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "BlueCross BlueShield SC"
+        ]
+      },
+      "ship_contact": {
+        "name": "South Carolina SHIP",
+        "phone": "1-800-868-9095",
+        "website": "www.scship.org"
+      }
+    }
+  },
+  "SD": {
+    "name": "South Dakota",
+    "slug": "south-dakota",
+    "dental": {
+      "coverage": "Limited",
+      "description": "South Dakota Medicaid covers limited dental for dual-eligible beneficiaries. University of South Dakota dental hygiene program in Vermillion serves the population.",
+      "programs": [
+        "SD Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "USD Dental Hygiene Clinic"
+      ],
+      "avgCost": "$800–$2,500/year",
+      "tips": [
+        "Community health centers in Sioux Falls and Rapid City offer sliding-scale dental",
+        "SD SHIINE (1-888-606-4177) for plan guidance",
+        "Limited MA plan options outside major cities"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "SD Medicaid covers vision for dual-eligible members. Limited MA plan competition in most areas.",
+      "programs": [
+        "SD Medicaid vision",
+        "Medicare Advantage vision",
+        "SD Division of Rehabilitation Services"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "DRS: 605-773-3195 for vision rehabilitation",
+        "Diabetic eye exam covered by Part B",
+        "SD SHIINE: 1-888-606-4177"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. SD has very limited audiology services outside Sioux Falls.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "SD School for the Deaf",
+        "South Dakota Assistive Technology Program"
+      ],
+      "avgCost": "$1,200–$7,000 per pair",
+      "tips": [
+        "SDATP: 605-367-5194 for assistive technology",
+        "OTC hearing aids best option in rural SD",
+        "SD SHIINE: 1-888-606-4177"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. SD Medicaid covers long-term care. SD has affordable nursing home costs.",
+      "programs": [
+        "Medicare Part A SNF",
+        "SD Medicaid LTC",
+        "SD SHIINE (1-888-606-4177)"
+      ],
+      "avgCost": "$190–$260/day semi-private",
+      "tips": [
+        "SD has affordable nursing home rates",
+        "HCBS waiver supports home-based alternatives",
+        "SHIINE: 1-888-606-4177"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 198336,
+        "ma_enrollment": 71338,
+        "ma_penetration_pct": 36.0,
+        "original_medicare": 126999,
+        "dual_eligible": 20314,
+        "mapd_enrollment": 38253
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 10.4,
+        "snf_utilization_pct": 1.29
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 24,
+        "avg_monthly_premium_usd": 20.6,
+        "top_insurers": [
+          "Sanford Health",
+          "Wellmark BCBS",
+          "Avera Health"
+        ]
+      },
+      "ship_contact": {
+        "name": "South Dakota SHIINE",
+        "phone": "1-888-606-4177",
+        "website": "www.shiine.net"
+      }
+    }
+  },
+  "TN": {
+    "name": "Tennessee",
+    "slug": "tennessee",
+    "dental": {
+      "coverage": "Limited",
+      "description": "TennCare covers limited dental for dual-eligible beneficiaries. Meharry Medical College School of Dentistry in Nashville serves underserved populations.",
+      "programs": [
+        "TennCare Dental",
+        "Medicare Advantage dental plans",
+        "Meharry School of Dentistry",
+        "University of Tennessee College of Dentistry (Memphis)"
+      ],
+      "avgCost": "$700–$2,500/year",
+      "tips": [
+        "Meharry dental school in Nashville and UT in Memphis offer quality low-cost care",
+        "Tennessee SHIP (1-877-801-0044) for plan guidance",
+        "Competitive MA markets in Nashville, Memphis, and Knoxville"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "TennCare covers vision for dual-eligible members. MA plan options vary significantly by county.",
+      "programs": [
+        "TennCare vision benefits",
+        "Medicare Advantage vision",
+        "Tennessee Division of Rehabilitation Services"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "DRS: 615-313-4700 for vision rehabilitation",
+        "Annual diabetic eye exam covered by Part B",
+        "Tennessee SHIP: 1-877-801-0044"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. TN has limited audiology resources outside major cities.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Tennessee Rehabilitation Center",
+        "Tennessee Technology Access Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "TTAP: 615-532-6530 for assistive technology",
+        "OTC hearing aids available in Nashville, Memphis, and Knoxville",
+        "Tennessee SHIP: 1-877-801-0044"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. TennCare covers long-term nursing home care. Tennessee has active CHOICES program for home and community-based care.",
+      "programs": [
+        "Medicare Part A SNF",
+        "TennCare LTC (CHOICES program)",
+        "Tennessee SHIP (1-877-801-0044)"
+      ],
+      "avgCost": "$200–$265/day semi-private",
+      "tips": [
+        "CHOICES program is Tennessee's HCBS waiver for home-based care",
+        "TN has affordable nursing home costs",
+        "SHIP: 1-877-801-0044"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1483324,
+        "ma_enrollment": 776961,
+        "ma_penetration_pct": 52.4,
+        "original_medicare": 706363,
+        "dual_eligible": 248652,
+        "mapd_enrollment": 739823
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 29.4,
+        "snf_utilization_pct": 3.7
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 122,
+        "avg_monthly_premium_usd": 7.6,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Cigna"
+        ]
+      },
+      "ship_contact": {
+        "name": "Tennessee SHIP",
+        "phone": "1-877-801-0044",
+        "website": "www.tnship.net"
+      }
+    }
+  },
+  "TX": {
+    "name": "Texas",
+    "slug": "texas",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Texas Medicaid covers limited dental for dual-eligible beneficiaries. Texas has multiple dental schools including UT Health San Antonio and Texas A&M College of Dentistry.",
+      "programs": [
+        "Texas Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "UT Health San Antonio Dental School",
+        "Texas A&M College of Dentistry (Dallas)"
+      ],
+      "avgCost": "$700–$2,500/year",
+      "tips": [
+        "UT and Texas A&M dental schools offer quality low-cost care",
+        "Texas SHIP (1-800-252-9240) for plan guidance",
+        "Competitive MA markets in Houston, Dallas, Austin, and San Antonio"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Texas Medicaid covers vision for dual-eligible members. Texas has a large but varied MA market across its many regions.",
+      "programs": [
+        "Texas Medicaid vision",
+        "Medicare Advantage vision",
+        "Texas Division for Blind Services"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "DBS: 1-800-628-5115 for vision rehabilitation",
+        "Annual diabetic eye exam very important given high TX diabetes rates",
+        "Texas SHIP: 1-800-252-9240"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Texas has good audiology resources in major cities but rural access is limited.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Texas Commission for the Deaf and Hard of Hearing",
+        "Texas Assistive Technology Network"
+      ],
+      "avgCost": "$1,000–$7,000 per pair",
+      "tips": [
+        "TCDHH: 512-407-3251 for resources",
+        "TATN: 1-866-372-0022 for assistive technology",
+        "Texas SHIP: 1-800-252-9240"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Texas Medicaid covers long-term care. Texas has a very large nursing home industry with quality varying widely.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Texas Medicaid LTC",
+        "PACE Texas (Dallas, San Antonio, El Paso)",
+        "Texas SHIP (1-800-252-9240)"
+      ],
+      "avgCost": "$200–$270/day semi-private",
+      "tips": [
+        "PACE programs in major Texas cities",
+        "Check TX nursing home ratings at Medicare Care Compare",
+        "SHIP: 1-800-252-9240"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 4773896,
+        "ma_enrollment": 2550003,
+        "ma_penetration_pct": 53.4,
+        "original_medicare": 2223892,
+        "dual_eligible": 706118,
+        "mapd_enrollment": 2158299
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 23.7,
+        "snf_utilization_pct": 3.28
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 228,
+        "avg_monthly_premium_usd": 9.8,
+        "top_insurers": [
+          "UnitedHealth",
+          "Humana",
+          "Centene/WellCare"
+        ]
+      },
+      "ship_contact": {
+        "name": "Texas SHIP",
+        "phone": "1-800-252-9240",
+        "website": "www.txship.gov"
+      }
+    }
+  },
+  "UT": {
+    "name": "Utah",
+    "slug": "utah",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Utah Medicaid covers limited dental for dual-eligible beneficiaries. Roseman University and University of Utah provide dental care resources.",
+      "programs": [
+        "Utah Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "Roseman University College of Dental Medicine",
+        "University of Utah dental programs"
+      ],
+      "avgCost": "$700–$2,200/year",
+      "tips": [
+        "Roseman dental school in South Jordan offers quality low-cost care",
+        "Utah SHIP (1-800-541-7735) for plan guidance",
+        "Salt Lake City has the most competitive MA market in Utah"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Utah Medicaid covers vision for dual-eligible members. Limited MA plan competition outside Salt Lake City area.",
+      "programs": [
+        "Utah Medicaid vision",
+        "Medicare Advantage vision",
+        "Utah Division of Services for People with Disabilities"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "Annual diabetic eye exam covered by Part B",
+        "Moran Eye Center at University of Utah offers specialized care",
+        "Utah SHIP: 1-800-541-7735"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Utah has audiology resources in Salt Lake City and Provo.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Utah Schools for the Deaf and Blind",
+        "Utah Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "UATP: 435-797-3811 for assistive technology",
+        "OTC hearing aids available in Salt Lake City area",
+        "Utah SHIP: 1-800-541-7735"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Utah Medicaid covers long-term care. Utah has an aging population and growing nursing home demand.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Utah Medicaid LTC",
+        "Aging Waiver Program",
+        "Utah SHIP (1-800-541-7735)"
+      ],
+      "avgCost": "$210–$290/day semi-private",
+      "tips": [
+        "Utah's Aging Waiver supports home-based alternatives",
+        "Growing senior population increasing demand for nursing homes",
+        "SHIP: 1-800-541-7735"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 465902,
+        "ma_enrollment": 241382,
+        "ma_penetration_pct": 51.8,
+        "original_medicare": 224520,
+        "dual_eligible": 42706,
+        "mapd_enrollment": 226858
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 11.5,
+        "snf_utilization_pct": 2.84
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 58,
+        "avg_monthly_premium_usd": 10.2,
+        "top_insurers": [
+          "SelectHealth",
+          "UnitedHealth",
+          "Molina Healthcare"
+        ]
+      },
+      "ship_contact": {
+        "name": "Utah SHIP",
+        "phone": "1-800-541-7735",
+        "website": "www.ship.utah.gov"
+      }
+    }
+  },
+  "VT": {
+    "name": "Vermont",
+    "slug": "vermont",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Vermont Medicaid (Green Mountain Care) covers dental for dual-eligible beneficiaries. Vermont has good community dental programs for such a small state.",
+      "programs": [
+        "Green Mountain Care Dental",
+        "Medicare Advantage dental plans",
+        "Community Health Centers of Burlington"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "Community health centers statewide offer sliding-scale dental",
+        "Vermont SHIP (1-800-642-5119) for plan guidance",
+        "Very limited MA plan options in Vermont — compare carefully"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Green Mountain Care covers vision for dual-eligible members. Very limited MA plan competition in Vermont.",
+      "programs": [
+        "Green Mountain Care vision",
+        "Medicare Advantage vision",
+        "Vermont Division for the Blind and Visually Impaired"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "DBVI: 1-888-405-5005 for vision rehabilitation",
+        "Diabetic eye exam covered by Part B",
+        "Vermont SHIP: 1-800-642-5119"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Vermont Medicare Advantage plans offer hearing benefits. Vermont has limited audiology services outside Burlington.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Vermont Center for the Deaf and Hard of Hearing",
+        "Vermont Assistive Technology Program"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "VCDHH: 802-241-1000 for resources",
+        "Vermont ATP: 1-800-750-6355 for assistive technology",
+        "Vermont SHIP: 1-800-642-5119"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Vermont Medicaid covers long-term care. Vermont strongly emphasizes home-based care alternatives.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Vermont Medicaid LTC",
+        "DAIL home-based programs",
+        "Vermont SHIP (1-800-642-5119)"
+      ],
+      "avgCost": "$310–$400/day",
+      "tips": [
+        "Vermont prioritizes home-based care through DAIL programs",
+        "Vermont has high nursing home costs — plan ahead",
+        "SHIP: 1-800-642-5119"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 165225,
+        "ma_enrollment": 53627,
+        "ma_penetration_pct": 32.5,
+        "original_medicare": 111598,
+        "dual_eligible": 27940,
+        "mapd_enrollment": 50723
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 15.0,
+        "snf_utilization_pct": 2.29
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 22,
+        "avg_monthly_premium_usd": 24.5,
+        "top_insurers": [
+          "UVM Health Advantage",
+          "Cigna",
+          "UnitedHealth"
+        ]
+      },
+      "ship_contact": {
+        "name": "Vermont SHIP",
+        "phone": "1-800-642-5119",
+        "website": "www.vtship.org"
+      }
+    }
+  },
+  "VA": {
+    "name": "Virginia",
+    "slug": "virginia",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Virginia Medicaid covers dental for dual-eligible beneficiaries. Virginia Commonwealth University and University of Virginia dental programs serve the population.",
+      "programs": [
+        "Virginia Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "VCU School of Dentistry (Richmond)",
+        "VCOM dental programs"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "VCU dental school in Richmond offers quality low-cost care",
+        "Virginia SHIP (1-800-552-3402) for plan guidance",
+        "Competitive MA markets in Northern VA (DC suburbs), Richmond, and Virginia Beach"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Virginia Medicaid covers vision for dual-eligible members. Northern VA has highly competitive MA market.",
+      "programs": [
+        "Virginia Medicaid vision",
+        "Medicare Advantage vision",
+        "Virginia Department for the Blind and Vision Impaired"
+      ],
+      "avgCost": "$150–$400/year",
+      "tips": [
+        "DBVI: 804-371-3140 for vision rehabilitation",
+        "UVA Eye Center offers specialized care",
+        "Virginia SHIP: 1-800-552-3402"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Virginia MA plans offer hearing benefits. Virginia has good audiology resources in Northern VA and Richmond metro areas.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Virginia Department for the Deaf and Hard of Hearing",
+        "Virginia Assistive Technology System"
+      ],
+      "avgCost": "$1,000–$7,000 per pair",
+      "tips": [
+        "VDDHH: 1-800-552-7917 for resources",
+        "VATS: 1-800-552-5019 for assistive technology",
+        "Virginia SHIP: 1-800-552-3402"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Virginia Medicaid covers long-term care. Virginia has many nursing facilities and PACE programs.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Virginia Medicaid LTC",
+        "PACE Virginia (multiple sites)",
+        "Virginia SHIP (1-800-552-3402)"
+      ],
+      "avgCost": "$250–$340/day semi-private",
+      "tips": [
+        "PACE programs in Richmond, Roanoke, and Northern VA",
+        "Commonwealth Coordinated Care Plus supports home-based alternatives",
+        "SHIP: 1-800-552-3402"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1688634,
+        "ma_enrollment": 643577,
+        "ma_penetration_pct": 38.1,
+        "original_medicare": 1045057,
+        "dual_eligible": 218692,
+        "mapd_enrollment": 583334
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 22.7,
+        "snf_utilization_pct": 3.53
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 112,
+        "avg_monthly_premium_usd": 11.4,
+        "top_insurers": [
+          "UnitedHealth",
+          "Anthem HealthKeepers",
+          "Aetna"
+        ]
+      },
+      "ship_contact": {
+        "name": "Virginia SHIP",
+        "phone": "1-800-552-3402",
+        "website": "www.vaship.org"
+      }
+    }
+  },
+  "WA": {
+    "name": "Washington",
+    "slug": "washington",
+    "dental": {
+      "coverage": "Comprehensive",
+      "description": "Washington Apple Health (Medicaid) covers comprehensive dental for dual-eligible beneficiaries. University of Washington School of Dentistry in Seattle is a nationally top-ranked program.",
+      "programs": [
+        "Apple Health Dental",
+        "Medicare Advantage dental plans",
+        "UW School of Dentistry",
+        "Neighborcare Health dental clinics"
+      ],
+      "avgCost": "$0–$300/year for Apple Health eligible; $400–$1,500 for others",
+      "tips": [
+        "UW dental school offers excellent care at reduced rates in Seattle",
+        "Washington SHIBA (1-800-562-6900) for plan guidance",
+        "Apple Health covers cleanings, fillings, and more for eligible enrollees"
+      ]
+    },
+    "vision": {
+      "coverage": "Comprehensive",
+      "description": "Apple Health covers vision for dual-eligible members. Competitive MA market in Seattle metro and Spokane.",
+      "programs": [
+        "Apple Health vision",
+        "Medicare Advantage vision",
+        "Washington State Department of Services for the Blind"
+      ],
+      "avgCost": "$0 for Apple Health eligible; $100–$300 for others",
+      "tips": [
+        "DSB: 1-800-552-7103 for vision rehabilitation",
+        "UW Medicine Eye Institute offers specialized care",
+        "Washington SHIBA: 1-800-562-6900"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Moderate",
+      "description": "Apple Health covers hearing aids for dual-eligible beneficiaries. Washington has excellent audiology resources in Seattle.",
+      "programs": [
+        "Apple Health hearing aid coverage",
+        "Medicare Advantage hearing plans",
+        "Washington School for the Deaf",
+        "UW Audiology Clinic"
+      ],
+      "avgCost": "$0 for Apple Health eligible; $1,000–$6,500 for others",
+      "tips": [
+        "Apple Health covers hearing aids for eligible dual enrollees",
+        "UW Audiology Clinic is a regional leader",
+        "Washington SHIBA: 1-800-562-6900"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Comprehensive",
+      "description": "Apple Health covers nursing home care for eligible seniors. Washington has strong PACE programs and emphasizes home and community-based care.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Apple Health LTC",
+        "PACE Washington (several sites)",
+        "Washington SHIBA (1-800-562-6900)"
+      ],
+      "avgCost": "$300–$400/day",
+      "tips": [
+        "PACE programs in Seattle, Spokane, and Tacoma areas",
+        "Community First Choice program supports home-based care",
+        "SHIBA: 1-800-562-6900"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1524231,
+        "ma_enrollment": 741828,
+        "ma_penetration_pct": 48.7,
+        "original_medicare": 782403,
+        "dual_eligible": 223825,
+        "mapd_enrollment": 681725
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 19.0,
+        "snf_utilization_pct": 2.02
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 103,
+        "avg_monthly_premium_usd": 10.0,
+        "top_insurers": [
+          "Kaiser Permanente",
+          "Regence BCBS",
+          "UnitedHealth"
+        ]
+      },
+      "ship_contact": {
+        "name": "Washington SHIBA",
+        "phone": "1-800-562-6900",
+        "website": "www.wahealthplanfinder.org"
+      }
+    }
+  },
+  "WV": {
+    "name": "West Virginia",
+    "slug": "west-virginia",
+    "dental": {
+      "coverage": "Limited",
+      "description": "West Virginia Medicaid covers limited dental for dual-eligible beneficiaries. WVU School of Dentistry in Morgantown serves the population. Rural access remains a major challenge.",
+      "programs": [
+        "WV Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "WVU School of Dentistry"
+      ],
+      "avgCost": "$800–$2,800/year",
+      "tips": [
+        "WVU dental school in Morgantown offers quality low-cost care",
+        "WV SHIP (1-877-987-4463) for plan guidance",
+        "Remote Area Medical clinics periodically offer free dental in WV"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "WV Medicaid covers vision for dual-eligible members. Limited MA plan options in rural areas.",
+      "programs": [
+        "WV Medicaid vision",
+        "Medicare Advantage vision",
+        "WV Division of Rehabilitation Services"
+      ],
+      "avgCost": "$200–$450/year",
+      "tips": [
+        "DRS: 304-766-4601 for vision rehabilitation",
+        "Annual diabetic eye exam covered by Part B",
+        "WV SHIP: 1-877-987-4463"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. WV has limited audiology resources outside Charleston and Morgantown.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "WVU Center for Excellence in Disabilities",
+        "WV Assistive Technology System"
+      ],
+      "avgCost": "$1,000–$7,000 per pair",
+      "tips": [
+        "WVATS: 1-800-841-8436 for assistive technology",
+        "OTC hearing aids available in Charleston and Huntington",
+        "WV SHIP: 1-877-987-4463"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. WV Medicaid covers long-term care. WV has affordable nursing home costs and active HCBS waiver programs.",
+      "programs": [
+        "Medicare Part A SNF",
+        "WV Medicaid LTC",
+        "Aged and Disabled Waiver",
+        "WV SHIP (1-877-987-4463)"
+      ],
+      "avgCost": "$180–$250/day semi-private",
+      "tips": [
+        "WV has affordable nursing home costs",
+        "Aged and Disabled Waiver supports home-based care",
+        "SHIP: 1-877-987-4463"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 453288,
+        "ma_enrollment": 243208,
+        "ma_penetration_pct": 53.7,
+        "original_medicare": 210080,
+        "dual_eligible": 84935,
+        "mapd_enrollment": 210152
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 19.6,
+        "snf_utilization_pct": 3.26
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 54,
+        "avg_monthly_premium_usd": 12.8,
+        "top_insurers": [
+          "UnitedHealth",
+          "Highmark BCBS WV",
+          "Aetna"
+        ]
+      },
+      "ship_contact": {
+        "name": "West Virginia SHIP",
+        "phone": "1-877-987-4463",
+        "website": "www.wvship.org"
+      }
+    }
+  },
+  "WI": {
+    "name": "Wisconsin",
+    "slug": "wisconsin",
+    "dental": {
+      "coverage": "Moderate",
+      "description": "Wisconsin Medicaid covers dental for dual-eligible beneficiaries. Marquette University School of Dentistry in Milwaukee is a top regional dental school.",
+      "programs": [
+        "Wisconsin Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "Marquette University School of Dentistry"
+      ],
+      "avgCost": "$400–$1,800/year",
+      "tips": [
+        "Marquette dental school in Milwaukee offers quality low-cost care",
+        "Wisconsin SHIP (1-800-242-1060) for plan guidance",
+        "Competitive MA markets in Milwaukee and Madison"
+      ]
+    },
+    "vision": {
+      "coverage": "Moderate",
+      "description": "Wisconsin Medicaid covers vision for dual-eligible members. Competitive MA market in Milwaukee and Madison.",
+      "programs": [
+        "Wisconsin Medicaid vision",
+        "Medicare Advantage vision",
+        "Wisconsin Council of the Blind and Visually Impaired"
+      ],
+      "avgCost": "$150–$350/year",
+      "tips": [
+        "WCBVI: 608-255-1166 for vision resources",
+        "University of Wisconsin Eye Clinic offers specialized care",
+        "Wisconsin SHIP: 1-800-242-1060"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Limited",
+      "description": "Wisconsin MA plans offer hearing benefits. Wisconsin has good audiology resources in Milwaukee and Madison.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Wisconsin Association of the Deaf",
+        "Wisconsin Assistive Technology Initiative"
+      ],
+      "avgCost": "$1,000–$6,500 per pair",
+      "tips": [
+        "WATI: 800-991-8731 for assistive technology",
+        "OTC hearing aids available statewide",
+        "Wisconsin SHIP: 1-800-242-1060"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Wisconsin Medicaid covers long-term care. Wisconsin has strong PACE and IRIS programs for home-based care.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Wisconsin Medicaid LTC",
+        "PACE Wisconsin (Milwaukee, Madison)",
+        "IRIS self-directed care",
+        "Wisconsin SHIP (1-800-242-1060)"
+      ],
+      "avgCost": "$240–$320/day semi-private",
+      "tips": [
+        "IRIS program allows self-directed home-based care",
+        "PACE programs in Milwaukee and Madison areas",
+        "Wisconsin SHIP: 1-800-242-1060"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 1316127,
+        "ma_enrollment": 749027,
+        "ma_penetration_pct": 56.9,
+        "original_medicare": 567100,
+        "dual_eligible": 180950,
+        "mapd_enrollment": 627910
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 13.6,
+        "snf_utilization_pct": 3.17
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 89,
+        "avg_monthly_premium_usd": 12.9,
+        "top_insurers": [
+          "Common Ground Healthcare",
+          "UnitedHealth",
+          "Anthem BCBS"
+        ]
+      },
+      "ship_contact": {
+        "name": "Wisconsin SHIP",
+        "phone": "1-800-242-1060",
+        "website": "www.wiship.org"
+      }
+    }
+  },
+  "WY": {
+    "name": "Wyoming",
+    "slug": "wyoming",
+    "dental": {
+      "coverage": "Limited",
+      "description": "Wyoming Medicaid covers limited dental for dual-eligible beneficiaries. Wyoming has significant dental provider shortages across the state.",
+      "programs": [
+        "Wyoming Medicaid Dental",
+        "Medicare Advantage dental plans",
+        "University of Wyoming dental hygiene program"
+      ],
+      "avgCost": "$900–$3,000/year",
+      "tips": [
+        "Community health centers in Cheyenne and Casper offer sliding-scale dental",
+        "Wyoming SHIFA (1-800-856-4398) for plan guidance",
+        "Very limited MA plan options in Wyoming — compare carefully"
+      ]
+    },
+    "vision": {
+      "coverage": "Limited",
+      "description": "Wyoming Medicaid covers vision for dual-eligible members. Very limited MA plan competition in Wyoming.",
+      "programs": [
+        "Wyoming Medicaid vision",
+        "Medicare Advantage vision",
+        "Wyoming Services for People with Disabilities"
+      ],
+      "avgCost": "$200–$500/year",
+      "tips": [
+        "Annual diabetic eye exam covered by Part B",
+        "Telehealth vision screenings expanding in rural Wyoming",
+        "Wyoming SHIFA: 1-800-856-4398"
+      ]
+    },
+    "hearingAids": {
+      "coverage": "Not Covered",
+      "description": "Medicare does not cover hearing aids. Wyoming has very limited audiology services with few providers statewide.",
+      "programs": [
+        "Medicare Advantage hearing plans",
+        "Wyoming Department of Vocational Rehabilitation",
+        "Wyoming Assistive Technology Resources"
+      ],
+      "avgCost": "$1,200–$7,500 per pair",
+      "tips": [
+        "DVR: 307-777-7389 for vocational rehabilitation services",
+        "OTC hearing aids are the most accessible option in rural Wyoming",
+        "Wyoming SHIFA: 1-800-856-4398"
+      ]
+    },
+    "nursingHome": {
+      "coverage": "Partial",
+      "description": "Medicare Part A covers SNF. Wyoming Medicaid covers long-term care. Wyoming has very few nursing home facilities given its sparse population.",
+      "programs": [
+        "Medicare Part A SNF",
+        "Wyoming Medicaid LTC",
+        "Wyoming SHIFA (1-800-856-4398)"
+      ],
+      "avgCost": "$220–$320/day semi-private",
+      "tips": [
+        "Wyoming has few nursing homes — plan early for placement",
+        "Home-based HCBS waiver available as alternative",
+        "SHIFA: 1-800-856-4398"
+      ]
+    },
+    "cms_data": {
+      "data_sources": [
+        "CMS Medicare Monthly Enrollment Annual 2024",
+        "CMS Medicare Advantage Geographic Variation 2021",
+        "CMS Medicare Advantage Landscape 2025 (plan counts & premiums)"
+      ],
+      "enrollment_2024": {
+        "total_beneficiaries": 127445,
+        "ma_enrollment": 22874,
+        "ma_penetration_pct": 17.9,
+        "original_medicare": 104571,
+        "dual_eligible": 12254,
+        "mapd_enrollment": 19251
+      },
+      "utilization_2021": {
+        "dual_pct_of_ma": 8.0,
+        "snf_utilization_pct": 2.59
+      },
+      "plan_landscape_2025": {
+        "total_plan_count": 14,
+        "avg_monthly_premium_usd": 30.2,
+        "top_insurers": [
+          "UnitedHealth",
+          "Cigna",
+          "Aetna"
+        ]
+      },
+      "ship_contact": {
+        "name": "Wyoming SHIFA",
+        "phone": "1-800-856-4398",
+        "website": "www.wyomingshifa.com"
+      }
+    }
+  }
+}

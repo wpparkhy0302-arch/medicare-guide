@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import statesData from '../data/states.json';
+
+const states = Object.entries(statesData)
+  .map(([abbr, data]) => ({ abbr, name: data.name, slug: data.slug }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+
+const topics = [
+  { id: 'dental',      label: 'Dental',      icon: '🦷' },
+  { id: 'vision',      label: 'Vision',      icon: '👁️' },
+  { id: 'hearing-aids',label: 'Hearing Aids', icon: '👂' },
+  { id: 'nursing-home',label: 'Nursing Home', icon: '🏥' },
+];
+---
+<BaseLayout title="All Medicare Guides by State — US Medicare Guide" description="Browse all 50 state Medicare guides covering dental, vision, hearing aids, and nursing home coverage.">
+  <div class="page-hero">
+    <div class="container">
+      <h1>All Medicare Guides</h1>
+      <p>Browse dental, vision, hearing aid, and nursing home coverage guides for all 50 US states.</p>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="container">
+      <div class="topic-chips">
+        {topics.map(t => (
+          <span class="chip">{t.icon} {t.label}</span>
+        ))}
+      </div>
+
+      <div class="states-table">
+        {states.map(s => (
+          <a class="state-row" href={`/states/${s.slug}`}>
+            <span class="state-abbr">{s.abbr}</span>
+            <span class="state-name">{s.name}</span>
+            <span class="state-links">
+              {topics.map(t => (
+                <span class="topic-tag">{t.icon}</span>
+              ))}
+            </span>
+            <span class="arrow">→</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #0f3578 0%, #2563eb 100%);
+    color: white;
+    padding: 2.5rem 1rem;
+  }
+  .page-hero h1 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 0.5rem; }
+  .page-hero p { opacity: 0.88; font-size: 1rem; }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 1rem; }
+  .page-body { padding: 2rem 1rem; }
+
+  .topic-chips { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; }
+  .chip { padding: 0.35rem 0.85rem; background: #eff6ff; border: 1.5px solid #bfdbfe; border-radius: 20px; font-size: 0.82rem; color: #1e40af; font-weight: 600; }
+
+  .states-table { display: flex; flex-direction: column; gap: 0.5rem; }
+  .state-row {
+    display: grid;
+    grid-template-columns: 48px 1fr auto auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .state-row:hover {
+    background: #eff6ff;
+    border-color: #2563eb;
+    transform: translateX(2px);
+    text-decoration: none;
+  }
+  .state-abbr { font-weight: 700; font-size: 0.9rem; color: #2563eb; }
+  .state-name { font-size: 0.9rem; color: #1e293b; font-weight: 500; }
+  .state-links { display: flex; gap: 0.4rem; font-size: 1rem; }
+  .topic-tag { opacity: 0.6; }
+  .state-row:hover .topic-tag { opacity: 1; }
+  .arrow { color: #94a3b8; font-size: 1rem; transition: color 0.15s; }
+  .state-row:hover .arrow { color: #2563eb; }
+</style>

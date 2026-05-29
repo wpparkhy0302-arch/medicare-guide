@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-ChildItem \"C:\\\\Users\\\\Won\\\\Desktop\\\\medicare-guide\" -Recurse -Force | Select-Object FullName | Where-Object { $_.FullName -notmatch \"node_modules\" })",
+      "WebSearch",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:simplemaps.com)",
+      "WebFetch(domain:gist.githubusercontent.com)",
+      "WebFetch(domain:data.cms.gov)",
+      "Bash(curl -s \"https://data.cms.gov/data-api/v1/dataset/8e989bc0-2260-49a7-8a50-5f37e7f2f7e0/data?size=5\")",
+      "Bash(python3 -c ' *)",
+      "Bash(curl -s \"https://data.cms.gov/data-api/v1/dataset/8e989bc0-2260-49a7-8a50-5f37e7f2f7e0/data-viewer\" -o -)",
+      "Bash(curl -s \"https://data.cms.gov/data-api/v1/dataset/24fe2a9a-4144-46b2-85bb-0a6a51ae0afd/data?size=3\")",
+      "Bash(curl -s \"https://data.cms.gov/data.json\")",
+      "Bash(curl -s \"https://data.cms.gov/data-api/v1/dataset/8e989bc0-2260-49a7-9c6d-8e9e10af7cea/data?size=5\")",
+      "Bash(curl -s \"https://data.cms.gov/data-api/v1/dataset/d7fabe1e-d19b-4333-9eff-e80e0643f2fd/data?size=3\")",
+      "Bash(curl -s \"https://data.cms.gov/data-api/v1/dataset/d7fabe1e-d19b-4333-9eff-e80e0643f2fd/data?filter[YEAR]=2024&filter[MONTH]=12&size=3\")",
+      "Bash(curl -s \"https://data.cms.gov/data-api/v1/dataset/d7fabe1e-d19b-4333-9eff-e80e0643f2fd/data?filter%5BYEAR%5D=2024&filter%5BMONTH%5D=Year&filter%5BBENE_GEO_LVL%5D=State&size=60\")",
+      "Bash(curl -sL \"https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data/monthly-enrollment-plan\")",
+      "Bash(curl -s \"https://data.cms.gov/data-api/v1/dataset/a0c2e927-bf56-4d1d-9c12-2b52bdb63a38/data?size=3\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(list\\(d[0].keys\\(\\)\\) if d else 'empty'\\)\")",
+      "Bash(curl -s \"https://api.coverage.cms.gov/v2025/fhir/InsurancePlan?type=MA&_summary=count\")",
+      "Bash(curl -s \"https://data.cms.gov/data-api/v1/dataset/8e989bc0-2260-49a7-9c6d-8e9e10af7cea/data?size=5&filter%5BYEAR%5D=2021\")",
+      "Bash(curl -s \"https://data.cms.gov/data-api/v1/dataset/8e989bc0-2260-49a7-9c6d-8e9e10af7cea/data?size=3\")",
+      "Bash(python3 merge_cms.py)",
+      "Bash(gh auth *)",
+      "PowerShell(gh auth *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

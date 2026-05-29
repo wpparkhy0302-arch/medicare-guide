@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="About — US Medicare Guide" description="Learn about US Medicare Guide, our mission, and how we help Americans navigate Medicare coverage options.">
+  <div class="page-hero">
+    <div class="container">
+      <h1>About US Medicare Guide</h1>
+      <p>Helping Americans navigate Medicare dental, vision, hearing, and nursing home coverage — state by state.</p>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="container prose">
+      <h2>Our Mission</h2>
+      <p>US Medicare Guide is an independent, informational resource dedicated to helping Medicare beneficiaries and their families understand what coverage is available in their state. Navigating Medicare's dental, vision, hearing aid, and nursing home benefits can be confusing — our goal is to make that information clear, accessible, and actionable.</p>
+
+      <h2>What We Cover</h2>
+      <p>Original Medicare (Parts A &amp; B) was designed primarily for medical and hospital care. It leaves significant gaps in everyday health needs:</p>
+      <ul>
+        <li><strong>Dental</strong> — routine cleanings, fillings, extractions, and dentures are generally not covered by Original Medicare.</li>
+        <li><strong>Vision</strong> — routine eye exams and prescription eyeglasses are excluded from Original Medicare.</li>
+        <li><strong>Hearing Aids</strong> — hearing aids and fitting exams are not covered by Original Medicare.</li>
+        <li><strong>Nursing Home Care</strong> — Medicare Part A covers skilled nursing facility care short-term; long-term custodial care requires Medicaid.</li>
+      </ul>
+      <p>State Medicaid programs, Medicare Advantage plans, and community resources vary enormously. We research and present this information for all 50 states in one place.</p>
+
+      <h2>Disclaimer</h2>
+      <p>US Medicare Guide is not affiliated with the US government, the Centers for Medicare &amp; Medicaid Services (CMS), or any insurance company. The information provided is for general educational purposes only and should not be considered legal, financial, or medical advice. Always verify coverage details with <a href="https://www.medicare.gov" target="_blank" rel="noopener">Medicare.gov</a> or a licensed SHIP counselor before making enrollment decisions.</p>
+
+      <h2>Contact Us</h2>
+      <p>Have a question, correction, or suggestion? Visit our <a href="/contact">Contact page</a>.</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #0f3578 0%, #2563eb 100%);
+    color: white;
+    padding: 2.5rem 1rem;
+  }
+  .page-hero h1 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 0.5rem; }
+  .page-hero p { opacity: 0.88; font-size: 1rem; }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 1rem; }
+  .page-body { padding: 2.5rem 1rem; }
+  .prose h2 { font-size: 1.2rem; font-weight: 700; color: #1a4fa0; margin: 1.75rem 0 0.6rem; }
+  .prose p { font-size: 0.93rem; color: #334155; line-height: 1.75; margin-bottom: 0.75rem; }
+  .prose ul { padding-left: 1.4rem; display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.75rem; }
+  .prose ul li { font-size: 0.93rem; color: #334155; line-height: 1.6; }
+  .prose a { color: #2563eb; }
+</style>

@@ -1,0 +1,336 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import USMap from '../components/USMap.astro';
+import AdSlot from '../components/AdSlot.astro';
+import statesData from '../data/states.json';
+
+const states = Object.entries(statesData)
+  .map(([abbr, data]) => ({ abbr, name: data.name, slug: data.slug }))
+  .sort((a, b) => a.name.localeCompare(b.name));
+---
+<BaseLayout title="US Medicare Guide — Find Coverage by State">
+  <div class="hero">
+    <div class="hero-inner">
+      <h1>Medicare Coverage by State</h1>
+      <p class="hero-sub">Click your state to find dental, vision, hearing aid, and nursing home Medicare coverage options near you.</p>
+    </div>
+  </div>
+
+  <section class="map-section">
+    <div class="container">
+      <USMap />
+      <p class="map-hint">👆 Click any state on the map — or choose from the list below</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <AdSlot slot="2222222222" format="horizontal" />
+  </div>
+
+  <section class="states-grid-section">
+    <div class="container">
+      <h2>Browse All 50 States</h2>
+      <div class="states-grid">
+        {states.map(s => (
+          <a class="state-card" href={`/states/${s.slug}`}>
+            <span class="state-abbr">{s.abbr}</span>
+            <span class="state-name">{s.name}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <AdSlot slot="3333333333" format="rectangle" />
+  </div>
+
+  <section id="topics" class="topics-section">
+    <div class="container">
+      <h2>Medicare Supplemental Coverage Areas</h2>
+      <p class="section-sub">Original Medicare (Parts A &amp; B) does not cover most dental, vision, or hearing aid costs. Here's what you need to know.</p>
+      <div class="topics-grid">
+        <div class="topic-card" id="dental">
+          <div class="topic-icon">🦷</div>
+          <h3>Dental Coverage</h3>
+          <p>Original Medicare generally does not cover routine dental care, fillings, dentures, or extractions. Medicare Advantage plans and state Medicaid programs may fill this gap.</p>
+          <ul>
+            <li>Preventive cleanings &amp; exams</li>
+            <li>Fillings &amp; extractions</li>
+            <li>Dentures &amp; implants</li>
+            <li>Emergency dental care</li>
+          </ul>
+        </div>
+        <div class="topic-card" id="vision">
+          <div class="topic-icon">👁️</div>
+          <h3>Vision Coverage</h3>
+          <p>Routine eye exams, glasses, and contacts are not covered by Original Medicare. Glaucoma screenings may be covered under Part B for high-risk individuals.</p>
+          <ul>
+            <li>Annual eye exams</li>
+            <li>Prescription eyeglasses</li>
+            <li>Contact lenses</li>
+            <li>Glaucoma &amp; diabetic screenings</li>
+          </ul>
+        </div>
+        <div class="topic-card" id="hearing">
+          <div class="topic-icon">👂</div>
+          <h3>Hearing Aids</h3>
+          <p>Hearing aids and fitting exams are not covered by Original Medicare. Since 2022, FDA-approved over-the-counter hearing aids are available without a prescription. Medicare Advantage plans may offer allowances.</p>
+          <ul>
+            <li>Hearing exams &amp; fitting</li>
+            <li>Prescription hearing aids</li>
+            <li>OTC hearing aids (since 2022)</li>
+            <li>Cochlear implant coverage</li>
+          </ul>
+        </div>
+        <div class="topic-card" id="nursing">
+          <div class="topic-icon">🏥</div>
+          <h3>Nursing Home Care</h3>
+          <p>Medicare Part A covers up to 100 days of skilled nursing facility (SNF) care per benefit period after a qualifying 3-day hospital stay. Long-term custodial care is covered by Medicaid for those who qualify.</p>
+          <ul>
+            <li>SNF: up to 100 days per benefit period</li>
+            <li>Days 1–20: fully covered</li>
+            <li>Days 21–100: daily coinsurance</li>
+            <li>Long-term care: Medicaid (income-based)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <AdSlot slot="4444444444" format="horizontal" />
+  </div>
+
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About Medicare</h2>
+      <div class="about-grid">
+        <div>
+          <h3>Medicare Parts Explained</h3>
+          <ul class="parts-list">
+            <li><strong>Part A</strong> — Hospital insurance (inpatient, SNF, hospice)</li>
+            <li><strong>Part B</strong> — Medical insurance (outpatient, preventive, DME)</li>
+            <li><strong>Part C</strong> — Medicare Advantage (private plans, often includes dental/vision/hearing)</li>
+            <li><strong>Part D</strong> — Prescription drug coverage</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Key Enrollment Periods</h3>
+          <ul class="parts-list">
+            <li><strong>IEP</strong> — 7-month window around your 65th birthday</li>
+            <li><strong>AEP</strong> — Oct 15 – Dec 7: change MA or Part D plans</li>
+            <li><strong>OEP</strong> — Jan 1 – Mar 31: switch MA plans</li>
+            <li><strong>SEP</strong> — Special periods triggered by qualifying events</li>
+          </ul>
+          <div class="help-box">
+            <strong>Free Help Available</strong>
+            <p>Your state's <strong>SHIP</strong> (State Health Insurance Assistance Program) offers free, unbiased Medicare counseling. Call <strong>1-800-MEDICARE</strong> or visit <a href="https://www.shiphelp.org" target="_blank" rel="noopener">shiphelp.org</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <p class="section-sub">Answers to the most common Medicare questions about dental, vision, hearing, and nursing home coverage.</p>
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary>Does Medicare cover dental care?</summary>
+          <div class="faq-body">
+            <p>Original Medicare (Parts A &amp; B) generally does <strong>not</strong> cover routine dental care such as cleanings, fillings, extractions, or dentures. However, <strong>Medicare Advantage (Part C)</strong> plans often include dental benefits, and <strong>Medicaid</strong> covers dental for dual-eligible beneficiaries in many states. Coverage and availability vary significantly by state — select your state above for details.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does Medicare cover vision and eyeglasses?</summary>
+          <div class="faq-body">
+            <p>Original Medicare does <strong>not</strong> cover routine eye exams, prescription glasses, or contact lenses. However, Medicare Part B <strong>does</strong> cover glaucoma screenings for high-risk individuals and dilated eye exams for people with diabetes. Many <strong>Medicare Advantage</strong> plans offer annual vision benefits including exams and an eyewear allowance. Check your state's Medicaid program if you are a dual-eligible beneficiary.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Does Medicare cover hearing aids?</summary>
+          <div class="faq-body">
+            <p>Original Medicare does <strong>not</strong> cover hearing aids or hearing aid fitting exams. Since 2022, the FDA has approved <strong>over-the-counter (OTC) hearing aids</strong> for mild-to-moderate hearing loss, available without a prescription at major retailers for as little as $200–$1,500 per pair. Many <strong>Medicare Advantage</strong> plans include hearing aid allowances of $500–$2,500 per year. Some state Medicaid programs also cover hearing aids for dual-eligible members.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How does Medicare cover nursing home stays?</summary>
+          <div class="faq-body">
+            <p><strong>Medicare Part A</strong> covers skilled nursing facility (SNF) care for up to <strong>100 days per benefit period</strong>, but only after a qualifying 3-day inpatient hospital stay. Days 1–20 are fully covered; days 21–100 require a daily coinsurance payment (approximately $204/day in 2025). Medicare does <strong>not</strong> cover long-term custodial care. <strong>Medicaid</strong> covers long-term nursing home costs for eligible low-income individuals. Contact your state SHIP for guidance.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What is Medicare Advantage and how is it different from Original Medicare?</summary>
+          <div class="faq-body">
+            <p><strong>Medicare Advantage (Part C)</strong> is an alternative to Original Medicare offered by private insurers approved by Medicare. It must cover everything Original Medicare covers, and most plans also include <strong>dental, vision, hearing, and prescription drug (Part D)</strong> benefits. Costs, provider networks, and extra benefits vary widely by plan and state. You can compare plans during the Annual Enrollment Period (Oct 15 – Dec 7) at <a href="https://www.medicare.gov/plan-compare" target="_blank" rel="noopener">Medicare.gov</a>.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What is dual eligibility (Medicare + Medicaid)?</summary>
+          <div class="faq-body">
+            <p><strong>Dual-eligible</strong> individuals qualify for both Medicare and Medicaid. This typically means very low income and limited assets. Dual eligibles often receive significantly expanded benefits including dental, vision, hearing aids, and long-term care covered by Medicaid, with Medicare covering medical and hospital costs. Eligibility rules and covered services vary by state — click your state on the map above for details.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>When can I enroll in or change my Medicare plan?</summary>
+          <div class="faq-body">
+            <p>Key enrollment windows include: <strong>Initial Enrollment Period (IEP)</strong> — a 7-month window around your 65th birthday; <strong>Annual Enrollment Period (AEP)</strong> — Oct 15 to Dec 7 each year to join, switch, or drop a Medicare Advantage or Part D plan; <strong>Open Enrollment Period (OEP)</strong> — Jan 1 to Mar 31 to switch Medicare Advantage plans; and <strong>Special Enrollment Periods (SEPs)</strong> triggered by qualifying life events such as moving or losing employer coverage.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Where can I get free help understanding my Medicare options?</summary>
+          <div class="faq-body">
+            <p>Every state has a <strong>SHIP (State Health Insurance Assistance Program)</strong> that provides free, unbiased, one-on-one Medicare counseling from trained volunteers. Call <strong>1-800-MEDICARE (1-800-633-4227)</strong> anytime, or visit <a href="https://www.shiphelp.org" target="_blank" rel="noopener">shiphelp.org</a> to find your local SHIP office. Counseling is completely free and not affiliated with any insurance company.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, #0f3578 0%, #2563eb 100%);
+    color: white;
+    padding: 3rem 1rem 2.5rem;
+  }
+  .hero-inner { max-width: 860px; margin: 0 auto; text-align: center; }
+  h1 { font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 800; margin-bottom: 0.75rem; }
+  .hero-sub { font-size: 1.1rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+  .map-section { padding: 2.5rem 1rem; background: #f8fafc; }
+  .map-hint { text-align: center; color: #64748b; font-size: 0.9rem; margin-top: 0.75rem; }
+
+  .states-grid-section { padding: 2.5rem 1rem; }
+  .states-grid-section h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 1.25rem; color: #1e293b; }
+  .states-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.6rem;
+  }
+  .state-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem 0.5rem;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 8px;
+    background: #f8fafc;
+    text-decoration: none;
+    transition: all 0.15s;
+    gap: 0.25rem;
+  }
+  .state-card:hover {
+    border-color: #2563eb;
+    background: #eff6ff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37,99,235,0.12);
+  }
+  .state-abbr { font-size: 1.1rem; font-weight: 700; color: #2563eb; }
+  .state-name { font-size: 0.75rem; color: #475569; text-align: center; }
+
+  .topics-section { padding: 3rem 1rem; background: #f8fafc; }
+  .topics-section .container h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .section-sub { color: #475569; margin-bottom: 2rem; max-width: 700px; }
+  .topics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.25rem; }
+  .topic-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    border: 1.5px solid #e2e8f0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  }
+  .topic-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+  .topic-card h3 { font-size: 1.1rem; font-weight: 700; color: #1a4fa0; margin-bottom: 0.5rem; }
+  .topic-card p { font-size: 0.88rem; color: #475569; margin-bottom: 0.75rem; line-height: 1.6; }
+  .topic-card ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.3rem; }
+  .topic-card ul li { font-size: 0.83rem; color: #334155; padding-left: 1.1rem; position: relative; }
+  .topic-card ul li::before { content: "✓"; position: absolute; left: 0; color: #16a34a; font-weight: 700; }
+
+  .about-section { padding: 3rem 1rem; }
+  .about-section .container h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem; }
+  .about-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+  .about-grid h3 { font-size: 1.05rem; font-weight: 700; color: #1a4fa0; margin-bottom: 0.75rem; }
+  .parts-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+  .parts-list li { font-size: 0.88rem; color: #334155; padding: 0.4rem 0.5rem 0.4rem 0.75rem; border-left: 3px solid #2563eb; background: #f8fafc; border-radius: 0 4px 4px 0; }
+  .help-box {
+    background: #eff6ff;
+    border: 1.5px solid #bfdbfe;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1.25rem;
+    font-size: 0.88rem;
+    color: #1e3a5f;
+    line-height: 1.6;
+  }
+  .help-box strong { display: block; font-size: 0.95rem; margin-bottom: 0.4rem; color: #1a4fa0; }
+
+  /* FAQ */
+  .faq-section { padding: 3rem 1rem; background: white; }
+  .faq-section .container h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 0.5rem; }
+  .faq-list { display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.75rem; }
+
+  .faq-item {
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f8fafc;
+    transition: border-color 0.15s;
+  }
+  .faq-item[open] {
+    border-color: #bfdbfe;
+    background: white;
+  }
+  .faq-item summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    font-size: 0.97rem;
+    font-weight: 600;
+    color: #1e293b;
+    cursor: pointer;
+    list-style: none;
+    gap: 1rem;
+    user-select: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #2563eb;
+    flex-shrink: 0;
+    line-height: 1;
+    transition: transform 0.2s;
+  }
+  .faq-item[open] summary::after {
+    content: '−';
+  }
+  .faq-item summary:hover { color: #1a4fa0; }
+  .faq-body {
+    padding: 0 1.25rem 1.1rem;
+    font-size: 0.9rem;
+    color: #475569;
+    line-height: 1.7;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 0.9rem;
+  }
+  .faq-body p { margin: 0; }
+  .faq-body a { color: #2563eb; }
+  .faq-body a:hover { text-decoration: underline; }
+</style>

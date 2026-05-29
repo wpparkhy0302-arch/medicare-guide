@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+const updated = 'May 30, 2026';
+---
+<BaseLayout title="Disclaimer — US Medicare Guide" description="Important disclaimer about the informational nature of US Medicare Guide content.">
+  <div class="page-hero">
+    <div class="container"><h1>Disclaimer</h1><p>Last updated: {updated}</p></div>
+  </div>
+  <div class="page-body">
+    <div class="container prose">
+      <div class="notice-box">
+        <strong>Important Notice</strong>
+        <p>The information on this website is for general educational purposes only. It is not legal, financial, or medical advice. Always consult with a qualified professional or licensed SHIP counselor for guidance specific to your situation.</p>
+      </div>
+
+      <h2>No Government Affiliation</h2>
+      <p>US Medicare Guide is an <strong>independent, privately operated</strong> informational website. We are not affiliated with, endorsed by, or connected to the United States government, the Centers for Medicare &amp; Medicaid Services (CMS), any state Medicaid agency, or any Medicare Advantage insurance company.</p>
+
+      <h2>Informational Purposes Only</h2>
+      <p>All content published on this Site is provided solely for general informational and educational purposes. Nothing on this Site constitutes:</p>
+      <ul>
+        <li>Legal advice or counsel</li>
+        <li>Financial or insurance advice</li>
+        <li>Medical advice or diagnosis</li>
+        <li>An endorsement of any specific Medicare plan, insurance product, or provider</li>
+      </ul>
+
+      <h2>Accuracy and Currency of Information</h2>
+      <p>Medicare rules, Medicaid benefit structures, plan availability, and cost-sharing amounts change regularly. While we strive to keep our content accurate and up to date, we make no guarantees regarding the completeness, accuracy, or timeliness of any information on this Site. Medicare beneficiaries should always verify current information directly with:</p>
+      <ul>
+        <li><a href="https://www.medicare.gov" target="_blank" rel="noopener">Medicare.gov</a> — official US government Medicare resource</li>
+        <li><a href="https://www.shiphelp.org" target="_blank" rel="noopener">SHIP (State Health Insurance Assistance Program)</a> — free, unbiased counseling</li>
+        <li>1-800-MEDICARE (1-800-633-4227) — available 24 hours a day, 7 days a week</li>
+      </ul>
+
+      <h2>No Liability</h2>
+      <p>US Medicare Guide, its owners, editors, and contributors shall not be held liable for any errors, omissions, or outdated information on this Site, or for any decisions made based on the content published here. Use of this Site is at your own risk.</p>
+
+      <h2>Advertising Disclosure</h2>
+      <p>This Site displays advertisements served by Google AdSense and may earn revenue from those advertisements. Advertisements are clearly labeled and do not influence our editorial content. We do not endorse any advertised products or services.</p>
+
+      <h2>External Links</h2>
+      <p>Links to external websites are provided for convenience and informational purposes. We do not endorse and are not responsible for the content, accuracy, or privacy practices of any third-party site.</p>
+
+      <h2>Contact</h2>
+      <p>If you believe any information on this Site is inaccurate, please <a href="/contact">contact us</a> and we will review it promptly.</p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero { background: linear-gradient(135deg, #0f3578 0%, #2563eb 100%); color: white; padding: 2.5rem 1rem; }
+  .page-hero h1 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 0.3rem; }
+  .page-hero p { opacity: 0.8; font-size: 0.9rem; }
+  .container { max-width: 800px; margin: 0 auto; padding: 0 1rem; }
+  .page-body { padding: 2.5rem 1rem; }
+  .notice-box {
+    background: #fff8e1;
+    border-left: 4px solid #f59e0b;
+    border-radius: 0 8px 8px 0;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.75rem;
+  }
+  .notice-box strong { display: block; color: #92400e; font-size: 0.95rem; margin-bottom: 0.4rem; }
+  .notice-box p { font-size: 0.88rem; color: #78350f; margin: 0; line-height: 1.6; }
+  .prose h2 { font-size: 1.1rem; font-weight: 700; color: #1a4fa0; margin: 1.75rem 0 0.5rem; }
+  .prose p { font-size: 0.9rem; color: #334155; line-height: 1.75; margin-bottom: 0.75rem; }
+  .prose ul { padding-left: 1.4rem; display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.75rem; }
+  .prose ul li { font-size: 0.9rem; color: #334155; line-height: 1.6; }
+  .prose a { color: #2563eb; }
+</style>

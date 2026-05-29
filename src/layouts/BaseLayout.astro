@@ -1,0 +1,201 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+const { title, description = "Find Medicare dental, vision, hearing aids, and nursing home coverage information for every US state." } = Astro.props;
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content={description} />
+  <title>{title} | US Medicare Guide</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #1a4fa0;
+      --blue-light: #2563eb;
+      --blue-dark: #0f3578;
+      --red: #c0392b;
+      --white: #ffffff;
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-600: #475569;
+      --gray-800: #1e293b;
+      --font: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    }
+    html { font-family: var(--font); color: var(--gray-800); background: var(--white); }
+    body { min-height: 100vh; display: flex; flex-direction: column; }
+    a { color: var(--blue-light); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    header {
+      background: linear-gradient(135deg, var(--blue-dark) 0%, var(--blue) 100%);
+      color: white;
+      padding: 0 1rem;
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .logo { font-size: 1.5rem; font-weight: 700; color: white; display: flex; align-items: center; gap: 0.5rem; }
+    .logo:hover { text-decoration: none; opacity: 0.9; }
+    .logo-icon { font-size: 1.8rem; }
+    .logo-sub { font-size: 0.75rem; font-weight: 400; opacity: 0.85; display: block; }
+    nav { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    nav a { color: rgba(255,255,255,0.9); font-size: 0.9rem; font-weight: 500; }
+    nav a:hover { color: white; text-decoration: none; }
+
+    .ad-banner {
+      background: var(--gray-100);
+      border-top: 1px solid var(--gray-200);
+      border-bottom: 1px solid var(--gray-200);
+      text-align: center;
+      padding: 0.5rem;
+    }
+    .ad-label { font-size: 0.65rem; color: var(--gray-600); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 2px; }
+
+    main { flex: 1; }
+
+    footer {
+      background: var(--gray-800);
+      color: rgba(255,255,255,0.7);
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+    }
+    .footer-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+    }
+    .footer-col h4 { color: white; font-size: 0.9rem; margin-bottom: 0.75rem; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+    .footer-col a { color: rgba(255,255,255,0.65); font-size: 0.85rem; }
+    .footer-col a:hover { color: white; text-decoration: none; }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 1.5rem auto 0;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+    .disclaimer {
+      background: #fff8e1;
+      border-left: 4px solid #f59e0b;
+      padding: 0.75rem 1rem;
+      font-size: 0.82rem;
+      color: #78350f;
+      max-width: 1200px;
+      margin: 1rem auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <a class="logo" href="/">
+        <span class="logo-icon">🏥</span>
+        <span>
+          US Medicare Guide
+          <span class="logo-sub">Dental · Vision · Hearing · Nursing Home</span>
+        </span>
+      </a>
+      <nav>
+        <a href="/">State Map</a>
+        <a href="/#about">About Medicare</a>
+        <a href="/#topics">Coverage Topics</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Top Banner Ad -->
+  <div class="ad-banner">
+    <div class="ad-label">Advertisement</div>
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="1111111111"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <main>
+    <slot />
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Medicare Coverage</h4>
+        <ul>
+          <li><a href="/#dental">Dental Coverage</a></li>
+          <li><a href="/#vision">Vision Coverage</a></li>
+          <li><a href="/#hearing">Hearing Aids</a></li>
+          <li><a href="/#nursing">Nursing Homes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Popular States</h4>
+        <ul>
+          <li><a href="/states/california">California</a></li>
+          <li><a href="/states/florida">Florida</a></li>
+          <li><a href="/states/texas">Texas</a></li>
+          <li><a href="/states/new-york">New York</a></li>
+          <li><a href="/states/pennsylvania">Pennsylvania</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="https://www.medicare.gov" target="_blank" rel="noopener">Medicare.gov</a></li>
+          <li><a href="https://www.medicare.gov/plan-compare" target="_blank" rel="noopener">Plan Finder</a></li>
+          <li><a href="https://www.medicare.gov/care-compare" target="_blank" rel="noopener">Care Compare</a></li>
+          <li><a href="https://www.shiphelp.org" target="_blank" rel="noopener">SHIP Help</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact &amp; Help</h4>
+        <ul>
+          <li><a href="https://www.medicare.gov/talk-to-someone" target="_blank" rel="noopener">1-800-MEDICARE</a></li>
+          <li><a href="https://www.shiphelp.org" target="_blank" rel="noopener">Free SHIP Counseling</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="/guides">All Guides</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms-of-service">Terms of Service</a></li>
+          <li><a href="/disclaimer">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© {new Date().getFullYear()} US Medicare Guide. This site provides general Medicare information. It is not affiliated with the US government. Always verify coverage details with Medicare.gov or a licensed SHIP counselor.</p>
+    </div>
+  </footer>
+</body>
+</html>
