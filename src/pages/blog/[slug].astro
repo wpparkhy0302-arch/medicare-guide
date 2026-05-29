@@ -1,0 +1,458 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import statesData from '../../data/states.json';
+
+type TopicKey = 'dental' | 'vision' | 'hearing-aids' | 'nursing-home';
+
+const TOPIC_CONFIG: Record<TopicKey, { label: string; icon: string; color: string; bg: string; border: string }> = {
+  'dental':       { label: 'Dental',       icon: '🦷', color: '#0f7490', bg: '#ecfeff',  border: '#a5f3fc' },
+  'vision':       { label: 'Vision',       icon: '👁️', color: '#7c3aed', bg: '#f5f3ff',  border: '#ddd6fe' },
+  'hearing-aids': { label: 'Hearing Aids', icon: '👂', color: '#b45309', bg: '#fffbeb',  border: '#fde68a' },
+  'nursing-home': { label: 'Nursing Home', icon: '🏥', color: '#166534', bg: '#f0fdf4',  border: '#bbf7d0' },
+};
+
+const ALL_TOPICS: TopicKey[] = ['dental', 'vision', 'hearing-aids', 'nursing-home'];
+
+export function getStaticPaths() {
+  const paths: Array<{
+    params: { slug: string };
+    props: { abbr: string; sd: Record<string, any>; topic: string };
+  }> = [];
+
+  for (const [abbr, sd] of Object.entries(statesData)) {
+    const stateSlug = (sd as any).slug as string;
+    for (const topic of ['dental', 'vision', 'hearing-aids', 'nursing-home'] as const) {
+      paths.push({
+        params: { slug: `does-medicare-cover-${topic}-in-${stateSlug}-2026` },
+        props: { abbr, sd: sd as Record<string, any>, topic },
+      });
+    }
+  }
+  return paths;
+}
+
+const { abbr, sd, topic } = Astro.props as { abbr: string; sd: any; topic: TopicKey };
+const cfg = TOPIC_CONFIG[topic];
+const stateName: string = sd.name;
+const stateSlug: string = sd.slug;
+
+const topicData: any =
+  topic === 'hearing-aids' ? sd.hearingAids :
+  topic === 'nursing-home' ? sd.nursingHome :
+  sd[topic];
+
+const coverage: string   = topicData?.coverage   ?? 'Limited';
+const description: string = topicData?.description ?? '';
+const programs: string[]  = topicData?.programs    ?? [];
+const avgCost: string    = topicData?.avgCost      ?? 'Varies by plan';
+const tips: string[]     = topicData?.tips         ?? [];
+
+const enroll: any = sd.cms_data?.enrollment_2024    ?? {};
+const plans: any  = sd.cms_data?.plan_landscape_2025 ?? {};
+const ship: any   = sd.cms_data?.ship_contact        ?? {};
+
+function fmt(n: number): string {
+  return n ? n.toLocaleString('en-US') : 'N/A';
+}
+
+const topicLabel = cfg.label;
+const pageTitle   = `Does Medicare Cover ${topicLabel} in ${stateName} 2026?`;
+const metaDesc    = `Does Medicare cover ${topicLabel.toLowerCase()} in ${stateName} in 2026? Coverage: ${coverage}. See available programs, typical costs, and tips for ${stateName} Medicare beneficiaries.`;
+
+type QA = { text: string; cls: string; short: string };
+const qaMap: Record<string, QA> = {
+  'Comprehensive': {
+    text: `Yes — Medicare provides comprehensive ${topicLabel.toLowerCase()} coverage in ${stateName} in 2026.`,
+    cls: 'qa-green', short: 'Comprehensive Coverage',
+  },
+  'Moderate': {
+    text: `Yes — Medicare provides moderate ${topicLabel.toLowerCase()} coverage in ${stateName} in 2026, typically through Medicare Advantage (Part C).`,
+    cls: 'qa-blue', short: 'Moderate Coverage',
+  },
+  'Limited': {
+    text: `Partially — Medicare offers limited ${topicLabel.toLowerCase()} coverage in ${stateName} in 2026. Supplemental coverage is usually needed.`,
+    cls: 'qa-yellow', short: 'Limited Coverage',
+  },
+  'Partial': {
+    text: `Partially — Medicare covers some ${topicLabel.toLowerCase()} costs in ${stateName} in 2026, but coverage limits and cost-sharing apply.`,
+    cls: 'qa-yellow', short: 'Partial Coverage',
+  },
+  'Not Covered': {
+    text: `No — Original Medicare does not cover ${topicLabel.toLowerCase()} in ${stateName}. Medicare Advantage plans and state programs may help.`,
+    cls: 'qa-red', short: 'Not Covered by Original Medicare',
+  },
+};
+const qa: QA = qaMap[coverage] ?? qaMap['Limited'];
+
+const nhExplain = `Medicare Part A covers short-term skilled nursing facility (SNF) care following a qualifying 3-night inpatient hospital stay. Coverage includes up to 100 days per benefit period — days 1–20 are fully covered; days 21–100 require a daily coinsurance (~$209.50/day in 2026). ${stateName} Medicaid covers long-term custodial nursing home care for those who qualify financially.`;
+
+const relatedTopics = ALL_TOPICS.filter(t => t !== topic);
+---
+
+<BaseLayout title={pageTitle} description={metaDesc}>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <a href="/">Home</a><span class="sep">›</span>
+      <a href="/blog">Blog</a><span class="sep">›</span>
+      <a href={`/states/${stateSlug}`}>{stateName}</a><span class="sep">›</span>
+      <span>{topicLabel}</span>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="blog-hero" style={`--topic-color:${cfg.color};`}>
+    <div class="container">
+      <div class="hero-chips">
+        <span class="chip" style={`background:${cfg.color};color:white;`}>{cfg.icon} {topicLabel}</span>
+        <span class="chip chip-state">{stateName}</span>
+        <span class="chip chip-year">2026 Guide</span>
+      </div>
+      <h1>{pageTitle}</h1>
+      <p class="hero-sub">Updated for 2026 — state-specific Medicare {topicLabel.toLowerCase()} coverage, programs, costs, and enrollment tips for {stateName} residents.</p>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="container layout-cols">
+
+      <!-- ── Main Content ── -->
+      <main class="main-col">
+
+        <!-- Quick Answer -->
+        <div class={`quick-answer ${qa.cls}`}>
+          <div class="qa-eyebrow">Quick Answer</div>
+          <div class="qa-level">{qa.short}</div>
+          <p class="qa-text">{qa.text}</p>
+        </div>
+
+        <AdSlot slot="5555555555" format="horizontal" />
+
+        <!-- What's Covered -->
+        <section class="art-section" style={`--sc:${cfg.color};--sb:${cfg.bg};--se:${cfg.border};`}>
+          <h2>{cfg.icon} What Does Medicare Cover for {topicLabel} in {stateName}?</h2>
+          <p>{topic === 'nursing-home' ? nhExplain : description}</p>
+          {topic === 'nursing-home' && (
+            <div class="callout">
+              <strong>⚠️ Key Rule:</strong> You must have a qualifying 3-consecutive-night inpatient hospital stay before the SNF admission to unlock Medicare Part A SNF benefits.
+            </div>
+          )}
+          {(topic === 'dental' || topic === 'vision') && coverage === 'Not Covered' && (
+            <p style="margin-top:.75rem;">
+              Original Medicare (Parts A &amp; B) does not cover routine {topicLabel.toLowerCase()} care.
+              However, most Medicare Advantage (Part C) plans available in {stateName} include {topicLabel.toLowerCase()} benefits.
+              Compare plans during <strong>Open Enrollment (Oct 15 – Dec 7)</strong> to find coverage.
+            </p>
+          )}
+          {topic === 'hearing-aids' && (
+            <p style="margin-top:.75rem;">
+              Original Medicare does not cover hearing aids or fitting exams. Many Medicare Advantage plans in {stateName} offer an annual hearing aid allowance ranging from $500–$2,500. FDA-approved over-the-counter (OTC) hearing aids have been available since 2022 and are a lower-cost alternative.
+            </p>
+          )}
+        </section>
+
+        <!-- Programs -->
+        <section class="art-section" style={`--sc:${cfg.color};--sb:${cfg.bg};--se:${cfg.border};`}>
+          <h2>📋 {stateName} Medicare {topicLabel} Programs (2026)</h2>
+          <p>The following programs may help {stateName} Medicare beneficiaries access {topicLabel.toLowerCase()} benefits:</p>
+          <ul class="prog-list">
+            {programs.map((p: string) => (
+              <li><span class="check" style={`color:${cfg.color};`}>✓</span>{p}</li>
+            ))}
+          </ul>
+        </section>
+
+        <AdSlot slot="6666666666" format="rectangle" />
+
+        <!-- Cost -->
+        <section class="art-section" style={`--sc:${cfg.color};--sb:${cfg.bg};--se:${cfg.border};`}>
+          <h2>💰 How Much Does {topicLabel} Cost in {stateName}?</h2>
+          <div class="cost-box" style={`border-color:${cfg.color};`}>
+            <div class="cost-lbl">Typical Out-of-Pocket Cost (2026)</div>
+            <div class="cost-val">{avgCost}</div>
+          </div>
+          <p class="cost-note">
+            Costs vary by Medicare plan, provider, and income. Dual-eligible beneficiaries (Medicare + Medicaid) often pay significantly less.
+            {ship.name && ` Contact ${ship.name}`}{ship.phone && ` at ${ship.phone}`} for free, personalized counseling.
+          </p>
+        </section>
+
+        <!-- Tips -->
+        <section class="art-section" style={`--sc:${cfg.color};--sb:${cfg.bg};--se:${cfg.border};`}>
+          <h2>💡 Tips for {stateName} Medicare Beneficiaries</h2>
+          <ol class="tips-ol">
+            {tips.map((t: string) => <li>{t}</li>)}
+          </ol>
+        </section>
+
+        <!-- CMS Stats -->
+        {(enroll.total_beneficiaries ?? 0) > 0 && (
+          <section class="cms-section">
+            <h2>📊 {stateName} Medicare Enrollment Statistics (2024)</h2>
+            <p class="cms-src">Source: <a href="https://data.cms.gov" target="_blank" rel="noopener">CMS Medicare Monthly Enrollment 2024</a></p>
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="si">👥</div>
+                <div class="sv">{fmt(enroll.total_beneficiaries)}</div>
+                <div class="sl">Total Beneficiaries</div>
+              </div>
+              <div class="stat-card highlight">
+                <div class="si">🏥</div>
+                <div class="sv">{fmt(enroll.ma_enrollment)}</div>
+                <div class="sl">Medicare Advantage{enroll.ma_penetration_pct ? ` (${enroll.ma_penetration_pct}%)` : ''}</div>
+              </div>
+              <div class="stat-card">
+                <div class="si">📋</div>
+                <div class="sv">{fmt(enroll.original_medicare)}</div>
+                <div class="sl">Original Medicare Only</div>
+              </div>
+              <div class="stat-card">
+                <div class="si">🤝</div>
+                <div class="sv">{fmt(enroll.dual_eligible)}</div>
+                <div class="sl">Dual Eligible (Medicare + Medicaid)</div>
+              </div>
+            </div>
+            {plans.total_plan_count && (
+              <div class="plans-note">
+                <strong>{plans.total_plan_count}</strong> Medicare Advantage plans available in {stateName} for 2025
+                {plans.avg_monthly_premium_usd != null && ` — avg. monthly premium: $${plans.avg_monthly_premium_usd}`}
+              </div>
+            )}
+          </section>
+        )}
+
+        <AdSlot slot="8888888888" format="horizontal" />
+
+        <!-- Get Help -->
+        <section class="help-section">
+          <h2>🤝 Get Free {topicLabel} Coverage Help in {stateName}</h2>
+          <div class="help-grid">
+            {ship.name && (
+              <div class="help-card">
+                <h3>{ship.name}</h3>
+                <p>Free, unbiased counseling from trained SHIP volunteers. They help {stateName} residents compare plans and find {topicLabel.toLowerCase()} coverage.</p>
+                {ship.phone && <a href={`tel:${ship.phone.replace(/-/g,'')}`} class="help-phone">{ship.phone}</a>}
+                {ship.website && <a href={`https://${ship.website}`} target="_blank" rel="noopener" class="btn">Visit Website →</a>}
+              </div>
+            )}
+            <div class="help-card">
+              <h3>1-800-MEDICARE</h3>
+              <p>Call <strong>1-800-633-4227</strong> (TTY: 1-877-486-2048) 24/7 for plan comparisons and enrollment help. Free and official.</p>
+              <a href="https://www.medicare.gov" target="_blank" rel="noopener" class="btn">Medicare.gov →</a>
+            </div>
+            <div class="help-card">
+              <h3>Medicare Plan Finder</h3>
+              <p>Compare all Medicare Advantage plans in {stateName} by ZIP code to find the best {topicLabel.toLowerCase()} benefits.</p>
+              <a href="https://www.medicare.gov/plan-compare" target="_blank" rel="noopener" class="btn">Compare Plans →</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Related Guides -->
+        <section class="related-section">
+          <h2>Related Medicare Coverage in {stateName}</h2>
+          <div class="related-grid">
+            {relatedTopics.map(rt => {
+              const rc = TOPIC_CONFIG[rt];
+              return (
+                <a href={`/blog/does-medicare-cover-${rt}-in-${stateSlug}-2026`} class="related-card">
+                  <span class="ri">{rc.icon}</span>
+                  <span class="rl">Does Medicare Cover {rc.label} in {stateName} 2026?</span>
+                  <span class="ra">→</span>
+                </a>
+              );
+            })}
+          </div>
+          <div style="margin-top:1.25rem;text-align:center;">
+            <a href={`/states/${stateSlug}`} class="full-btn">View Full {stateName} Medicare Guide →</a>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- ── Sidebar ── -->
+      <aside class="sidebar">
+        <div class="sb-card toc-card">
+          <h3>On This Page</h3>
+          <ul>
+            <li><a href="#what-covered">What's Covered</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#cost">Cost</a></li>
+            <li><a href="#tips">Tips</a></li>
+            <li><a href="#stats">Enrollment Stats</a></li>
+            <li><a href="#help">Get Help</a></li>
+          </ul>
+        </div>
+        <AdSlot slot="9999999999" format="rectangle" />
+        <div class="sb-card oe-card">
+          <h3>Open Enrollment 2025</h3>
+          <p>Compare Medicare Advantage plans with {topicLabel.toLowerCase()} benefits:</p>
+          <p class="oe-dates">Oct 15 – Dec 7, 2025</p>
+          <a href="https://www.medicare.gov/plan-compare" target="_blank" rel="noopener" class="btn" style="margin-top:.5rem;">Compare Plans →</a>
+        </div>
+        <div class="sb-card">
+          <h3>{stateName} Full Guide</h3>
+          <p>All four Medicare coverage topics for {stateName}.</p>
+          <a href={`/states/${stateSlug}`} class="btn">{abbr} Complete Guide →</a>
+        </div>
+        <div class="sb-card">
+          <h3>All {topicLabel} Guides</h3>
+          <p>Find {topicLabel.toLowerCase()} coverage guides for every state.</p>
+          <a href={`/blog#${topic}`} class="btn">All States →</a>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+
+</BaseLayout>
+
+<style>
+  .breadcrumb-bar {
+    background:#f1f5f9; border-bottom:1px solid #e2e8f0;
+    padding:.5rem 1rem; font-size:.82rem; color:#64748b;
+  }
+  .breadcrumb-bar .container { display:flex; gap:.4rem; align-items:center; flex-wrap:wrap; }
+  .breadcrumb-bar a { color:#2563eb; }
+  .sep { color:#94a3b8; }
+
+  .blog-hero {
+    background: linear-gradient(135deg, #0f3578 0%, #1a4fa0 100%);
+    color: white; padding: 2.25rem 1rem;
+  }
+  .container { max-width:1100px; margin:0 auto; padding:0 1rem; }
+
+  .hero-chips { display:flex; gap:.5rem; flex-wrap:wrap; margin-bottom:1rem; }
+  .chip {
+    padding:.3rem .8rem; border-radius:20px; font-size:.8rem; font-weight:600;
+    background:rgba(255,255,255,.15); color:white;
+  }
+  .chip-state { background:rgba(255,255,255,.2); }
+  .chip-year  { background:rgba(255,255,255,.1); }
+
+  .blog-hero h1 { font-size:clamp(1.35rem,3vw,2.1rem); font-weight:800; margin-bottom:.5rem; line-height:1.25; }
+  .hero-sub { opacity:.88; font-size:.93rem; max-width:620px; line-height:1.65; }
+
+  .page-body { padding:2rem 0; }
+  .layout-cols { display:grid; grid-template-columns:1fr 280px; gap:1.75rem; align-items:start; }
+  @media(max-width:860px) { .layout-cols { grid-template-columns:1fr; } .sidebar { display:none; } }
+
+  /* Quick Answer */
+  .quick-answer {
+    border-radius:12px; padding:1.25rem 1.5rem; margin-bottom:1.5rem;
+    border-left:5px solid; display:flex; flex-direction:column; gap:.35rem;
+  }
+  .qa-green  { background:#f0fdf4; border-color:#16a34a; }
+  .qa-blue   { background:#eff6ff; border-color:#2563eb; }
+  .qa-yellow { background:#fffbeb; border-color:#d97706; }
+  .qa-red    { background:#fff1f2; border-color:#dc2626; }
+  .qa-eyebrow { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; opacity:.65; }
+  .qa-level   { font-size:1.05rem; font-weight:800; color:#1e293b; }
+  .qa-text    { font-size:.9rem; color:#334155; line-height:1.6; margin:0; }
+
+  /* Article sections */
+  .art-section {
+    background:var(--sb); border:1.5px solid var(--se); border-radius:14px;
+    padding:1.75rem; margin-bottom:1.5rem;
+  }
+  .art-section h2 {
+    font-size:1.2rem; font-weight:700; color:var(--sc);
+    margin-bottom:.85rem; display:flex; align-items:center; gap:.5rem; flex-wrap:wrap;
+  }
+  .art-section p { font-size:.91rem; color:#334155; line-height:1.7; }
+
+  .callout {
+    background:#fff8e1; border-left:4px solid #f59e0b; border-radius:6px;
+    padding:.75rem 1rem; font-size:.85rem; color:#78350f; margin-top:1rem;
+  }
+
+  .prog-list { list-style:none; padding:0; margin-top:.75rem; display:flex; flex-direction:column; gap:.55rem; }
+  .prog-list li { display:flex; align-items:flex-start; gap:.55rem; font-size:.9rem; color:#334155; line-height:1.55; }
+  .check { font-weight:700; flex-shrink:0; margin-top:.05em; }
+
+  .cost-box {
+    border:2px solid; border-radius:10px; padding:1rem 1.25rem;
+    background:white; margin:.75rem 0; display:inline-block; min-width:220px;
+  }
+  .cost-lbl { font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.05em; color:#64748b; margin-bottom:.25rem; }
+  .cost-val { font-size:1.2rem; font-weight:800; color:#1e293b; }
+  .cost-note { font-size:.83rem; color:#64748b; line-height:1.6; margin-top:.5rem; }
+
+  .tips-ol { padding-left:1.35rem; display:flex; flex-direction:column; gap:.55rem; margin-top:.5rem; }
+  .tips-ol li { font-size:.9rem; color:#334155; line-height:1.6; }
+
+  /* CMS Stats */
+  .cms-section {
+    background:#f0f7ff; border:1.5px solid #bfdbfe; border-radius:14px;
+    padding:1.75rem; margin-bottom:1.5rem;
+  }
+  .cms-section h2 { font-size:1.2rem; font-weight:700; color:#1e293b; margin-bottom:.3rem; }
+  .cms-src { font-size:.78rem; color:#64748b; margin-bottom:1.25rem; }
+  .cms-src a { color:#2563eb; }
+  .stat-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(175px,1fr)); gap:.85rem; margin-bottom:1rem; }
+  .stat-card {
+    background:white; border:1.5px solid #e2e8f0; border-radius:12px;
+    padding:1rem; display:flex; flex-direction:column; gap:.25rem;
+  }
+  .stat-card.highlight { border-color:#2563eb; background:#eff6ff; }
+  .si { font-size:1.25rem; }
+  .sv { font-size:1.35rem; font-weight:800; color:#1e293b; line-height:1; }
+  .sl { font-size:.77rem; color:#475569; line-height:1.4; }
+  .plans-note {
+    font-size:.84rem; color:#334155; background:white; border:1px solid #e2e8f0;
+    border-radius:8px; padding:.75rem 1rem; margin-top:.5rem;
+  }
+
+  /* Help */
+  .help-section { margin-bottom:1.5rem; }
+  .help-section h2 { font-size:1.2rem; font-weight:700; margin-bottom:1rem; }
+  .help-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:.9rem; }
+  .help-card {
+    background:#f8fafc; border:1.5px solid #e2e8f0; border-radius:12px;
+    padding:1.25rem; display:flex; flex-direction:column; gap:.45rem;
+  }
+  .help-card h3 { font-size:.95rem; font-weight:700; color:#1a4fa0; }
+  .help-card p  { font-size:.85rem; color:#475569; line-height:1.55; }
+  .help-phone { font-size:1.05rem; font-weight:800; color:#15803d; text-decoration:none; }
+  .help-phone:hover { text-decoration:underline; }
+  .btn {
+    display:inline-block; padding:.42rem .9rem; background:#2563eb; color:white;
+    border-radius:6px; font-size:.82rem; font-weight:600; text-decoration:none;
+    transition:background .15s; width:fit-content;
+  }
+  .btn:hover { background:#1a4fa0; text-decoration:none; }
+
+  /* Related */
+  .related-section { margin-bottom:1.5rem; }
+  .related-section h2 { font-size:1.15rem; font-weight:700; margin-bottom:.85rem; }
+  .related-grid { display:flex; flex-direction:column; gap:.55rem; }
+  .related-card {
+    display:flex; align-items:center; gap:.75rem;
+    background:#f8fafc; border:1.5px solid #e2e8f0; border-radius:10px;
+    padding:.85rem 1rem; text-decoration:none; color:#1e293b; transition:border-color .15s;
+  }
+  .related-card:hover { border-color:#2563eb; text-decoration:none; }
+  .ri { font-size:1.4rem; flex-shrink:0; }
+  .rl { font-size:.88rem; font-weight:500; flex:1; line-height:1.4; }
+  .ra { color:#2563eb; font-weight:700; flex-shrink:0; }
+  .full-btn {
+    display:inline-block; padding:.55rem 1.25rem; background:#0f3578; color:white;
+    border-radius:8px; font-size:.88rem; font-weight:600; text-decoration:none;
+    transition:background .15s;
+  }
+  .full-btn:hover { background:#2563eb; text-decoration:none; }
+
+  /* Sidebar */
+  .sidebar { display:flex; flex-direction:column; gap:1rem; position:sticky; top:1rem; }
+  .sb-card {
+    background:#f8fafc; border:1.5px solid #e2e8f0; border-radius:12px; padding:1.1rem;
+  }
+  .sb-card h3 { font-size:.92rem; font-weight:700; color:#1a4fa0; margin-bottom:.6rem; }
+  .sb-card p  { font-size:.83rem; color:#475569; line-height:1.55; }
+  .toc-card ul { list-style:none; padding:0; display:flex; flex-direction:column; gap:.35rem; }
+  .toc-card a  { font-size:.85rem; color:#2563eb; }
+  .toc-card a:hover { text-decoration:underline; }
+  .oe-card .oe-dates { font-size:.95rem; font-weight:800; color:#0f3578; margin-top:.25rem; }
+</style>
