@@ -11,62 +11,44 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   <div class="page-body">
     <div class="container">
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h2>Get in Touch</h2>
-          <p>US Medicare Guide is an independent informational resource. We welcome corrections, suggestions, and general inquiries.</p>
 
-          <div class="info-card">
-            <div class="info-icon">📧</div>
-            <div>
-              <strong>Email</strong>
-              <p>contact@usmedicareguide.com</p>
-            </div>
-          </div>
-          <div class="info-card">
-            <div class="info-icon">🕐</div>
-            <div>
-              <strong>Response Time</strong>
-              <p>We typically respond within 2–3 business days.</p>
-            </div>
-          </div>
-          <div class="info-card">
-            <div class="info-icon">🏥</div>
-            <div>
-              <strong>Medicare Help Line</strong>
-              <p>For Medicare coverage questions, call <strong>1-800-MEDICARE</strong> (1-800-633-4227) — available 24/7.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact-form-wrap">
-          <h2>Send a Message</h2>
-          <form class="contact-form" netlify name="contact" method="POST">
-            <div class="field">
-              <label for="name">Your Name</label>
-              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
-            </div>
-            <div class="field">
-              <label for="email">Email Address</label>
-              <input type="email" id="email" name="email" placeholder="jane@example.com" required />
-            </div>
-            <div class="field">
-              <label for="subject">Subject</label>
-              <select id="subject" name="subject">
-                <option value="general">General Question</option>
-                <option value="correction">Content Correction</option>
-                <option value="suggestion">Suggestion</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Send Message</button>
-          </form>
+      <div class="email-highlight">
+        <div class="email-icon">📧</div>
+        <div class="email-body">
+          <div class="email-label">Email us at</div>
+          <a class="email-address" href="mailto:contact@usmedicareguide.com">contact@usmedicareguide.com</a>
+          <div class="email-note">We typically respond within 2–3 business days.</div>
         </div>
       </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <div class="info-icon">✏️</div>
+          <div>
+            <strong>Content Corrections</strong>
+            <p>Found outdated or inaccurate information? Please include the page URL and the specific correction in your email so we can review it promptly.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">💡</div>
+          <div>
+            <strong>Suggestions &amp; Feedback</strong>
+            <p>Have an idea for improving the site or a topic you'd like us to cover? We read every message and appreciate the input.</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">🏥</div>
+          <div>
+            <strong>Medicare Coverage Questions</strong>
+            <p>For personalized Medicare help, contact <strong>1-800-MEDICARE</strong> (1-800-633-4227) 24/7, or find your free state SHIP counselor at <a href="https://www.shiphelp.org" target="_blank" rel="noopener noreferrer">shiphelp.org</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="disclaimer-box">
+        <p>US Medicare Guide is an independent informational resource. We cannot provide personalized Medicare advice, plan recommendations, or enrollment assistance. For those needs, please contact <a href="https://www.medicare.gov/talk-to-someone" target="_blank" rel="noopener noreferrer">1-800-MEDICARE</a> or a licensed SHIP counselor.</p>
+      </div>
+
     </div>
   </div>
 </BaseLayout>
@@ -79,49 +61,58 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
   .page-hero h1 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 0.5rem; }
   .page-hero p { opacity: 0.88; font-size: 1rem; }
-  .container { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
+  .container { max-width: 760px; margin: 0 auto; padding: 0 1rem; }
   .page-body { padding: 2.5rem 1rem; }
 
-  .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; }
+  .email-highlight {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    background: #f0f7ff;
+    border: 2px solid #bfdbfe;
+    border-radius: 14px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+  }
+  .email-icon { font-size: 2rem; flex-shrink: 0; }
+  .email-label { font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #64748b; margin-bottom: 0.2rem; }
+  .email-address {
+    display: inline-block;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1a4fa0;
+    text-decoration: none;
+    word-break: break-all;
+  }
+  .email-address:hover { text-decoration: underline; }
+  .email-note { font-size: 0.82rem; color: #64748b; margin-top: 0.35rem; }
 
-  .contact-info h2, .contact-form-wrap h2 { font-size: 1.2rem; font-weight: 700; color: #1a4fa0; margin-bottom: 0.75rem; }
-  .contact-info > p { font-size: 0.9rem; color: #475569; line-height: 1.6; margin-bottom: 1.25rem; }
-
-  .info-card { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.9rem 1rem; background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 10px; margin-bottom: 0.75rem; }
-  .info-icon { font-size: 1.3rem; flex-shrink: 0; }
-  .info-card strong { display: block; font-size: 0.88rem; font-weight: 700; color: #1e293b; margin-bottom: 0.2rem; }
-  .info-card p { font-size: 0.85rem; color: #475569; margin: 0; line-height: 1.5; }
-
-  .contact-form { display: flex; flex-direction: column; gap: 1rem; }
-  .field { display: flex; flex-direction: column; gap: 0.3rem; }
-  .field label { font-size: 0.85rem; font-weight: 600; color: #334155; }
-  .field input, .field select, .field textarea {
-    padding: 0.6rem 0.85rem;
+  .info-grid { display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 2rem; }
+  .info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    padding: 1rem 1.15rem;
+    background: #f8fafc;
     border: 1.5px solid #e2e8f0;
-    border-radius: 7px;
-    font-size: 0.9rem;
-    color: #1e293b;
-    background: white;
-    font-family: inherit;
-    transition: border-color 0.15s;
+    border-radius: 10px;
   }
-  .field input:focus, .field select:focus, .field textarea:focus {
-    outline: none;
-    border-color: #2563eb;
-    box-shadow: 0 0 0 3px rgba(37,99,235,0.1);
+  .info-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 0.1rem; }
+  .info-card strong { display: block; font-size: 0.9rem; font-weight: 700; color: #1e293b; margin-bottom: 0.3rem; }
+  .info-card p { font-size: 0.86rem; color: #475569; margin: 0; line-height: 1.55; }
+  .info-card a { color: #2563eb; }
+
+  .disclaimer-box {
+    background: #fff8e1;
+    border-left: 4px solid #f59e0b;
+    border-radius: 6px;
+    padding: 0.85rem 1.1rem;
   }
-  .field textarea { resize: vertical; }
-  .btn-submit {
-    padding: 0.7rem 1.5rem;
-    background: #2563eb;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background 0.15s;
-    width: fit-content;
+  .disclaimer-box p { font-size: 0.83rem; color: #78350f; line-height: 1.6; margin: 0; }
+  .disclaimer-box a { color: #92400e; font-weight: 600; }
+
+  @media (max-width: 480px) {
+    .email-highlight { flex-direction: column; gap: 0.75rem; padding: 1.25rem; }
+    .email-address { font-size: 1rem; }
   }
-  .btn-submit:hover { background: #1a4fa0; }
 </style>
