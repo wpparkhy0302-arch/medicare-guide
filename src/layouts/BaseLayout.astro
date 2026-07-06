@@ -4,6 +4,19 @@ interface Props {
   description?: string;
 }
 const { title, description = "Find Medicare dental, vision, hearing aids, and nursing home coverage information for every US state." } = Astro.props;
+
+const orgSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "US Medicare Guide",
+  "url": "https://medicarecoverinfo.com",
+  "description": "Independent Medicare information resource covering dental, vision, hearing, and nursing home coverage for all 50 US states.",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "contact@usmedicareguide.com",
+    "contactType": "customer service"
+  }
+});
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +36,10 @@ const { title, description = "Find Medicare dental, vision, hearing aids, and nu
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2204132369832933" crossorigin="anonymous"></script>
+  <!-- Organization structured data -->
+  <script type="application/ld+json" set:html={orgSchema}></script>
+  <!-- Page-specific structured data -->
+  <slot name="head" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
@@ -111,6 +128,23 @@ const { title, description = "Find Medicare dental, vision, hearing aids, and nu
       max-width: 1200px;
       margin: 1rem auto;
     }
+    .independence-bar {
+      background: #eff6ff;
+      border-bottom: 1px solid #bfdbfe;
+      padding: 0.45rem 1rem;
+      font-size: 0.78rem;
+      color: #1e40af;
+      text-align: center;
+    }
+    .notice-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .independence-bar a {
+      color: #1d4ed8;
+      font-weight: 600;
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -125,8 +159,9 @@ const { title, description = "Find Medicare dental, vision, hearing aids, and nu
       </a>
       <nav>
         <a href="/">State Map</a>
-        <a href="/#about">About Medicare</a>
-        <a href="/#topics">Coverage Topics</a>
+        <a href="/guides">All Guides</a>
+        <a href="/about">About</a>
+        <a href="/contact">Contact</a>
       </nav>
     </div>
   </header>
@@ -141,6 +176,15 @@ const { title, description = "Find Medicare dental, vision, hearing aids, and nu
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- Independence notice -->
+  <div class="independence-bar">
+    <div class="notice-inner">
+      This site is independent and not affiliated with the U.S. government or Medicare. Always verify with
+      <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer">Medicare.gov</a> or
+      <a href="https://www.shiphelp.org" target="_blank" rel="noopener noreferrer">your state SHIP counselor</a>.
+    </div>
   </div>
 
   <main>
@@ -188,6 +232,7 @@ const { title, description = "Find Medicare dental, vision, hearing aids, and nu
         <h4>Pages</h4>
         <ul>
           <li><a href="/about">About</a></li>
+          <li><a href="/editorial-policy">Editorial Policy</a></li>
           <li><a href="/contact">Contact</a></li>
           <li><a href="/guides">All Guides</a></li>
         </ul>

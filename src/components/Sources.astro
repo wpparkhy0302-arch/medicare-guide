@@ -1,0 +1,98 @@
+---
+interface Props {
+  stateName?: string;
+  shipName?: string;
+}
+const { stateName, shipName } = Astro.props;
+---
+
+<section class="sources-section">
+  <h2 class="sources-title">Sources &amp; References</h2>
+  <ul class="sources-list">
+    <li>
+      <a href="https://data.cms.gov/medicare-enrollment/enrollment-by-state" target="_blank" rel="noopener noreferrer">
+        CMS Medicare Enrollment Data — data.cms.gov
+      </a>
+      <span class="src-note">Beneficiary enrollment counts and Medicare Advantage penetration rates</span>
+    </li>
+    <li>
+      <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer">
+        Medicare.gov — Official U.S. Medicare Website
+      </a>
+      <span class="src-note">Coverage rules, plan finder, care compare, and official benefit explanations</span>
+    </li>
+    <li>
+      <a href="https://www.cms.gov/data-research/statistics-trends-and-reports/medicare-advantagepart-d-contract-and-enrollment-data" target="_blank" rel="noopener noreferrer">
+        CMS Medicare Advantage &amp; Part D Landscape Files — cms.gov
+      </a>
+      <span class="src-note">Plan counts, premium data, and insurer landscape for 2025</span>
+    </li>
+    <li>
+      <a href="https://www.medicaid.gov" target="_blank" rel="noopener noreferrer">
+        Medicaid.gov — State Medicaid Program Information
+      </a>
+      <span class="src-note">Dual-eligibility rules and state Medicaid benefit details</span>
+    </li>
+    {(shipName || stateName) && (
+      <li>
+        <a href="https://www.shiphelp.org" target="_blank" rel="noopener noreferrer">
+          {shipName ?? `${stateName} SHIP`} — shiphelp.org
+        </a>
+        <span class="src-note">Free, unbiased Medicare counseling from trained SHIP volunteers</span>
+      </li>
+    )}
+  </ul>
+  <p class="sources-note">
+    All data is sourced from official U.S. government public datasets.
+    This site is independent and not affiliated with the U.S. government.
+    Always verify coverage details at <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer">Medicare.gov</a> before making enrollment decisions.
+  </p>
+</section>
+
+<style>
+  .sources-section {
+    background: #f1f5f9;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .sources-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.9rem;
+  }
+  .sources-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-bottom: 1rem;
+  }
+  .sources-list li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .sources-list a {
+    font-size: 0.87rem;
+    color: #2563eb;
+    font-weight: 600;
+  }
+  .sources-list a:hover { text-decoration: underline; }
+  .src-note {
+    font-size: 0.77rem;
+    color: #64748b;
+  }
+  .sources-note {
+    font-size: 0.8rem;
+    color: #64748b;
+    line-height: 1.6;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 0.85rem;
+    margin: 0;
+  }
+  .sources-note a { color: #2563eb; }
+</style>

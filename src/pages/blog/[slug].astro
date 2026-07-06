@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import AuthorBio from '../../components/AuthorBio.astro';
+import Sources from '../../components/Sources.astro';
 import statesData from '../../data/states.json';
 
 type TopicKey = 'dental' | 'vision' | 'hearing-aids' | 'nursing-home';
@@ -60,6 +62,29 @@ const topicLabel = cfg.label;
 const pageTitle   = `Does Medicare Cover ${topicLabel} in ${stateName} 2026?`;
 const metaDesc    = `Does Medicare cover ${topicLabel.toLowerCase()} in ${stateName} in 2026? Coverage: ${coverage}. See available programs, typical costs, and tips for ${stateName} Medicare beneficiaries.`;
 
+const buildDate = new Date().toISOString().split('T')[0];
+const buildDateDisplay = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const pageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": pageTitle,
+  "description": metaDesc,
+  "url": `https://medicarecoverinfo.com/blog/does-medicare-cover-${topic}-in-${stateSlug}-2026`,
+  "dateModified": buildDate,
+  "author": {
+    "@type": "Person",
+    "name": "Jinsoo Park",
+    "url": "https://medicarecoverinfo.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "US Medicare Guide",
+    "url": "https://medicarecoverinfo.com"
+  },
+  "inLanguage": "en-US"
+});
+
 type QA = { text: string; cls: string; short: string };
 const qaMap: Record<string, QA> = {
   'Comprehensive': {
@@ -91,6 +116,7 @@ const relatedTopics = ALL_TOPICS.filter(t => t !== topic);
 ---
 
 <BaseLayout title={pageTitle} description={metaDesc}>
+  <script slot="head" type="application/ld+json" set:html={pageSchema}></script>
 
   <!-- Breadcrumb -->
   <div class="breadcrumb-bar">
@@ -109,6 +135,7 @@ const relatedTopics = ALL_TOPICS.filter(t => t !== topic);
         <span class="chip" style={`background:${cfg.color};color:white;`}>{cfg.icon} {topicLabel}</span>
         <span class="chip chip-state">{stateName}</span>
         <span class="chip chip-year">2026 Guide</span>
+        <span class="chip chip-updated">Updated: <time datetime={buildDate}>{buildDateDisplay}</time></span>
       </div>
       <h1>{pageTitle}</h1>
       <p class="hero-sub">Updated for 2026 — state-specific Medicare {topicLabel.toLowerCase()} coverage, programs, costs, and enrollment tips for {stateName} residents.</p>
@@ -250,6 +277,12 @@ const relatedTopics = ALL_TOPICS.filter(t => t !== topic);
           </div>
         </section>
 
+        <!-- Sources -->
+        <Sources stateName={stateName} shipName={ship.name} />
+
+        <!-- Author Bio -->
+        <AuthorBio />
+
         <!-- Related Guides -->
         <section class="related-section">
           <h2>Related Medicare Coverage in {stateName}</h2>
@@ -329,8 +362,9 @@ const relatedTopics = ALL_TOPICS.filter(t => t !== topic);
     padding:.3rem .8rem; border-radius:20px; font-size:.8rem; font-weight:600;
     background:rgba(255,255,255,.15); color:white;
   }
-  .chip-state { background:rgba(255,255,255,.2); }
-  .chip-year  { background:rgba(255,255,255,.1); }
+  .chip-state    { background:rgba(255,255,255,.2); }
+  .chip-year     { background:rgba(255,255,255,.1); }
+  .chip-updated  { background:rgba(255,255,255,.1); font-size:.75rem; }
 
   .blog-hero h1 { font-size:clamp(1.35rem,3vw,2.1rem); font-weight:800; margin-bottom:.5rem; line-height:1.25; }
   .hero-sub { opacity:.88; font-size:.93rem; max-width:620px; line-height:1.65; }

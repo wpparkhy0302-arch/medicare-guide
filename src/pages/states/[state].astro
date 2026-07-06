@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AdSlot from '../../components/AdSlot.astro';
+import AuthorBio from '../../components/AuthorBio.astro';
+import Sources from '../../components/Sources.astro';
 import statesData from '../../data/states.json';
 
 export function getStaticPaths() {
@@ -12,6 +14,29 @@ export function getStaticPaths() {
 
 const { abbr, stateData } = Astro.props;
 const { name, dental, vision, hearingAids, nursingHome, cms_data } = stateData;
+
+const buildDate = new Date().toISOString().split('T')[0];
+const buildDateDisplay = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+
+const pageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": ["MedicalWebPage", "Article"],
+  "headline": `${name} Medicare Coverage — Dental, Vision, Hearing, Nursing Home`,
+  "description": `Medicare dental, vision, hearing aids, and nursing home coverage information for ${name}. Find programs, costs, and tips.`,
+  "url": `https://medicarecoverinfo.com/states/${stateData.slug}`,
+  "dateModified": buildDate,
+  "author": {
+    "@type": "Person",
+    "name": "Jinsoo Park",
+    "url": "https://medicarecoverinfo.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "US Medicare Guide",
+    "url": "https://medicarecoverinfo.com"
+  },
+  "inLanguage": "en-US"
+});
 
 const enroll   = cms_data?.enrollment_2024 ?? {};
 const plans    = cms_data?.plan_landscape_2025 ?? {};
@@ -73,6 +98,7 @@ const coverageBadge = (level: string) => {
   title={`${name} Medicare Coverage — Dental, Vision, Hearing, Nursing Home`}
   description={`Medicare dental, vision, hearing aids, and nursing home coverage information for ${name}. Find programs, costs, and tips.`}
 >
+  <script slot="head" type="application/ld+json" set:html={pageSchema}></script>
   <!-- Breadcrumb -->
   <div class="breadcrumb-bar">
     <div class="container">
@@ -101,6 +127,10 @@ const coverageBadge = (level: string) => {
             <span>{t.icon}</span> {t.label}
           </a>
         ))}
+      </div>
+      <!-- Last updated -->
+      <div class="last-updated-badge">
+        Last updated: <time datetime={buildDate}>{buildDateDisplay}</time>
       </div>
     </div>
   </div>
@@ -261,6 +291,12 @@ const coverageBadge = (level: string) => {
         </div>
       </section>
 
+      <!-- Sources -->
+      <Sources stateName={name} shipName={ship.name} />
+
+      <!-- Author Bio -->
+      <AuthorBio />
+
       <!-- Back nav -->
       <div class="back-nav">
         <a href="/" class="back-btn">← Back to All States Map</a>
@@ -314,6 +350,13 @@ const coverageBadge = (level: string) => {
     transition: background 0.15s;
   }
   .quick-nav-item:hover { background: rgba(255,255,255,0.22); text-decoration: none; }
+
+  .last-updated-badge {
+    margin-top: 0.75rem;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.75);
+  }
+  .last-updated-badge time { font-weight: 600; color: rgba(255,255,255,0.92); }
 
   .page-body { padding: 2rem 0; }
 

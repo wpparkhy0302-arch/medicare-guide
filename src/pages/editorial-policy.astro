@@ -1,0 +1,134 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="Editorial Policy — US Medicare Guide"
+  description="How US Medicare Guide sources, verifies, and updates Medicare coverage information. Our editorial standards and independence policy."
+>
+  <div class="page-hero">
+    <div class="container">
+      <h1>Editorial Policy</h1>
+      <p>How we source, verify, and update Medicare information — and what this site is not.</p>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="container prose">
+
+      <div class="policy-intro">
+        <p>US Medicare Guide is committed to providing accurate, up-to-date Medicare information sourced exclusively from official U.S. government publications. This page explains our editorial standards so readers can evaluate the reliability of the information presented.</p>
+      </div>
+
+      <h2>1. Sources We Use</h2>
+      <p>Every data point on this site is sourced from one or more of the following official sources:</p>
+      <div class="source-grid">
+        <div class="source-item">
+          <div class="source-name"><a href="https://data.cms.gov" target="_blank" rel="noopener noreferrer">CMS Public Data (data.cms.gov)</a></div>
+          <div class="source-desc">Medicare enrollment statistics, Medicare Advantage plan landscape files, Part D data, and utilization reports published by the Centers for Medicare &amp; Medicaid Services.</div>
+        </div>
+        <div class="source-item">
+          <div class="source-name"><a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer">Medicare.gov</a></div>
+          <div class="source-desc">Official benefit rules, coverage explanations, and plan comparison data from the U.S. federal Medicare program.</div>
+        </div>
+        <div class="source-item">
+          <div class="source-name"><a href="https://www.medicaid.gov" target="_blank" rel="noopener noreferrer">Medicaid.gov</a></div>
+          <div class="source-desc">State Medicaid program rules, dual-eligibility criteria, and state-level benefit information.</div>
+        </div>
+        <div class="source-item">
+          <div class="source-name"><a href="https://www.shiphelp.org" target="_blank" rel="noopener noreferrer">SHIP National Resource Center (shiphelp.org)</a></div>
+          <div class="source-desc">State Health Insurance Assistance Program (SHIP) contact information and counseling resources for each state.</div>
+        </div>
+      </div>
+      <p>We do not use insurance company websites, broker materials, or non-government sources as primary references.</p>
+
+      <h2>2. How We Verify Information</h2>
+      <p>Before publishing state-level coverage data, we cross-reference at least two official sources when available. When sources conflict, we note the discrepancy rather than choosing the more favorable figure. If a data point cannot be confirmed from an official source, it is not included.</p>
+
+      <h2>3. Update Frequency</h2>
+      <ul>
+        <li><strong>Annual updates:</strong> Medicare Advantage plan counts, premiums, and insurer landscape data are updated when CMS releases its annual Plan Landscape files (typically September–October each year).</li>
+        <li><strong>Enrollment data:</strong> Beneficiary enrollment statistics are updated when CMS publishes new monthly enrollment figures.</li>
+        <li><strong>Coverage rules:</strong> When CMS or Medicare.gov announces changes to benefit rules, we review and update affected pages within 30 days of the announcement.</li>
+        <li><strong>Build date:</strong> Every page shows its last-updated date, which reflects when the page was last rebuilt with current data.</li>
+      </ul>
+
+      <h2>4. What This Site Is Not</h2>
+      <p>This site is strictly an informational reference. It does not provide:</p>
+      <ul>
+        <li><strong>Medical advice</strong> — we do not recommend treatments, diagnoses, or healthcare decisions.</li>
+        <li><strong>Legal advice</strong> — coverage disputes, appeals, and rights questions should be directed to a licensed attorney or your State Insurance Commissioner.</li>
+        <li><strong>Financial advice</strong> — plan cost comparisons and enrollment decisions should be made with a licensed insurance counselor or SHIP volunteer.</li>
+        <li><strong>Personalized plan recommendations</strong> — we describe what plans generally offer; individual eligibility and benefits vary by ZIP code, income, and other factors.</li>
+      </ul>
+
+      <h2>5. Editorial Independence</h2>
+      <p>US Medicare Guide receives no compensation from insurance companies, plan sponsors, brokers, or government agencies. There is no sponsored content on this site. Our coverage of any plan, insurer, or program is not influenced by advertising or commercial relationships.</p>
+
+      <h2>6. Corrections Policy</h2>
+      <p>We take accuracy seriously. If you believe information on this site is incorrect or outdated, please <a href="/contact">contact us</a> with the specific page URL and the correction you believe is needed. We review all correction requests and update pages promptly when errors are confirmed.</p>
+
+      <h2>7. Independence Statement</h2>
+      <p>US Medicare Guide is an independent informational website. It is not affiliated with the U.S. government, the Centers for Medicare &amp; Medicaid Services (CMS), Medicare.gov, or any insurance company, plan, or broker. The information provided is for general educational purposes only. Always verify coverage details with <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer">Medicare.gov</a> or a licensed <a href="https://www.shiphelp.org" target="_blank" rel="noopener noreferrer">SHIP counselor</a> before making enrollment decisions.</p>
+
+      <div class="policy-footer">
+        <p>Questions about our editorial standards? <a href="/contact">Contact us →</a></p>
+      </div>
+
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .page-hero {
+    background: linear-gradient(135deg, #0f3578 0%, #2563eb 100%);
+    color: white;
+    padding: 2.5rem 1rem;
+  }
+  .page-hero h1 { font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 0.5rem; }
+  .page-hero p { opacity: 0.88; font-size: 1rem; }
+  .container { max-width: 860px; margin: 0 auto; padding: 0 1rem; }
+  .page-body { padding: 2.5rem 1rem; }
+
+  .policy-intro {
+    background: #f0f7ff;
+    border: 1.5px solid #bfdbfe;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .policy-intro p { font-size: 0.93rem; color: #334155; line-height: 1.75; margin: 0; }
+
+  .prose h2 { font-size: 1.15rem; font-weight: 700; color: #1a4fa0; margin: 1.75rem 0 0.75rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.4rem; }
+  .prose p { font-size: 0.93rem; color: #334155; line-height: 1.75; margin-bottom: 0.75rem; }
+  .prose ul { padding-left: 1.4rem; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem; }
+  .prose ul li { font-size: 0.93rem; color: #334155; line-height: 1.6; }
+  .prose a { color: #2563eb; }
+  .prose strong { color: #1e293b; }
+
+  .source-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 0.85rem;
+    margin: 0.85rem 0 1rem;
+  }
+  .source-item {
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.1rem;
+  }
+  .source-name { font-size: 0.88rem; font-weight: 700; margin-bottom: 0.4rem; }
+  .source-name a { color: #2563eb; }
+  .source-desc { font-size: 0.82rem; color: #475569; line-height: 1.55; }
+
+  .policy-footer {
+    background: #f1f5f9;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  .policy-footer p { font-size: 0.9rem; color: #475569; margin: 0; }
+  .policy-footer a { color: #2563eb; font-weight: 600; }
+</style>

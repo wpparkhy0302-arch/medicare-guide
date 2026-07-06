@@ -1,34 +1,64 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteAuthor } from '../data/author';
 ---
-<BaseLayout title="About — US Medicare Guide" description="Learn about US Medicare Guide, our mission, and how we help Americans navigate Medicare coverage options.">
+<BaseLayout
+  title="About — US Medicare Guide"
+  description="Learn about Jinsoo Park and why US Medicare Guide was created to help Americans navigate Medicare coverage options state by state."
+>
   <div class="page-hero">
     <div class="container">
       <h1>About US Medicare Guide</h1>
-      <p>Helping Americans navigate Medicare dental, vision, hearing, and nursing home coverage — state by state.</p>
+      <p>An independent resource for understanding Medicare dental, vision, hearing, and nursing home coverage — state by state.</p>
     </div>
   </div>
 
   <div class="page-body">
     <div class="container prose">
-      <h2>Our Mission</h2>
-      <p>US Medicare Guide is an independent, informational resource dedicated to helping Medicare beneficiaries and their families understand what coverage is available in their state. Navigating Medicare's dental, vision, hearing aid, and nursing home benefits can be confusing — our goal is to make that information clear, accessible, and actionable.</p>
 
-      <h2>What We Cover</h2>
-      <p>Original Medicare (Parts A &amp; B) was designed primarily for medical and hospital care. It leaves significant gaps in everyday health needs:</p>
+      <!-- Author card -->
+      <div class="author-card">
+        <div class="author-avatar">JP</div>
+        <div class="author-info">
+          <div class="author-name">{siteAuthor.name}</div>
+          <div class="author-role">{siteAuthor.role}</div>
+          <p>{siteAuthor.bio}</p>
+        </div>
+      </div>
+
+      <h2>Why This Site Exists</h2>
+      <p>Original Medicare (Parts A &amp; B) leaves significant gaps in everyday health care — dental cleanings, eyeglasses, hearing aids, and long-term nursing home care are largely excluded. Yet navigating what state Medicaid programs, Medicare Advantage plans, and community resources cover can be overwhelming.</p>
+      <p>US Medicare Guide was created to make that information clear and accessible. By compiling publicly available data from CMS and Medicare.gov into one place, organized by state, beneficiaries and their families can quickly understand what options exist before calling a plan or SHIP counselor.</p>
+
+      <h2>How We Research &amp; Verify Information</h2>
+      <p>Every piece of information on this site is sourced from official U.S. government publications and public datasets. Our research process:</p>
       <ul>
-        <li><strong>Dental</strong> — routine cleanings, fillings, extractions, and dentures are generally not covered by Original Medicare.</li>
-        <li><strong>Vision</strong> — routine eye exams and prescription eyeglasses are excluded from Original Medicare.</li>
-        <li><strong>Hearing Aids</strong> — hearing aids and fitting exams are not covered by Original Medicare.</li>
-        <li><strong>Nursing Home Care</strong> — Medicare Part A covers skilled nursing facility care short-term; long-term custodial care requires Medicaid.</li>
+        <li><strong>CMS Public Data:</strong> Enrollment statistics, Medicare Advantage plan landscapes, and utilization data are drawn from <a href="https://data.cms.gov" target="_blank" rel="noopener noreferrer">data.cms.gov</a> public datasets, updated when CMS releases new figures.</li>
+        <li><strong>Medicare.gov:</strong> Coverage rules, benefit explanations, and plan finder data are verified against <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer">Medicare.gov</a>, the official U.S. Medicare website.</li>
+        <li><strong>State SHIP Programs:</strong> State-specific counseling resources and contact information are sourced from <a href="https://www.shiphelp.org" target="_blank" rel="noopener noreferrer">shiphelp.org</a>, the national SHIP resource center.</li>
+        <li><strong>Medicaid.gov:</strong> Dual-eligibility and state Medicaid benefit details are verified against <a href="https://www.medicaid.gov" target="_blank" rel="noopener noreferrer">Medicaid.gov</a>.</li>
       </ul>
-      <p>State Medicaid programs, Medicare Advantage plans, and community resources vary enormously. We research and present this information for all 50 states in one place.</p>
+      <p>We do not invent, estimate, or editorialize coverage data. If official sources conflict or are unclear, we note the uncertainty rather than guess.</p>
 
-      <h2>Disclaimer</h2>
-      <p>US Medicare Guide is not affiliated with the US government, the Centers for Medicare &amp; Medicaid Services (CMS), or any insurance company. The information provided is for general educational purposes only and should not be considered legal, financial, or medical advice. Always verify coverage details with <a href="https://www.medicare.gov" target="_blank" rel="noopener">Medicare.gov</a> or a licensed SHIP counselor before making enrollment decisions.</p>
+      <h2>Independence &amp; Transparency</h2>
+      <p>US Medicare Guide is entirely independent. We are not affiliated with:</p>
+      <ul>
+        <li>The U.S. federal government, CMS, or Medicare.gov</li>
+        <li>Any state government agency or Medicaid program</li>
+        <li>Any insurance company, Medicare Advantage plan, or broker</li>
+        <li>Any healthcare provider or hospital network</li>
+      </ul>
+      <p>This site does not sell insurance, provide personalized plan recommendations, or receive commissions. It is an informational reference only. Always verify coverage details and eligibility directly with <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer">Medicare.gov</a> or a licensed <a href="https://www.shiphelp.org" target="_blank" rel="noopener noreferrer">SHIP counselor</a> before making enrollment decisions.</p>
 
-      <h2>Contact Us</h2>
-      <p>Have a question, correction, or suggestion? Visit our <a href="/contact">Contact page</a>.</p>
+      <h2>What This Site Is Not</h2>
+      <p>The information on US Medicare Guide is for general educational purposes only. It is <strong>not</strong> medical advice, legal advice, financial advice, or a substitute for professional consultation. Medicare coverage rules, plan premiums, and state program eligibility change annually. Coverage details for your specific situation may differ.</p>
+
+      <h2>Editorial Standards</h2>
+      <p>Content is reviewed and updated when CMS releases new data or when Medicare rules change. See our <a href="/editorial-policy">Editorial Policy</a> for details on our sourcing standards and update process.</p>
+
+      <h2>Contact</h2>
+      <p>Found an error or have a question? We welcome corrections and feedback. Visit our <a href="/contact">Contact page</a> to reach us.</p>
+
     </div>
   </div>
 </BaseLayout>
@@ -43,9 +73,44 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .page-hero p { opacity: 0.88; font-size: 1rem; }
   .container { max-width: 860px; margin: 0 auto; padding: 0 1rem; }
   .page-body { padding: 2.5rem 1rem; }
+
+  .author-card {
+    display: flex;
+    gap: 1.25rem;
+    align-items: flex-start;
+    background: #f0f7ff;
+    border: 1.5px solid #bfdbfe;
+    border-left: 4px solid #1a4fa0;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .author-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #1a4fa0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .author-info { flex: 1; }
+  .author-name { font-size: 1rem; font-weight: 700; color: #1e293b; }
+  .author-role { font-size: 0.82rem; color: #64748b; font-style: italic; margin-bottom: 0.5rem; }
+  .author-info p { font-size: 0.88rem; color: #334155; line-height: 1.65; margin: 0; }
+
   .prose h2 { font-size: 1.2rem; font-weight: 700; color: #1a4fa0; margin: 1.75rem 0 0.6rem; }
   .prose p { font-size: 0.93rem; color: #334155; line-height: 1.75; margin-bottom: 0.75rem; }
-  .prose ul { padding-left: 1.4rem; display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 0.75rem; }
+  .prose ul { padding-left: 1.4rem; display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 0.75rem; }
   .prose ul li { font-size: 0.93rem; color: #334155; line-height: 1.6; }
   .prose a { color: #2563eb; }
+  .prose strong { color: #1e293b; }
+
+  @media (max-width: 480px) {
+    .author-card { flex-direction: column; }
+  }
 </style>

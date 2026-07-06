@@ -1,0 +1,76 @@
+---
+import { siteAuthor } from '../data/author';
+---
+
+<div class="author-bio">
+  <div class="author-bio-inner">
+    <div class="author-avatar" aria-hidden="true">
+      {siteAuthor.avatar
+        ? <img src={siteAuthor.avatar} alt={siteAuthor.name} width="52" height="52" />
+        : <span class="avatar-placeholder">JP</span>
+      }
+    </div>
+    <div class="author-details">
+      <div class="author-label">Written &amp; reviewed by</div>
+      <div class="author-name">{siteAuthor.name}</div>
+      <div class="author-role">{siteAuthor.role}</div>
+      <p class="author-desc">{siteAuthor.bio}</p>
+      <div class="author-links">
+        <a href={siteAuthor.profileUrl}>About the author</a>
+        <span class="sep">·</span>
+        <a href={siteAuthor.editorialPolicyUrl}>Editorial Policy</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  .author-bio {
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    border-left: 4px solid #1a4fa0;
+    border-radius: 10px;
+    padding: 1.25rem 1.5rem;
+    margin: 2rem 0 1rem;
+  }
+  .author-bio-inner {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .author-avatar {
+    flex-shrink: 0;
+  }
+  .author-avatar img {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .avatar-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #1a4fa0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+  .author-details { flex: 1; min-width: 0; }
+  .author-label { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: #64748b; margin-bottom: 0.15rem; }
+  .author-name { font-size: 0.97rem; font-weight: 700; color: #1e293b; }
+  .author-role { font-size: 0.8rem; color: #64748b; font-style: italic; margin-bottom: 0.5rem; }
+  .author-desc { font-size: 0.85rem; color: #475569; line-height: 1.6; margin-bottom: 0.6rem; }
+  .author-links { display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap; }
+  .author-links a { font-size: 0.82rem; color: #2563eb; }
+  .author-links a:hover { text-decoration: underline; }
+  .sep { color: #94a3b8; font-size: 0.75rem; }
+  @media (max-width: 480px) {
+    .author-bio-inner { flex-direction: column; }
+    .author-avatar { align-self: flex-start; }
+  }
+</style>
