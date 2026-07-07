@@ -1,0 +1,289 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AuthorBio from '../../components/AuthorBio.astro';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map(entry => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+const { title, description, author, dateModified, category, sources } = entry.data;
+
+const pageSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "url": `https://medicarecoverinfo.com/guides/${entry.id}`,
+  "dateModified": dateModified,
+  "author": {
+    "@type": "Person",
+    "name": author,
+    "url": "https://medicarecoverinfo.com/about"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "US Medicare Guide",
+    "url": "https://medicarecoverinfo.com"
+  },
+  "inLanguage": "en-US"
+});
+---
+
+<BaseLayout title={title} description={description}>
+  <script slot="head" type="application/ld+json" set:html={pageSchema}></script>
+
+  <!-- Breadcrumb -->
+  <div class="breadcrumb-bar">
+    <div class="container">
+      <a href="/">Home</a>
+      <span class="sep">›</span>
+      <a href="/guides">Guides</a>
+      <span class="sep">›</span>
+      <span>{category ?? 'Guide'}</span>
+    </div>
+  </div>
+
+  <!-- Article hero -->
+  <div class="article-hero">
+    <div class="container">
+      <div class="hero-meta">
+        {category && <span class="category-chip">{category}</span>}
+        <span class="updated-chip">Updated: <time datetime={dateModified}>{new Date(dateModified).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="page-body">
+    <div class="container">
+      <div class="article-layout">
+
+        <!-- Article content -->
+        <article class="article-content">
+          <Content />
+
+          <!-- Sources from frontmatter -->
+          {sources && sources.length > 0 && (
+            <section class="sources-section">
+              <h2>Sources</h2>
+              <ul class="sources-list">
+                {sources.map((s: string) => <li>{s}</li>)}
+              </ul>
+              <p class="sources-footer">
+                All information is sourced from official U.S. government publications.
+                Always verify details at <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer">Medicare.gov</a> before making enrollment decisions.
+              </p>
+            </section>
+          )}
+
+          <AuthorBio />
+        </article>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <div class="sb-card cta-card">
+            <h3>Free Medicare Help</h3>
+            <p>Your state SHIP program offers free, unbiased Medicare counseling from trained volunteers.</p>
+            <a href="https://www.shiphelp.org" target="_blank" rel="noopener noreferrer" class="btn">Find Your SHIP →</a>
+          </div>
+          <div class="sb-card cta-card">
+            <h3>Compare Plans</h3>
+            <p>Use the official Medicare Plan Finder to compare Medicare Advantage dental benefits in your ZIP code.</p>
+            <a href="https://www.medicare.gov/plan-compare" target="_blank" rel="noopener noreferrer" class="btn">Medicare Plan Finder →</a>
+          </div>
+          <div class="sb-card">
+            <h3>State Coverage Pages</h3>
+            <p>Find specific Medicare benefit details for your state.</p>
+            <a href="/guides" class="btn">All 50 States →</a>
+          </div>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .breadcrumb-bar {
+    background: #f1f5f9;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 0.5rem 1rem;
+    font-size: 0.82rem;
+    color: #64748b;
+  }
+  .breadcrumb-bar .container { display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; }
+  .breadcrumb-bar a { color: #2563eb; }
+  .sep { color: #94a3b8; }
+
+  .article-hero {
+    background: linear-gradient(135deg, #0f3578 0%, #1a4fa0 100%);
+    padding: 1.5rem 1rem 1.25rem;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 1rem; }
+  .hero-meta { display: flex; gap: 0.6rem; flex-wrap: wrap; align-items: center; }
+  .category-chip {
+    padding: 0.3rem 0.85rem;
+    background: rgba(255,255,255,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+  }
+  .updated-chip { font-size: 0.78rem; color: rgba(255,255,255,0.75); }
+  .updated-chip time { color: rgba(255,255,255,0.92); font-weight: 600; }
+
+  .page-body { padding: 2rem 0; }
+
+  .article-layout {
+    display: grid;
+    grid-template-columns: 1fr 270px;
+    gap: 2rem;
+    align-items: start;
+  }
+  @media (max-width: 860px) {
+    .article-layout { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+  }
+
+  /* Article typography */
+  .article-content :global(h1) {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 800;
+    color: #0f3578;
+    line-height: 1.25;
+    margin: 0 0 1.5rem;
+  }
+  .article-content :global(h2) {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1a4fa0;
+    margin: 2rem 0 0.75rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #e2e8f0;
+  }
+  .article-content :global(h3) {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 1.25rem 0 0.5rem;
+  }
+  .article-content :global(p) {
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+  .article-content :global(ul),
+  .article-content :global(ol) {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .article-content :global(li) {
+    font-size: 0.94rem;
+    color: #334155;
+    line-height: 1.7;
+  }
+  .article-content :global(strong) { color: #1e293b; font-weight: 700; }
+  .article-content :global(em) { color: #64748b; font-size: 0.88rem; line-height: 1.7; }
+  .article-content :global(a) { color: #2563eb; }
+  .article-content :global(a:hover) { text-decoration: underline; }
+  .article-content :global(hr) {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 2rem 0;
+  }
+
+  /* Markdown table */
+  .article-content :global(table) {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin: 1.25rem 0;
+    overflow-x: auto;
+    display: block;
+  }
+  .article-content :global(th) {
+    background: #0f3578;
+    color: white;
+    padding: 0.6rem 0.85rem;
+    text-align: left;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .article-content :global(td) {
+    padding: 0.55rem 0.85rem;
+    border-bottom: 1px solid #e2e8f0;
+    color: #334155;
+    vertical-align: top;
+  }
+  .article-content :global(tr:nth-child(even) td) { background: #f8fafc; }
+  .article-content :global(tr:hover td) { background: #eff6ff; }
+
+  /* Sources */
+  .sources-section {
+    background: #f1f5f9;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem 0 1rem;
+  }
+  .sources-section h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.85rem;
+    border: none;
+    padding: 0;
+  }
+  .sources-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 0.85rem;
+  }
+  .sources-list li { font-size: 0.86rem; color: #475569; }
+  .sources-footer {
+    font-size: 0.8rem;
+    color: #64748b;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 0.75rem;
+    margin: 0;
+  }
+  .sources-footer a { color: #2563eb; }
+
+  /* Sidebar */
+  .sidebar { display: flex; flex-direction: column; gap: 1rem; position: sticky; top: 1rem; }
+  .sb-card {
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.1rem;
+  }
+  .sb-card h3 { font-size: 0.92rem; font-weight: 700; color: #1a4fa0; margin-bottom: 0.6rem; }
+  .sb-card p { font-size: 0.83rem; color: #475569; line-height: 1.55; margin-bottom: 0.6rem; }
+  .cta-card { background: #f0f7ff; border-color: #bfdbfe; }
+  .btn {
+    display: inline-block;
+    padding: 0.42rem 0.9rem;
+    background: #2563eb;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+  .btn:hover { background: #1a4fa0; text-decoration: none; }
+</style>

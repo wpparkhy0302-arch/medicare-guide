@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
 import statesData from '../data/states.json';
 
 const states = Object.entries(statesData)
@@ -12,17 +13,44 @@ const topics = [
   { id: 'hearing-aids',label: 'Hearing Aids', icon: '👂' },
   { id: 'nursing-home',label: 'Nursing Home', icon: '🏥' },
 ];
+
+const guideArticles = await getCollection('guides');
+guideArticles.sort((a, b) =>
+  new Date(b.data.dateModified).getTime() - new Date(a.data.dateModified).getTime()
+);
 ---
-<BaseLayout title="All Medicare Guides by State — US Medicare Guide" description="Browse all 50 state Medicare guides covering dental, vision, hearing aids, and nursing home coverage.">
+<BaseLayout title="All Medicare Guides — US Medicare Guide" description="Browse Medicare guides and all 50 state coverage pages covering dental, vision, hearing aids, and nursing home benefits.">
   <div class="page-hero">
     <div class="container">
-      <h1>All Medicare Guides</h1>
-      <p>Browse dental, vision, hearing aid, and nursing home coverage guides for all 50 US states.</p>
+      <h1>Medicare Guides</h1>
+      <p>In-depth guides and all 50 state coverage pages for dental, vision, hearing, and nursing home benefits.</p>
     </div>
   </div>
 
   <div class="page-body">
     <div class="container">
+
+      <!-- Featured Guide Articles -->
+      {guideArticles.length > 0 && (
+        <section class="guides-section">
+          <h2 class="section-heading">Coverage Guides</h2>
+          <div class="guide-cards">
+            {guideArticles.map(g => (
+              <a class="guide-card" href={`/guides/${g.id}`}>
+                <div class="guide-card-meta">
+                  {g.data.category && <span class="guide-category">{g.data.category}</span>}
+                  <span class="guide-date">{new Date(g.data.dateModified).toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' })}</span>
+                </div>
+                <div class="guide-title">{g.data.title}</div>
+                <div class="guide-desc">{g.data.description}</div>
+                <span class="guide-read">Read guide →</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <h2 class="section-heading">State Coverage Pages</h2>
       <div class="topic-chips">
         {topics.map(t => (
           <span class="chip">{t.icon} {t.label}</span>
@@ -46,6 +74,34 @@ const topics = [
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  .guides-section { margin-bottom: 2.5rem; }
+  .section-heading { font-size: 1.15rem; font-weight: 700; color: #1a4fa0; margin-bottom: 1rem; }
+  .guide-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+  .guide-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    padding: 1.25rem 1.4rem;
+    background: #f0f7ff;
+    border: 1.5px solid #bfdbfe;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.15s;
+    color: inherit;
+  }
+  .guide-card:hover { border-color: #2563eb; background: #e0eeff; text-decoration: none; transform: translateY(-1px); }
+  .guide-card-meta { display: flex; gap: 0.6rem; align-items: center; flex-wrap: wrap; }
+  .guide-category {
+    font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+    background: #2563eb; color: white; padding: 0.15rem 0.6rem; border-radius: 10px;
+  }
+  .guide-date { font-size: 0.75rem; color: #64748b; }
+  .guide-title { font-size: 0.97rem; font-weight: 700; color: #0f3578; line-height: 1.4; }
+  .guide-desc { font-size: 0.83rem; color: #475569; line-height: 1.55; flex: 1; }
+  .guide-read { font-size: 0.82rem; color: #2563eb; font-weight: 600; }
+</style>
 
 <style>
   .page-hero {
